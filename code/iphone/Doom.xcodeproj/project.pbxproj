@@ -10,6 +10,7 @@
 		088E1248AD863802B31B4568 /* libPods-DoomTV.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A33C320EF24B974E5A33788B /* libPods-DoomTV.a */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		292D63A32123B58700516326 /* ProxyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292D63A22123B58700516326 /* ProxyManager.swift */; };
+		2958F8E721247CC200B65404 /* icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1B98E13207EFFEA00827A46 /* icons.xcassets */; };
 		4333CCE80F5CC23E00AE2B6F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4333CCE70F5CC23E00AE2B6F /* AudioToolbox.framework */; };
 		4364BF3F0F5CB25900F29317 /* dist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4364BF3E0F5CB25900F29317 /* dist.plist */; };
 		43CF02FF0F56974E00E4A23D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 43CF02FE0F56974E00E4A23D /* Default.png */; };
@@ -1784,7 +1785,7 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 0940;
 				TargetAttributes = {
 					1D6058900D05DD3D006BFB54 = {
 						LastSwiftMigration = 0940;
@@ -1826,6 +1827,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2958F8E721247CC200B65404 /* icons.xcassets in Resources */,
 				43CF02FF0F56974E00E4A23D /* Default.png in Resources */,
 				4364BF3F0F5CB25900F29317 /* dist.plist in Resources */,
 				C8D1CF6813DE1EB600F0EAC6 /* DOOM_57.png in Resources */,
@@ -2628,6 +2630,7 @@
 				PREBINDING = NO;
 				PRODUCT_NAME = Doom;
 				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
 			};
 			name = ReleaseLite;
 		};
@@ -3145,6 +3148,7 @@
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
 			};
 			name = Release;
 		};
