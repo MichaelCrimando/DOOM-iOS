@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		088E1248AD863802B31B4568 /* libPods-DoomTV.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A33C320EF24B974E5A33788B /* libPods-DoomTV.a */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		4333CCE80F5CC23E00AE2B6F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4333CCE70F5CC23E00AE2B6F /* AudioToolbox.framework */; };
 		4364BF3F0F5CB25900F29317 /* dist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4364BF3E0F5CB25900F29317 /* dist.plist */; };
@@ -14,6 +15,7 @@
 		43CF030A0F56D5C200E4A23D /* iphone_loop.c in Sources */ = {isa = PBXBuildFile; fileRef = 43CF03090F56D5C200E4A23D /* iphone_loop.c */; };
 		43E8D2E10F4FC61E003F09B2 /* iphone_main.c in Sources */ = {isa = PBXBuildFile; fileRef = 43E8D2DF0F4FC61E003F09B2 /* iphone_main.c */; };
 		43E8D4E00F51B48B003F09B2 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E8D4DF0F51B48B003F09B2 /* OpenAL.framework */; };
+		6620218C94627DCD0C6B0CDF /* Pods_Doom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEB6485B3DCB3AF18DAFF4D2 /* Pods_Doom.framework */; };
 		720EBBAE0F82E0BB003F989A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 720EBBAD0F82E0BB003F989A /* QuartzCore.framework */; };
 		7229CE4A0F6C89F8004123C5 /* EAGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7229CE460F6C89F8004123C5 /* EAGLView.m */; };
 		7229CE550F6C8CDE004123C5 /* gles_glue.c in Sources */ = {isa = PBXBuildFile; fileRef = 7229CE540F6C8CDE004123C5 /* gles_glue.c */; };
@@ -535,8 +537,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C707AA992C2E4D3298558F4 /* Pods-DoomTV.adhocdist.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoomTV.adhocdist.xcconfig"; path = "Pods/Target Support Files/Pods-DoomTV/Pods-DoomTV.adhocdist.xcconfig"; sourceTree = "<group>"; };
+		0F173240739CE021F28AFC5B /* Pods-Doom.adhocdist.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Doom.adhocdist.xcconfig"; path = "Pods/Target Support Files/Pods-Doom/Pods-Doom.adhocdist.xcconfig"; sourceTree = "<group>"; };
+		0F4EA8A9B678BB257A194C60 /* Pods-Doom.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Doom.release.xcconfig"; path = "Pods/Target Support Files/Pods-Doom/Pods-Doom.release.xcconfig"; sourceTree = "<group>"; };
 		1D6058910D05DD3D006BFB54 /* Doom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Doom.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		272D67BE756F435A538FA94C /* Pods-DoomTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoomTV.release.xcconfig"; path = "Pods/Target Support Files/Pods-DoomTV/Pods-DoomTV.release.xcconfig"; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3DEF22EEADBD0EDCD0759344 /* Pods-Doom.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Doom.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Doom/Pods-Doom.debug.xcconfig"; sourceTree = "<group>"; };
 		4333CCE70F5CC23E00AE2B6F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = /System/Library/Frameworks/AudioToolbox.framework; sourceTree = "<absolute>"; };
 		434669A30F8D08C000EA7D6D /* doom_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = doom_Prefix.pch; sourceTree = "<group>"; };
 		4364BF3E0F5CB25900F29317 /* dist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = dist.plist; sourceTree = "<group>"; };
@@ -544,6 +551,9 @@
 		43CF03090F56D5C200E4A23D /* iphone_loop.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = iphone_loop.c; sourceTree = "<group>"; };
 		43E8D2DF0F4FC61E003F09B2 /* iphone_main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = iphone_main.c; sourceTree = "<group>"; };
 		43E8D4DF0F51B48B003F09B2 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = /System/Library/Frameworks/OpenAL.framework; sourceTree = "<absolute>"; };
+		52DF86F9E22FF278E6847C1A /* Pods-DoomTV.distribution.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoomTV.distribution.xcconfig"; path = "Pods/Target Support Files/Pods-DoomTV/Pods-DoomTV.distribution.xcconfig"; sourceTree = "<group>"; };
+		66CF97D6BE0F9AB2473EE120 /* Pods-Doom.distribution.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Doom.distribution.xcconfig"; path = "Pods/Target Support Files/Pods-Doom/Pods-Doom.distribution.xcconfig"; sourceTree = "<group>"; };
+		6F41E56221A0669BF3633D77 /* Pods-DoomTV.debuglite.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoomTV.debuglite.xcconfig"; path = "Pods/Target Support Files/Pods-DoomTV/Pods-DoomTV.debuglite.xcconfig"; sourceTree = "<group>"; };
 		720EBBAD0F82E0BB003F989A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = /System/Library/Frameworks/QuartzCore.framework; sourceTree = "<absolute>"; };
 		7229CC8E0F6B3363004123C5 /* doomiphone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = doomiphone.h; path = ../doomiphone.h; sourceTree = SOURCE_ROOT; };
 		7229CE450F6C89F8004123C5 /* EAGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAGLView.h; sourceTree = "<group>"; };
@@ -736,6 +746,7 @@
 		72F1F9B20F96C18800AD49AC /* tessmono.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = tessmono.c; path = ../libtess/tessmono.c; sourceTree = SOURCE_ROOT; };
 		72F1F9B30F96C18800AD49AC /* tessmono.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tessmono.h; path = ../libtess/tessmono.h; sourceTree = SOURCE_ROOT; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94A62DAC3CAE19690A2504A8 /* Pods-DoomTV.releaselite.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoomTV.releaselite.xcconfig"; path = "Pods/Target Support Files/Pods-DoomTV/Pods-DoomTV.releaselite.xcconfig"; sourceTree = "<group>"; };
 		A112904F2069B62B00BEDEB5 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		A12302D5205737F40075CBAD /* LocalizationObjectiveC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LocalizationObjectiveC.h; path = ../ios/LocalizationObjectiveC.h; sourceTree = "<group>"; };
 		A12302D6205737F40075CBAD /* Label.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = Label.mm; path = ../ios/Label.mm; sourceTree = "<group>"; };
@@ -946,6 +957,8 @@
 		A1EA3B84207F1D310038650E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS11.3.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
 		A1EA3B86207F9DE20038650E /* DOOM_400.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DOOM_400.png; sourceTree = "<group>"; };
 		A1EA3B8F208020B60038650E /* EpisodeCell-tvos.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = "EpisodeCell-tvos.xib"; sourceTree = "<group>"; };
+		A33C320EF24B974E5A33788B /* libPods-DoomTV.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DoomTV.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEB6485B3DCB3AF18DAFF4D2 /* Pods_Doom.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Doom.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8139AB213FADA800094C2C0 /* SliderSkull@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SliderSkull@2x.png"; path = "../../IB Images/SliderSkull@2x.png"; sourceTree = SOURCE_ROOT; };
 		C8139AB413FADA9D0094C2C0 /* SliderSkull~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SliderSkull~ipad.png"; path = "../../IB Images/SliderSkull~ipad.png"; sourceTree = SOURCE_ROOT; };
 		C81E0E5D13E076E400B1049A /* idGinzaNar-Md2.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "idGinzaNar-Md2.otf"; path = "../../idGinzaNar-Md2.otf"; sourceTree = SOURCE_ROOT; };
@@ -1003,6 +1016,9 @@
 		C8D1CF8713DF79BC00F0EAC6 /* Default~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default~ipad.png"; sourceTree = "<group>"; };
 		C8D1CFA713E1CDBD00F0EAC6 /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = "<group>"; };
 		C8D1CFA913E1CDC600F0EAC6 /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
+		D42245598F4EF690C3DBBCBD /* Pods-DoomTV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoomTV.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DoomTV/Pods-DoomTV.debug.xcconfig"; sourceTree = "<group>"; };
+		E9B8EF4E880EBFBEC2187135 /* Pods-Doom.releaselite.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Doom.releaselite.xcconfig"; path = "Pods/Target Support Files/Pods-Doom/Pods-Doom.releaselite.xcconfig"; sourceTree = "<group>"; };
+		E9E9A527C2AB2B32AD0E19BE /* Pods-Doom.debuglite.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Doom.debuglite.xcconfig"; path = "Pods/Target Support Files/Pods-Doom/Pods-Doom.debuglite.xcconfig"; sourceTree = "<group>"; };
 		ED9AB3CF10966E85000B5852 /* iphone_email.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iphone_email.h; sourceTree = "<group>"; };
 		ED9AB3D010966E85000B5852 /* iphone_email.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iphone_email.m; sourceTree = "<group>"; };
 		EDD2760411C2B19E004A9B9B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -1025,6 +1041,7 @@
 				EDD2760711C2B19E004A9B9B /* Foundation.framework in Frameworks */,
 				EDD2760911C2B19E004A9B9B /* OpenGLES.framework in Frameworks */,
 				EDD2760B11C2B19E004A9B9B /* UIKit.framework in Frameworks */,
+				6620218C94627DCD0C6B0CDF /* Pods_Doom.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1041,12 +1058,32 @@
 				A1B98E10207EFF8B00827A46 /* CoreGraphics.framework in Frameworks */,
 				A1B98E11207EFF8B00827A46 /* GameController.framework in Frameworks */,
 				A1B98E12207EFF8B00827A46 /* OpenAL.framework in Frameworks */,
+				088E1248AD863802B31B4568 /* libPods-DoomTV.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		059968364EFB5DE8CB455C1E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3DEF22EEADBD0EDCD0759344 /* Pods-Doom.debug.xcconfig */,
+				E9E9A527C2AB2B32AD0E19BE /* Pods-Doom.debuglite.xcconfig */,
+				0F4EA8A9B678BB257A194C60 /* Pods-Doom.release.xcconfig */,
+				E9B8EF4E880EBFBEC2187135 /* Pods-Doom.releaselite.xcconfig */,
+				0F173240739CE021F28AFC5B /* Pods-Doom.adhocdist.xcconfig */,
+				66CF97D6BE0F9AB2473EE120 /* Pods-Doom.distribution.xcconfig */,
+				D42245598F4EF690C3DBBCBD /* Pods-DoomTV.debug.xcconfig */,
+				6F41E56221A0669BF3633D77 /* Pods-DoomTV.debuglite.xcconfig */,
+				272D67BE756F435A538FA94C /* Pods-DoomTV.release.xcconfig */,
+				94A62DAC3CAE19690A2504A8 /* Pods-DoomTV.releaselite.xcconfig */,
+				0C707AA992C2E4D3298558F4 /* Pods-DoomTV.adhocdist.xcconfig */,
+				52DF86F9E22FF278E6847C1A /* Pods-DoomTV.distribution.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -1078,6 +1115,7 @@
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
+				059968364EFB5DE8CB455C1E /* Pods */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -1177,6 +1215,8 @@
 				EDD2760611C2B19E004A9B9B /* Foundation.framework */,
 				EDD2760811C2B19E004A9B9B /* OpenGLES.framework */,
 				EDD2760A11C2B19E004A9B9B /* UIKit.framework */,
+				AEB6485B3DCB3AF18DAFF4D2 /* Pods_Doom.framework */,
+				A33C320EF24B974E5A33788B /* libPods-DoomTV.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1690,10 +1730,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Doom" */;
 			buildPhases = (
+				FF49E9EC2AA0CC2E1B2B918E /* [CP] Check Pods Manifest.lock */,
 				1D60588D0D05DD3D006BFB54 /* Resources */,
 				1D60588E0D05DD3D006BFB54 /* Sources */,
 				1D60588F0D05DD3D006BFB54 /* Frameworks */,
 				A12302A32057365B0075CBAD /* Headers */,
+				A5B638D78ADE893F918654D9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1708,6 +1750,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A1B98E00207EFEEA00827A46 /* Build configuration list for PBXNativeTarget "DoomTV" */;
 			buildPhases = (
+				8C095B874F8EC7B47E6E9BB8 /* [CP] Check Pods Manifest.lock */,
 				A1B98DE8207EFEE800827A46 /* Resources */,
 				A1B98DE6207EFEE800827A46 /* Sources */,
 				A1B98DE7207EFEE800827A46 /* Frameworks */,
@@ -1730,6 +1773,13 @@
 			attributes = {
 				LastUpgradeCheck = 0930;
 				TargetAttributes = {
+					1D6058900D05DD3D006BFB54 = {
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
 					A1B98DE9207EFEE800827A46 = {
 						CreatedOnToolsVersion = 9.3;
 					};
@@ -1747,6 +1797,7 @@
 				Base,
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			productRefGroup = 19C28FACFE9D520D11CA2CBB /* Products */;
 			projectDirPath = "";
 			projectRoot = ../..;
 			targets = (
@@ -1947,6 +1998,65 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8C095B874F8EC7B47E6E9BB8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DoomTV-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5B638D78ADE893F918654D9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Doom/Pods-Doom-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BiSON/BiSON.framework",
+				"${BUILT_PRODUCTS_DIR}/SmartDeviceLink/SmartDeviceLink.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BiSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SmartDeviceLink.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Doom/Pods-Doom-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF49E9EC2AA0CC2E1B2B918E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Doom-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1D60588E0D05DD3D006BFB54 /* Sources */ = {
@@ -2300,6 +2410,7 @@
 /* Begin XCBuildConfiguration section */
 		1D6058940D05DD3E006BFB54 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DEF22EEADBD0EDCD0759344 /* Pods-Doom.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -2344,6 +2455,7 @@
 		};
 		1D6058950D05DD3E006BFB54 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F4EA8A9B678BB257A194C60 /* Pods-Doom.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -2422,6 +2534,7 @@
 		};
 		4364BF490F5CB27300F29317 /* AdHocDist */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F173240739CE021F28AFC5B /* Pods-Doom.adhocdist.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -2492,6 +2605,7 @@
 		};
 		43AE7CA50F61EC4E00B2F562 /* ReleaseLite */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9B8EF4E880EBFBEC2187135 /* Pods-Doom.releaselite.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -2565,6 +2679,7 @@
 		};
 		43AE7CAF0F61FC9200B2F562 /* DebugLite */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9E9A527C2AB2B32AD0E19BE /* Pods-Doom.debuglite.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -2600,6 +2715,7 @@
 		};
 		A1B98DFA207EFEEA00827A46 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D42245598F4EF690C3DBBCBD /* Pods-DoomTV.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "Brand Assets";
@@ -2659,6 +2775,7 @@
 		};
 		A1B98DFB207EFEEA00827A46 /* DebugLite */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F41E56221A0669BF3633D77 /* Pods-DoomTV.debuglite.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "Brand Assets";
@@ -2707,6 +2824,7 @@
 		};
 		A1B98DFC207EFEEA00827A46 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 272D67BE756F435A538FA94C /* Pods-DoomTV.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "Brand Assets";
@@ -2758,6 +2876,7 @@
 		};
 		A1B98DFD207EFEEA00827A46 /* ReleaseLite */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94A62DAC3CAE19690A2504A8 /* Pods-DoomTV.releaselite.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "Brand Assets";
@@ -2804,6 +2923,7 @@
 		};
 		A1B98DFE207EFEEA00827A46 /* AdHocDist */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C707AA992C2E4D3298558F4 /* Pods-DoomTV.adhocdist.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "Brand Assets";
@@ -2850,6 +2970,7 @@
 		};
 		A1B98DFF207EFEEA00827A46 /* Distribution */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52DF86F9E22FF278E6847C1A /* Pods-DoomTV.distribution.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "Brand Assets";
@@ -3039,6 +3160,7 @@
 		};
 		ED06595C1087C51800E5450B /* Distribution */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66CF97D6BE0F9AB2473EE120 /* Pods-Doom.distribution.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_WEAK = YES;
