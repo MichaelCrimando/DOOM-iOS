@@ -23,10 +23,9 @@ class ProxyManager: NSObject {
         let lifecycleConfiguration = SDLLifecycleConfiguration(appName:appName, appId: appId)
         lifecycleConfiguration.shortAppName = appName
         
-        if let appImage = UIImage(named: "Doom App Icon") {
-            let appIcon = SDLArtwork(image: appImage, name: "Doom", persistent: true, as: .JPG)
-            lifecycleConfiguration.appIcon = appIcon
-        }
+
+        let appIcon = SDLArtwork(image: #imageLiteral(resourceName: "DOOM_72.png"), name: "Doom", persistent: true, as: .JPG)
+        lifecycleConfiguration.appIcon = appIcon
         
         
         SDLLockScreenConfiguration.enabled()
