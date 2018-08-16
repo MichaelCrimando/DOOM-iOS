@@ -41,7 +41,7 @@ class ProxyManager: NSObject, SDLStreamingMediaManagerDataSource {
         
         //TODO: Implement Secure streaming
         
-        let streamingConfig = SDLStreamingMediaConfiguration(securityManagers: nil, encryptionFlag: SDLStreamingEncryptionFlag.none, videoSettings: videoEncoderSettings, dataSource: self, rootViewController: self.sdlViewController)
+        let streamingConfig = SDLStreamingMediaConfiguration(securityManagers: nil, encryptionFlag: SDLStreamingEncryptionFlag.none, videoSettings: nil, dataSource: self, rootViewController: self.sdlViewController)
         streamingConfig.carWindowRenderingType = .viewAfterScreenUpdates
         
         let configuration = SDLConfiguration(lifecycle: lifecycleConfiguration, lockScreen: nil, logging: nil, streamingMedia: streamingConfig)
