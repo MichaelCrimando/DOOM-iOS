@@ -11,6 +11,9 @@
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		292D63A32123B58700516326 /* ProxyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292D63A22123B58700516326 /* ProxyManager.swift */; };
 		2958F8E721247CC200B65404 /* icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1B98E13207EFFEA00827A46 /* icons.xcassets */; };
+		298274422125FA2100095F93 /* libFMCSecurity.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 298274412125FA2100095F93 /* libFMCSecurity.a */; };
+		298274442125FA3200095F93 /* libFMCSecurity.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 298274432125FA3100095F93 /* libFMCSecurity.a */; };
+		29A886172125F44300457200 /* blankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A886162125F44300457200 /* blankViewController.swift */; };
 		4333CCE80F5CC23E00AE2B6F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4333CCE70F5CC23E00AE2B6F /* AudioToolbox.framework */; };
 		4364BF3F0F5CB25900F29317 /* dist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4364BF3E0F5CB25900F29317 /* dist.plist */; };
 		43CF02FF0F56974E00E4A23D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 43CF02FE0F56974E00E4A23D /* Default.png */; };
@@ -546,6 +549,9 @@
 		272D67BE756F435A538FA94C /* Pods-DoomTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoomTV.release.xcconfig"; path = "Pods/Target Support Files/Pods-DoomTV/Pods-DoomTV.release.xcconfig"; sourceTree = "<group>"; };
 		292D63A12123B58600516326 /* Doom-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Doom-Bridging-Header.h"; sourceTree = "<group>"; };
 		292D63A22123B58700516326 /* ProxyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyManager.swift; sourceTree = "<group>"; };
+		298274412125FA2100095F93 /* libFMCSecurity.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFMCSecurity.a; path = FMCSecurity/FMCSecurity/release/libFMCSecurity.a; sourceTree = "<group>"; };
+		298274432125FA3100095F93 /* libFMCSecurity.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFMCSecurity.a; path = FMCSecurity/FMCSecurity/debug/libFMCSecurity.a; sourceTree = "<group>"; };
+		29A886162125F44300457200 /* blankViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = blankViewController.swift; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3DEF22EEADBD0EDCD0759344 /* Pods-Doom.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Doom.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Doom/Pods-Doom.debug.xcconfig"; sourceTree = "<group>"; };
 		4333CCE70F5CC23E00AE2B6F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = /System/Library/Frameworks/AudioToolbox.framework; sourceTree = "<absolute>"; };
@@ -1036,6 +1042,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				298274442125FA3200095F93 /* libFMCSecurity.a in Frameworks */,
+				298274422125FA2100095F93 /* libFMCSecurity.a in Frameworks */,
 				A1E89C9420689D4C00760204 /* GameController.framework in Frameworks */,
 				A1A63E5520563A6D000955AE /* AVFoundation.framework in Frameworks */,
 				43E8D4E00F51B48B003F09B2 /* OpenAL.framework in Frameworks */,
@@ -1103,6 +1111,7 @@
 			children = (
 				292D63A22123B58700516326 /* ProxyManager.swift */,
 				292D63A12123B58600516326 /* Doom-Bridging-Header.h */,
+				29A886162125F44300457200 /* blankViewController.swift */,
 			);
 			path = SmartDeviceLink;
 			sourceTree = "<group>";
@@ -1210,6 +1219,8 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				298274412125FA2100095F93 /* libFMCSecurity.a */,
+				298274432125FA3100095F93 /* libFMCSecurity.a */,
 				A1EA3B84207F1D310038650E /* AVFoundation.framework */,
 				A1E89C9320689D4B00760204 /* GameController.framework */,
 				A1B98E02207EFF8A00827A46 /* AudioToolbox.framework */,
@@ -2138,6 +2149,7 @@
 				72E8480A0F941A5900AB3C99 /* p_enemy.c in Sources */,
 				A1A63F3420563B60000955AE /* eas_pan.c in Sources */,
 				72E8480B0F941A5900AB3C99 /* p_floor.c in Sources */,
+				29A886172125F44300457200 /* blankViewController.swift in Sources */,
 				A1A63E3420563345000955AE /* mmus2mid.c in Sources */,
 				72E8480C0F941A5900AB3C99 /* p_genlin.c in Sources */,
 				A12302F5205738560075CBAD /* Carousel.mm in Sources */,
@@ -2439,6 +2451,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = SS66SKR6TQ;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -2463,6 +2476,11 @@
 				INFOPLIST_FILE = Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FMCSecurity/FMCSecurity/release",
+					"$(PROJECT_DIR)/FMCSecurity/FMCSecurity/debug",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mcriman1.Doom;
 				PRODUCT_NAME = Doom;
 				PROFILE_PREFIX = com.idsoftware;
@@ -2489,6 +2507,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = SS66SKR6TQ;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = doom_Prefix.pch;
@@ -2505,6 +2524,11 @@
 				INFOPLIST_FILE = Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FMCSecurity/FMCSecurity/release",
+					"$(PROJECT_DIR)/FMCSecurity/FMCSecurity/debug",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mcriman1.Doom;
 				PRODUCT_NAME = Doom;
 				PROFILE_PREFIX = com.idsoftware;
@@ -2574,6 +2598,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = SS66SKR6TQ;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = doom_Prefix.pch;
@@ -2585,6 +2610,11 @@
 				INFOPLIST_FILE = Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FMCSecurity/FMCSecurity/release",
+					"$(PROJECT_DIR)/FMCSecurity/FMCSecurity/debug",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mcriman1.Doom;
 				PRODUCT_NAME = Doom;
 				PROFILE_PREFIX = com.idsoftware;
@@ -2653,6 +2683,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = SS66SKR6TQ;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = doom_Prefix.pch;
@@ -2664,6 +2695,11 @@
 				INFOPLIST_FILE = Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FMCSecurity/FMCSecurity/release",
+					"$(PROJECT_DIR)/FMCSecurity/FMCSecurity/debug",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mcriman1.Doom;
 				PRODUCT_NAME = DoomLite;
 				PROFILE_PREFIX = com.idsoftware;
@@ -2734,6 +2770,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = SS66SKR6TQ;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -2747,6 +2784,11 @@
 				INFOPLIST_FILE = Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FMCSecurity/FMCSecurity/release",
+					"$(PROJECT_DIR)/FMCSecurity/FMCSecurity/debug",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mcriman1.Doom;
 				PRODUCT_NAME = DoomLite;
 				PROFILE_PREFIX = com.idsoftware;
@@ -3224,6 +3266,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = SS66SKR6TQ;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = doom_Prefix.pch;
@@ -3236,6 +3279,11 @@
 				INFOPLIST_FILE = Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FMCSecurity/FMCSecurity/release",
+					"$(PROJECT_DIR)/FMCSecurity/FMCSecurity/debug",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mcriman1.Doom;
 				PRODUCT_NAME = Doom;
 				PROFILE_PREFIX = com.idsoftware;

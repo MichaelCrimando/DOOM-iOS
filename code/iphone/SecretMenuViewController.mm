@@ -21,6 +21,8 @@
 #import "SecretMenuViewController.h"
 #include "doomiphone.h"
 #include "iphone_delegate.h"
+#import "SmartDeviceLink.h"
+#import "Doom-Swift.h"
 
 @implementation Doom_SecretMenuViewController
 
@@ -123,6 +125,8 @@
     
     self->levelPicker.dataSource = self;
     self->levelPicker.delegate = self;
+    
+    ProxyManager.sharedManager.sdlManager.streamManager.rootViewController = self;
 
 }
 

@@ -26,6 +26,8 @@
 #import "SettingsMenuViewController.h"
 #import "ControlsMenuViewController.h"
 #import "LegalMenuViewController.h"
+#import "SmartDeviceLink.h"
+#import "Doom-Swift.h"
 
 /*
  ================================================================================================
@@ -189,6 +191,7 @@ BOOL settingsMenuSelected = NO;
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    ProxyManager.sharedManager.sdlManager.streamManager.rootViewController = self;
 }
 
 /*

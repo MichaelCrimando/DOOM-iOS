@@ -21,6 +21,8 @@
 #import "MissionMenuViewController.h"
 #include "doomiphone.h"
 #include "iphone_delegate.h"
+#import "SmartDeviceLink.h"
+#import "Doom-Swift.h"
 
 @interface Doom_MissionMenuViewController ()
 
@@ -104,6 +106,7 @@ static const char * const MissionNames[TOTAL_EPISODES][9] = {
     nightmareSelectionLabel.hidden = YES;
     
     [missionList reloadData];
+    ProxyManager.sharedManager.sdlManager.streamManager.rootViewController = self;
 }
 
 /*

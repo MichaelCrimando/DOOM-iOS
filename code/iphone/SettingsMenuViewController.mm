@@ -20,6 +20,8 @@
 #import "SettingsMenuViewController.h"
 #include "doomiphone.h"
 #include "iphone_delegate.h"
+#import "SmartDeviceLink.h"
+#import "Doom-Swift.h"
 
 /*
  ================================================================================================
@@ -81,6 +83,7 @@ UIFocusGuide *focusGuide;
     focusGuide.preferredFocusEnvironments = @[resetButton];
 
 #endif
+    ProxyManager.sharedManager.sdlManager.streamManager.rootViewController = self;
 }
 
 /*

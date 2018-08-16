@@ -21,6 +21,8 @@
 #import "CreditsMenuViewController.h"
 #include "doomiphone.h"
 #include "iphone_delegate.h"
+#import "SmartDeviceLink.h"
+#import "Doom-Swift.h"
 
 @interface Doom_CreditsMenuViewController ()
 
@@ -170,6 +172,7 @@ static const int CreditSizes[CREDITS_LINES] = {
 {
     [super viewDidLoad];
     creditsList.allowsSelection = NO;
+    ProxyManager.sharedManager.sdlManager.streamManager.rootViewController = self;
 }
 
 /*

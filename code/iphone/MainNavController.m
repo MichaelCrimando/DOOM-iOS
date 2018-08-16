@@ -19,6 +19,8 @@
  */
 
 #import "MainNavController.h"
+#import "SmartDeviceLink.h"
+#import "Doom-Swift.h"
 //#import "doomiphone.h"
 
 @interface MainNavController ()
@@ -40,6 +42,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    ProxyManager.sharedManager.sdlManager.streamManager.rootViewController = self;
 }
 
 - (void)didReceiveMemoryWarning

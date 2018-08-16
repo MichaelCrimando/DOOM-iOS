@@ -8,11 +8,12 @@
 import Foundation
 import SmartDeviceLink
 
-class ProxyManager: NSObject {
+class ProxyManager: NSObject, SDLStreamingMediaManagerDataSource {
     // Manager
     private let appName = "DOOM"
     private let appId = "666"
-    fileprivate var sdlManager: SDLManager!
+    var isVideoStreamStarted: Bool = false
+    var sdlViewController:UIViewController? = blankViewController()
     
     // Singleton
     static let sharedManager = ProxyManager()
@@ -31,21 +32,22 @@ class ProxyManager: NSObject {
         SDLLockScreenConfiguration.enabled()
         SDLLogConfiguration.default()
         
-        lifecycleConfiguration.appType = .media
+        lifecycleConfiguration.appType = .navigation
         let frameRate:Int = 30
         let averageBitRate:Int = 1000000
-        
-        
-        let configuration = SDLConfiguration(lifecycle: lifecycleConfiguration, lockScreen: .enabled(), logging: .default())
         
         //setup Streaming configuration
         let videoEncoderSettings = [kVTCompressionPropertyKey_ExpectedFrameRate as String: frameRate, kVTCompressionPropertyKey_AverageBitRate as String: averageBitRate]
         
         //TODO: Implement Secure streaming
-        //let streamingConfig = SDLStreamingMediaConfiguration(securityManagers: [FMCSecurityManager.self], encryptionFlag: self.encryptionSetting, videoSettings: videoEncoderSettings, dataSource: self, rootViewController: self.sdlViewController)
         
+        let streamingConfig = SDLStreamingMediaConfiguration(securityManagers: nil, encryptionFlag: SDLStreamingEncryptionFlag.none, videoSettings: videoEncoderSettings, dataSource: self, rootViewController: self.sdlViewController)
+        streamingConfig.carWindowRenderingType = .viewAfterScreenUpdates
+        
+        let configuration = SDLConfiguration(lifecycle: lifecycleConfiguration, lockScreen: nil, logging: nil, streamingMedia: streamingConfig)
         sdlManager = SDLManager(configuration: configuration, delegate: self)
         
+        self.isVideoStreamStarted = true
         
     }
     func connect() {
@@ -56,7 +58,29 @@ class ProxyManager: NSObject {
             }
         }
     }
+    
+    func preferredVideoFormatOrder(fromHeadUnitPreferredOrder headUnitPreferredOrder: [SDLVideoStreamingFormat]) -> [SDLVideoStreamingFormat] {
+        return headUnitPreferredOrder
+    }
+    
+    func resolution(fromHeadUnitPreferredResolution headUnitPreferredResolution: SDLImageResolution) -> [SDLImageResolution] {
+        let height:Int = Int((headUnitPreferredResolution.resolutionHeight as! Double))
+        let width:Int = Int((headUnitPreferredResolution.resolutionWidth as! Double))
+        let imageRes = SDLImageResolution(width: UInt16(width), height: UInt16(height))
+        return [imageRes]
+    }
+    
+
+    public var sdlManager: SDLManager!
+    var streamManager: SDLStreamingMediaManager? {
+//        if !isConnected {
+//            return nil
+//        }
+        return self.sdlManager.streamManager
+    }
+
 }
+
 
 
 //MARK: SDLManagerDelegate

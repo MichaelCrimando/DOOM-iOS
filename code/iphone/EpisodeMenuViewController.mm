@@ -22,6 +22,8 @@
 #include "doomiphone.h"
 #include "iphone_delegate.h"
 #import "MissionMenuViewController.h"
+#import "SmartDeviceLink.h"
+#import "Doom-Swift.h"
 
 #define TOTAL_EPISODES 4
 
@@ -106,6 +108,7 @@ static const char * const EpisodeNames[TOTAL_EPISODES][4] = {
     [self handleSelectionAtIndexPath:initialPath];
     self.episodeList.separatorStyle = UITableViewCellSeparatorStyleNone;
 #endif
+    ProxyManager.sharedManager.sdlManager.streamManager.rootViewController = self;
 }
 
 /*

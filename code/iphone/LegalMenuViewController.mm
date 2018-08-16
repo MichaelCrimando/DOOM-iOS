@@ -21,6 +21,8 @@
 #import "LegalMenuViewController.h"
 #include "doomiphone.h"
 #include "iphone_delegate.h"
+#import "SmartDeviceLink.h"
+#import "Doom-Swift.h"
 
 @implementation Doom_LegalMenuViewController
 
@@ -62,6 +64,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    ProxyManager.sharedManager.sdlManager.streamManager.rootViewController = self;
 }
 
 /*
