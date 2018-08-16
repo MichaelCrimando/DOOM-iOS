@@ -201,6 +201,7 @@ const static float ACCELEROMETER_UPDATE_INTERVAL = 1.0f / FRAME_HERTZ;
 		[NSTimer scheduledTimerWithTimeInterval:0.2f target:self selector:@selector(HACK_PushController) userInfo:nil repeats:NO];
 
 		[ openGLViewController StartDisplay ];
+        ProxyManager.sharedManager.sdlManager.streamManager.rootViewController = openGLViewController;
     }
 }
 
