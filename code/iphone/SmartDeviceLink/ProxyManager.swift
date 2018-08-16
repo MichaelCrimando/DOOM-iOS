@@ -8,7 +8,7 @@
 import Foundation
 import SmartDeviceLink
 
-class ProxyManager: NSObject,SDLManagerDelegate {
+class ProxyManager: NSObject {
     // Manager
     private let appName = "DOOM"
     private let appId = "666"
@@ -56,13 +56,16 @@ class ProxyManager: NSObject,SDLManagerDelegate {
             }
         }
     }
+}
+
+
+//MARK: SDLManagerDelegate
+extension ProxyManager: SDLManagerDelegate {
     func managerDidDisconnect() {
         print("Manager disconnected!")
     }
-    
+
     func hmiLevel(_ oldLevel: SDLHMILevel, didChangeToLevel newLevel: SDLHMILevel) {
         print("Went from HMI level \(oldLevel) to HMI level \(newLevel)")
     }
 }
-
-
