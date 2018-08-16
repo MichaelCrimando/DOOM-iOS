@@ -23,12 +23,11 @@
 #import <AudioToolbox/AudioServices.h>
 #include "doomiphone.h"
 #include "iphone_common.h"
-#include "Doom-Swift.h"
 // disabling all app store and game center stuff, not sure if used
 //#include "ios/InAppStore.h"
 //#include "ios/GameCenter.h"
-
-
+#import "SmartDeviceLink.h"
+#import "Doom-Swift.h"
 
 @implementation iphoneApp
 
@@ -62,8 +61,7 @@ const static float ACCELEROMETER_UPDATE_INTERVAL = 1.0f / FRAME_HERTZ;
     
     // Disable Screen Dimming.
     [[ UIApplication sharedApplication] setIdleTimerDisabled: YES ];
-    // Initialize and start the proxy
-    [[ProxyManager sharedManager] connect];
+
 
 #if !TARGET_OS_TV
     
@@ -92,6 +90,9 @@ const static float ACCELEROMETER_UPDATE_INTERVAL = 1.0f / FRAME_HERTZ;
 	[window setRootViewController:navigationController];
     [window setBackgroundColor: [UIColor blackColor] ];
 	[window makeKeyAndVisible];
+    
+    // Initialize and start the SmartDeviceLink proxy
+    [[ProxyManager sharedManager] connect];
 }
 
 /*

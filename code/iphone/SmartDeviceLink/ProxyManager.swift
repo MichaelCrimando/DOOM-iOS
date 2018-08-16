@@ -8,9 +8,9 @@
 import Foundation
 import SmartDeviceLink
 
-class ProxyManager: NSObject {
+class ProxyManager: NSObject,SDLManagerDelegate {
     // Manager
-    private let appName = "Doom"
+    private let appName = "DOOM"
     private let appId = "666"
     fileprivate var sdlManager: SDLManager!
     
@@ -44,7 +44,7 @@ class ProxyManager: NSObject {
         //TODO: Implement Secure streaming
         //let streamingConfig = SDLStreamingMediaConfiguration(securityManagers: [FMCSecurityManager.self], encryptionFlag: self.encryptionSetting, videoSettings: videoEncoderSettings, dataSource: self, rootViewController: self.sdlViewController)
         
-        sdlManager = SDLManager(configuration: configuration, delegate: nil)
+        sdlManager = SDLManager(configuration: configuration, delegate: self)
         
         
     }
@@ -56,15 +56,13 @@ class ProxyManager: NSObject {
             }
         }
     }
+    func managerDidDisconnect() {
+        print("Manager disconnected!")
+    }
+    
+    func hmiLevel(_ oldLevel: SDLHMILevel, didChangeToLevel newLevel: SDLHMILevel) {
+        print("Went from HMI level \(oldLevel) to HMI level \(newLevel)")
+    }
 }
 
 
-//extension ProxyManager: SDLManagerDelegate {
-//    func managerDidDisconnect() {
-//        print("Manager disconnected!")
-//    }
-//
-//    func hmiLevel(_ oldLevel: SDLHMILevel, didChangeToLevel newLevel: SDLHMILevel){
-//        print("Doom went from HMI level \(oldLevel) to HMI level \(newLevel)")
-//    }
-//}
