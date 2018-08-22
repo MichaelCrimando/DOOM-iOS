@@ -9,6 +9,7 @@ import Foundation
 
 
 private var controller: GCController? = nil
+private var initialized: Bool = false
 private var togglePause = false
 enum weaponswitch_e : Int {
     case weapon_PREVIOUS = 0
@@ -90,45 +91,15 @@ private func setupPauseButtonHandler(ctrl: GCController?) {
  Lazily initialze game controller on first request
  return true if controller is available
  */
-func iphoneControllerIsAvailable() -> Bool {
-    var initialized = false
+func vehicleControllerIsAvailable() -> Bool {
     if !initialized {
-        let controllers = GCController.controllers()
-        if controllers.count > 0 {
-            //            controller = controllers[0]; // Just use the first one
-            // If we have neither gamepad nor extended gamepad support, just make controller nil
-            //            if(![controller gamepad] && ![controller extendedGamepad]) {
-            controller = nil
-            //            }
-            for i in 0..<controllers.count {
-                if controllers[i].gamepad != nil || controllers[i].extendedGamepad != nil {
-                    controller = controllers[i]
-                }
-            }
-            setupPauseButtonHandler(controller)
-            // Register for controller connected/disconnected notifications
-            let ns = NotificationCenter.default
-            ns.addObserver(forName: .GCControllerDidConnect, object: nil, queue: OperationQueue.main, using: { note in
-                if !controller {
-                    controller = GCController.controllers()[0]
-                    if !controller.gamepad() && controller.extendedGamepad == nil {
-                        controller = nil
-                    }
-                    setupPauseButtonHandler(controller)
-                }
-            })
-            ns.addObserver(forName: .GCControllerDidDisconnect, object: nil, queue: OperationQueue.main, using: { note in
-                controller = nil
-            })
-        }
-        initialized = true
-        // Only need to do this once
+        self.initVehicleController()
     }
-    return controller != nil
+    return controller
 }
 
-func iphoneControllerInput(cmd: ticcmd_t?) {
-    if iphoneControllerIsAvailable() {
+func vehicleControllerInput(cmd: ticcmd_t?) {
+    if vehicleControllerIsAvailable() {
         // Perform standard gamepad updates
         let gamepad: GCExtendedGamepad? = controller.extendedGamepad
         cmd?.angleturn += (gamepad?.rightThumbstick.xAxis.value ?? 0.0) * -ROTATETHRESHOLD
@@ -169,4 +140,31 @@ func iphoneControllerInput(cmd: ticcmd_t?) {
             togglePause = false
         }
     }
+}
+func initVehicleController(){
+    let controllers = GCController.controllers()
+        controller = nil
+        //            }
+        for i in 0..<controllers.count {
+            if controllers[i].gamepad != nil || controllers[i].extendedGamepad != nil {
+                controller = controllers[i]
+            }
+        }
+        setupPauseButtonHandler(controller)
+        // Register for controller connected/disconnected notifications
+        let ns = NotificationCenter.default
+        ns.addObserver(forName: .GCControllerDidConnect, object: nil, queue: OperationQueue.main, using: { note in
+            if !controller {
+                controller = GCController.controllers()[0]
+                if !controller.gamepad() && controller.extendedGamepad == nil {
+                    controller = nil
+                }
+                setupPauseButtonHandler(controller)
+            }
+        })
+        ns.addObserver(forName: .GCControllerDidDisconnect, object: nil, queue: OperationQueue.main, using: { note in
+            controller = nil
+        })
+        initialized = true
+    // Only need to do this once
 }
