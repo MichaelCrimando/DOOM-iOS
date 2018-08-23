@@ -58,7 +58,7 @@ private func SwitchWeapon(direction: weaponswitch_e) -> Int {
     var index = players[consoleplayer].readyweapon
     if direction == WEAPON_PREVIOUS {
         index -= 1
-        while !HasAmmo(index) {
+        while !self.HasAmmo(index) {
             index -= 1
             if index < 0 {
                 index = NUMWEAPONS - 1
@@ -66,7 +66,7 @@ private func SwitchWeapon(direction: weaponswitch_e) -> Int {
         }
     } else if direction == WEAPON_NEXT {
         index += 1
-        while !HasAmmo(index) {
+        while !self.HasAmmo(index) {
             index += 1
             if index >= NUMWEAPONS {
                 index = 0
@@ -99,7 +99,7 @@ func vehicleControllerIsAvailable() -> Bool {
 }
 
 func vehicleControllerInput(cmd: ticcmd_t?) {
-    if vehicleControllerIsAvailable() {
+    if self.vehicleControllerIsAvailable() {
         // Perform standard gamepad updates
         let gamepad: GCExtendedGamepad? = controller.extendedGamepad
         cmd?.angleturn += (gamepad?.rightThumbstick.xAxis.value ?? 0.0) * -ROTATETHRESHOLD
@@ -114,10 +114,10 @@ func vehicleControllerInput(cmd: ticcmd_t?) {
         var newWeapon = wp_nochange
         // Switch weapons using X and Y buttons
         if gamepad?.buttonX.isPressed ?? false && players[consoleplayer].pendingweapon == wp_nochange {
-            newWeapon = SwitchWeapon(WEAPON_PREVIOUS)
+            newWeapon = self.SwitchWeapon(WEAPON_PREVIOUS)
         }
         if gamepad?.buttonY.isPressed ?? false && players[consoleplayer].pendingweapon == wp_nochange {
-            newWeapon = SwitchWeapon(WEAPON_NEXT)
+            newWeapon = self.SwitchWeapon(WEAPON_NEXT)
         }
         // If we switched weapons, pass that info down to our frame cmd
         if newWeapon != wp_nochange {
@@ -150,7 +150,7 @@ func initVehicleController(){
                 controller = controllers[i]
             }
         }
-        setupPauseButtonHandler(controller)
+        self.setupPauseButtonHandler(controller)
         // Register for controller connected/disconnected notifications
         let ns = NotificationCenter.default
         ns.addObserver(forName: .GCControllerDidConnect, object: nil, queue: OperationQueue.main, using: { note in
@@ -159,7 +159,7 @@ func initVehicleController(){
                 if !controller.gamepad() && controller.extendedGamepad == nil {
                     controller = nil
                 }
-                setupPauseButtonHandler(controller)
+                self.setupPauseButtonHandler(controller)
             }
         })
         ns.addObserver(forName: .GCControllerDidDisconnect, object: nil, queue: OperationQueue.main, using: { note in
