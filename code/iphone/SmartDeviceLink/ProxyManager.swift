@@ -92,9 +92,6 @@ class ProxyManager: NSObject, SDLStreamingMediaManagerDataSource {
     
     public var sdlManager: SDLManager!
     var streamManager: SDLStreamingMediaManager? {
-        //        if !isConnected {
-        //            return nil
-        //        }
         return self.sdlManager.streamManager
     }
  

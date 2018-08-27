@@ -13,6 +13,8 @@
 		2958F8E721247CC200B65404 /* icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1B98E13207EFFEA00827A46 /* icons.xcassets */; };
 		298274422125FA2100095F93 /* libFMCSecurity.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 298274412125FA2100095F93 /* libFMCSecurity.a */; };
 		298274442125FA3200095F93 /* libFMCSecurity.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 298274432125FA3100095F93 /* libFMCSecurity.a */; };
+		298BA6AD21348CB900239CEB /* VehicleController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 298BA6AB21348CB900239CEB /* VehicleController.mm */; };
+		298BA6AE21348CB900239CEB /* VehicleController.h in Headers */ = {isa = PBXBuildFile; fileRef = 298BA6AC21348CB900239CEB /* VehicleController.h */; };
 		29A886172125F44300457200 /* blankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A886162125F44300457200 /* blankViewController.swift */; };
 		4333CCE80F5CC23E00AE2B6F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4333CCE70F5CC23E00AE2B6F /* AudioToolbox.framework */; };
 		4364BF3F0F5CB25900F29317 /* dist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4364BF3E0F5CB25900F29317 /* dist.plist */; };
@@ -551,6 +553,8 @@
 		292D63A22123B58700516326 /* ProxyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyManager.swift; sourceTree = "<group>"; };
 		298274412125FA2100095F93 /* libFMCSecurity.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFMCSecurity.a; path = FMCSecurity/FMCSecurity/release/libFMCSecurity.a; sourceTree = "<group>"; };
 		298274432125FA3100095F93 /* libFMCSecurity.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFMCSecurity.a; path = FMCSecurity/FMCSecurity/debug/libFMCSecurity.a; sourceTree = "<group>"; };
+		298BA6AB21348CB900239CEB /* VehicleController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = VehicleController.mm; sourceTree = "<group>"; };
+		298BA6AC21348CB900239CEB /* VehicleController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VehicleController.h; sourceTree = "<group>"; };
 		29A886162125F44300457200 /* blankViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = blankViewController.swift; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3DEF22EEADBD0EDCD0759344 /* Pods-Doom.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Doom.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Doom/Pods-Doom.debug.xcconfig"; sourceTree = "<group>"; };
@@ -1112,6 +1116,8 @@
 				292D63A22123B58700516326 /* ProxyManager.swift */,
 				292D63A12123B58600516326 /* Doom-Bridging-Header.h */,
 				29A886162125F44300457200 /* blankViewController.swift */,
+				298BA6AB21348CB900239CEB /* VehicleController.mm */,
+				298BA6AC21348CB900239CEB /* VehicleController.h */,
 			);
 			path = SmartDeviceLink;
 			sourceTree = "<group>";
@@ -1738,6 +1744,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				298BA6AE21348CB900239CEB /* VehicleController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2122,6 +2129,7 @@
 				72E847B90F9400D700AB3C99 /* f_wipe.c in Sources */,
 				72E847BA0F9400D700AB3C99 /* g_game.c in Sources */,
 				A1A63F2B20563B60000955AE /* eas_imelodydata.c in Sources */,
+				298BA6AD21348CB900239CEB /* VehicleController.mm in Sources */,
 				A1A63DED20562B76000955AE /* MissionMenuViewController.mm in Sources */,
 				72E847BB0F9400D700AB3C99 /* gl_main.c in Sources */,
 				72E847BC0F9400D700AB3C99 /* gl_texture.c in Sources */,
