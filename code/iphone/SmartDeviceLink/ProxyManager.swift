@@ -68,6 +68,7 @@ class ProxyManager: NSObject, SDLStreamingMediaManagerDataSource {
             print("Door closed")
         }
     }
+    
     func connect() {
         // Start watching for a connection with a SDL Core
         sdlManager.start { (success, error) in

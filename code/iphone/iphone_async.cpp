@@ -34,7 +34,6 @@
 //#include "ios/GameCenter.h"
 
 #include "GameController.h"
-#import "Doom-Swift.h"
 
 typedef struct {
 	int	msecFromLast;
@@ -565,9 +564,6 @@ static void iphoneBuildTiccmd(ticcmd_t* cmd) {
 	
 	// don't built a tic when dead, other than the respawn use
 	if ( players[consoleplayer].playerstate == PST_DEAD ) {
-        //mcrimando: Set this up for the whip so that you can respawn
-        
-        
 #if TARGET_OS_TV
         // unless we're on apple tv
         iphoneControllerInput(cmd);
@@ -846,7 +842,6 @@ void iphoneAsyncTic() {
 	ticcmd_t cmd;
 	iphoneBuildTiccmd( &cmd );
 	
-    
 	//---------------------------------
 	// If we are a client, send our command to the server
 	//---------------------------------

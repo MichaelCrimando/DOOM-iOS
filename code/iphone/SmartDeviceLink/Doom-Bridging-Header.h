@@ -4,5 +4,3 @@
 
 #import "../FMCSecurity/FMCSecurity/common/FMCSecurityManager.h"
 #import "../FMCSecurity/FMCSecurity/common/FMCSecurityConstants.h"
-#import "GameController.h"
-#import "d_player.h"
