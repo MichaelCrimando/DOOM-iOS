@@ -17,6 +17,12 @@ class ProxyManager: NSObject, SDLStreamingMediaManagerDataSource {
     var subscribeVehicleData : SDLSubscribeVehicleData
     var currentHmiLevel : SDLHMILevel = .none
     var isVehicleDataSubscribed : Bool = false
+    var bodyData : SDLBodyInformation = SDLBodyInformation() //Door - 1 = open, 0 = closed
+    var steeringWheelAngle : SDLFloat = 0 as SDLFloat
+    var headLampStatus : SDLHeadLampStatus = SDLHeadLampStatus()
+    var accelPedalPosition : SDLFloat = 0 as SDLFloat
+    //TODO: figure out braking status
+    //var brakingStatus : SDLVehicleDataEventStatus = SDLVehicleDataEventStatus(rawValue: .NO)
     
     // Singleton
     static let sharedManager = ProxyManager()
@@ -62,13 +68,13 @@ class ProxyManager: NSObject, SDLStreamingMediaManagerDataSource {
         guard let onVehicleData = notification.notification as? SDLOnVehicleData else {
             return
         }
+        bodyData = onVehicleData.bodyInformation ?? bodyData
+        steeringWheelAngle = onVehicleData.steeringWheelAngle ?? steeringWheelAngle
+        headLampStatus = onVehicleData.headLampStatus ?? headLampStatus
+        accelPedalPosition = onVehicleData.accPedalPosition ?? accelPedalPosition
         
-        let bodyData = onVehicleData.bodyInformation
-        if bodyData?.driverDoorAjar == 1 {
-            print("Swageroonie")
-        } else {
-            print("Door closed")
-        }
+        //TODO: figure out braking status
+        //brakingStatus = onVehicleData.driverBraking ?? brakingStatus
     }
     
     func connect() {
@@ -110,13 +116,13 @@ class ProxyManager: NSObject, SDLStreamingMediaManagerDataSource {
                 } else if response.resultCode == .userDisallowed {
                     // User disabled the ability to give you this vehicle data
                 } else if response.resultCode == .ignored {
-                    if let bodyData = response.bodyInformation {
-                        if bodyData.resultCode == .dataAlreadySubscribed {
+                    if let bodyDataResponse = response.bodyInformation {
+                        if bodyDataResponse.resultCode == .dataAlreadySubscribed {
                             // You have access to this data item, and you are already subscribed to this item so we are ignoring.
-                        } else if bodyData.resultCode == .vehicleDataNotAvailable {
+                        } else if bodyDataResponse.resultCode == .vehicleDataNotAvailable {
                             // You have access to this data item, but the vehicle you are connected to does not provide it.
                         } else {
-                            print("Unknown reason for being ignored: \(bodyData.resultCode)")
+                            print("Unknown reason for being ignored: \(bodyDataResponse.resultCode)")
                         }
                     } else {
                         print("Unknown reason for being ignored: \(String(describing: response.info))")

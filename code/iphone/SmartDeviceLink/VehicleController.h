@@ -31,4 +31,7 @@
 bool vehicleControllerIsAvailable();
 void vehicleControllerInput(ticcmd_t* cmd);
 
+#define TURBOTHRESHOLD  0x32 // Lifted from iphone_async.cpp, as GameController also requires this constant
+#define ROTATETHRESHOLD 1500.0f // Replace magic number for scaling rotation
+
 #endif /* VehicleController_h */
