@@ -26,6 +26,8 @@
 #ifndef VehicleController_h
 #define VehicleController_h
 
+#import "doomiphone.h"
+
 bool vehicleControllerIsAvailable();
 void vehicleControllerInput(ticcmd_t* cmd);
 
