@@ -15,6 +15,8 @@ class ProxyManager: NSObject, SDLStreamingMediaManagerDataSource {
     var isVideoStreamStarted: Bool = false
     var sdlViewController:UIViewController? = blankViewController()
     var subscribeVehicleData : SDLSubscribeVehicleData
+    var currentHmiLevel : SDLHMILevel = .none
+    var isVehicleDataSubscribed : Bool = false
     
     // Singleton
     static let sharedManager = ProxyManager()
@@ -122,13 +124,14 @@ class ProxyManager: NSObject, SDLStreamingMediaManagerDataSource {
                 } else if let error = error {
                     print("Encountered Error sending SubscribeVehicleData: \(error)")
                 }
+                self.isVehicleDataSubscribed = false
                 return
             }
             
+            self.isVehicleDataSubscribed = true
             // Successfully subscribed
         }
     }
-    
     
 }
 
@@ -141,6 +144,7 @@ extension ProxyManager: SDLManagerDelegate {
     
     func hmiLevel(_ oldLevel: SDLHMILevel, didChangeToLevel newLevel: SDLHMILevel) {
         print("Went from HMI level \(oldLevel) to HMI level \(newLevel)")
+        currentHmiLevel = newLevel
         if (newLevel == .full ) {
             // We entered full
             print("entered HMI full")

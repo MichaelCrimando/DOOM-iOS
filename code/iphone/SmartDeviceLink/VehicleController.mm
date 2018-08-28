@@ -6,11 +6,12 @@
 //
 
 #import "VehicleController.h"
-
+#import "SmartDeviceLink.h"
+#import "Doom-Swift.h"
 
 
 bool vehicleControllerIsAvailable(){
-    return true;
+    return ProxyManager.sharedManager.isVehicleDataSubscribed;
 }
 
 void vehicleControllerInput(ticcmd_t* cmd){
