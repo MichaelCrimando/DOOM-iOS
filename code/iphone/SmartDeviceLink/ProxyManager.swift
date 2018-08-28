@@ -148,7 +148,9 @@ extension ProxyManager: SDLManagerDelegate {
         if (newLevel == .full ) {
             // We entered full
             print("entered HMI full")
-            self.subscribeToVehicleData()
+            if(!self.isVehicleDataSubscribed){
+                self.subscribeToVehicleData()
+            }
         }
     }
 }
