@@ -31,6 +31,7 @@ class ProxyManager: NSObject, SDLStreamingMediaManagerDataSource {
     }
     //TODO: figure out braking status
     //var brakingStatus : SDLVehicleDataEventStatus = SDLVehicleDataEventStatus(rawValue: .NO)
+    var isEncryptionEnabled : Bool = true
     
     // Singleton
     static let sharedManager = ProxyManager()
@@ -52,16 +53,28 @@ class ProxyManager: NSObject, SDLStreamingMediaManagerDataSource {
         SDLLogConfiguration.default()
         
         lifecycleConfiguration.appType = .navigation
-        let frameRate:Int = 30
-        let averageBitRate:Int = 1000000
+
         
         //setup Streaming configuration
-        let videoEncoderSettings = [kVTCompressionPropertyKey_ExpectedFrameRate as String: frameRate, kVTCompressionPropertyKey_AverageBitRate as String: averageBitRate]
+        //Nevermind, this seems to work better when set to nil
+//        let frameRate:Int = 30
+//        let averageBitRate:Int = 1000000
+//        let videoEncoderSettings = [kVTCompressionPropertyKey_ExpectedFrameRate as String: frameRate, kVTCompressionPropertyKey_AverageBitRate as String: averageBitRate]
         
         //TODO: Implement Secure streaming
         
-        let streamingConfig = SDLStreamingMediaConfiguration(securityManagers: nil, encryptionFlag: SDLStreamingEncryptionFlag.none, videoSettings: nil, dataSource: self, rootViewController: self.sdlViewController)
+
+        //let streamingConfig : SDLStreamingMediaConfiguration
+        //if(isEncryptionEnabled) {
+           let streamingConfig = SDLStreamingMediaConfiguration(securityManagers: nil, encryptionFlag: SDLStreamingEncryptionFlag.none, videoSettings: nil, dataSource: self, rootViewController: self.sdlViewController)
+       // } else {
+//            streamingConfig = SDLStreamingMediaConfiguration(securityManagers: [FMCSecurityManager.self], encryptionFlag: SDLStreamingEncryptionFlag.authenticateAndEncrypt, videoSettings: nil, dataSource: self, rootViewController: self.sdlViewController)
+//        }
+
         streamingConfig.carWindowRenderingType = .viewAfterScreenUpdates
+        
+
+        
         
         let configuration = SDLConfiguration(lifecycle: lifecycleConfiguration, lockScreen: nil, logging: nil, streamingMedia: streamingConfig)
         sdlManager = SDLManager(configuration: configuration, delegate: self)
@@ -146,7 +159,7 @@ class ProxyManager: NSObject, SDLStreamingMediaManagerDataSource {
             
             self.isVehicleDataSubscribed = true
             // Successfully subscribed
-            print("Vehicle data subscribed!")
+            print("Vehicle data subscribed")
         }
     }
     
@@ -163,6 +176,7 @@ extension ProxyManager: SDLManagerDelegate {
         print("Went from HMI level \(oldLevel) to HMI level \(newLevel)")
         currentHmiLevel = newLevel
         if (newLevel == .full ) {
+            print("Encryption Settings: \(SettingsBundleHelper.isEncryptionEnabled())")
             // We entered full
             print("entered HMI full")
             if(!self.isVehicleDataSubscribed){

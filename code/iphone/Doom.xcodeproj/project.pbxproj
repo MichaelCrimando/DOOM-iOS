@@ -10,6 +10,8 @@
 		088E1248AD863802B31B4568 /* libPods-DoomTV.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A33C320EF24B974E5A33788B /* libPods-DoomTV.a */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		292D63A32123B58700516326 /* ProxyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292D63A22123B58700516326 /* ProxyManager.swift */; };
+		2941E57C213EC84B00DEE442 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2941E57B213EC84B00DEE442 /* Settings.bundle */; };
+		2941E57E213EC93700DEE442 /* SettingsBundleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2941E57D213EC93700DEE442 /* SettingsBundleHelper.swift */; };
 		2958F8E721247CC200B65404 /* icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1B98E13207EFFEA00827A46 /* icons.xcassets */; };
 		298274422125FA2100095F93 /* libFMCSecurity.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 298274412125FA2100095F93 /* libFMCSecurity.a */; };
 		298274442125FA3200095F93 /* libFMCSecurity.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 298274432125FA3100095F93 /* libFMCSecurity.a */; };
@@ -551,6 +553,8 @@
 		272D67BE756F435A538FA94C /* Pods-DoomTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoomTV.release.xcconfig"; path = "Pods/Target Support Files/Pods-DoomTV/Pods-DoomTV.release.xcconfig"; sourceTree = "<group>"; };
 		292D63A12123B58600516326 /* Doom-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Doom-Bridging-Header.h"; sourceTree = "<group>"; };
 		292D63A22123B58700516326 /* ProxyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyManager.swift; sourceTree = "<group>"; };
+		2941E57B213EC84B00DEE442 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		2941E57D213EC93700DEE442 /* SettingsBundleHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsBundleHelper.swift; sourceTree = "<group>"; };
 		298274412125FA2100095F93 /* libFMCSecurity.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFMCSecurity.a; path = FMCSecurity/FMCSecurity/release/libFMCSecurity.a; sourceTree = "<group>"; };
 		298274432125FA3100095F93 /* libFMCSecurity.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFMCSecurity.a; path = FMCSecurity/FMCSecurity/debug/libFMCSecurity.a; sourceTree = "<group>"; };
 		298BA6AB21348CB900239CEB /* VehicleController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = VehicleController.mm; sourceTree = "<group>"; };
@@ -1118,6 +1122,8 @@
 				29A886162125F44300457200 /* blankViewController.swift */,
 				298BA6AB21348CB900239CEB /* VehicleController.mm */,
 				298BA6AC21348CB900239CEB /* VehicleController.h */,
+				2941E57B213EC84B00DEE442 /* Settings.bundle */,
+				2941E57D213EC93700DEE442 /* SettingsBundleHelper.swift */,
 			);
 			path = SmartDeviceLink;
 			sourceTree = "<group>";
@@ -1922,6 +1928,7 @@
 				C87931F113F610B9003D834F /* LayoutSingleButton_Highlighted.png in Resources */,
 				C87931F213F610B9003D834F /* LayoutSingleButton.png in Resources */,
 				C87931F313F610B9003D834F /* LayoutWheelButton_Highlighted.png in Resources */,
+				2941E57C213EC84B00DEE442 /* Settings.bundle in Resources */,
 				A1A63E3820563345000955AE /* r_drawflush.inl in Resources */,
 				C87931F413F610B9003D834F /* LayoutWheelButton.png in Resources */,
 				C87931F513F610B9003D834F /* SettingsButton_Highlighted.png in Resources */,
@@ -2182,6 +2189,7 @@
 				A1A63E50205634E8000955AE /* eas_wave.c in Sources */,
 				A1A63E5320563A06000955AE /* EASGlue.c in Sources */,
 				A1A63F1F20563B60000955AE /* eas_midi.c in Sources */,
+				2941E57E213EC93700DEE442 /* SettingsBundleHelper.swift in Sources */,
 				72E848170F941A5900AB3C99 /* p_spec.c in Sources */,
 				A1A63F2020563B60000955AE /* wt_22khz.c in Sources */,
 				72E848180F941A5900AB3C99 /* p_switch.c in Sources */,
