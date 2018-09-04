@@ -31,7 +31,8 @@ void vehicleControllerInput(ticcmd_t* cmd){
         cmd->forwardmove += (ProxyManager.sharedManager.accelPedalPosition * TURBOTHRESHOLD);
         //cmd->sidemove += (gamepad.leftThumbstick.xAxis.value * TURBOTHRESHOLD);
         
-        if(ProxyManager.sharedManager.bodyData.driverDoorAjar == 0) {
+        //If door is closed, shoot
+        if(![ProxyManager.sharedManager.bodyData.driverDoorAjar boolValue]) {
             cmd->buttons |= BT_ATTACK;
         }
         

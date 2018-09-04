@@ -146,6 +146,7 @@ class ProxyManager: NSObject, SDLStreamingMediaManagerDataSource {
             
             self.isVehicleDataSubscribed = true
             // Successfully subscribed
+            print("Vehicle data subscribed!")
         }
     }
     
