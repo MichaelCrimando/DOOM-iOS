@@ -63,13 +63,14 @@ class ProxyManager: NSObject, SDLStreamingMediaManagerDataSource {
         
         //TODO: Implement Secure streaming
         
-
-        //let streamingConfig : SDLStreamingMediaConfiguration
-        //if(isEncryptionEnabled) {
-           let streamingConfig = SDLStreamingMediaConfiguration(securityManagers: nil, encryptionFlag: SDLStreamingEncryptionFlag.none, videoSettings: nil, dataSource: self, rootViewController: self.sdlViewController)
-       // } else {
-//            streamingConfig = SDLStreamingMediaConfiguration(securityManagers: [FMCSecurityManager.self], encryptionFlag: SDLStreamingEncryptionFlag.authenticateAndEncrypt, videoSettings: nil, dataSource: self, rootViewController: self.sdlViewController)
-//        }
+        isEncryptionEnabled = SettingsBundleHelper.isEncryptionEnabled()
+        var streamingConfig : SDLStreamingMediaConfiguration
+        if(isEncryptionEnabled) {
+            //streamingConfig = SDLStreamingMediaConfiguration(securityManagers: [FMCSecurityManager.self], encryptionFlag: SDLStreamingEncryptionFlag.authenticateAndEncrypt, videoSettings: nil, dataSource: self, rootViewController: self.sdlViewController)
+            streamingConfig = SDLStreamingMediaConfiguration(securityManagers: nil, encryptionFlag: SDLStreamingEncryptionFlag.none, videoSettings: nil, dataSource: self, rootViewController: self.sdlViewController)
+        } else {
+            streamingConfig = SDLStreamingMediaConfiguration(securityManagers: nil, encryptionFlag: SDLStreamingEncryptionFlag.none, videoSettings: nil, dataSource: self, rootViewController: self.sdlViewController)
+        }
 
         streamingConfig.carWindowRenderingType = .viewAfterScreenUpdates
         
