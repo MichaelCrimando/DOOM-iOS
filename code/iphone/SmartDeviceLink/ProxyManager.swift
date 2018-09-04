@@ -18,9 +18,17 @@ class ProxyManager: NSObject, SDLStreamingMediaManagerDataSource {
     var currentHmiLevel : SDLHMILevel = .none
     var isVehicleDataSubscribed : Bool = false
     var bodyData : SDLBodyInformation = SDLBodyInformation() //Door - 1 = open, 0 = closed
-    var steeringWheelAngle : SDLFloat = 0 as SDLFloat
+    private var _steeringWheelAngle : SDLFloat = 0 as SDLFloat
+    var steeringWheelAngle: CGFloat {
+        set { _steeringWheelAngle = newValue as SDLFloat}
+        get {return _steeringWheelAngle as! CGFloat}
+    }
     var headLampStatus : SDLHeadLampStatus = SDLHeadLampStatus()
-    var accelPedalPosition : SDLFloat = 0 as SDLFloat
+    private var _accelPedalPosition : SDLFloat = 0 as SDLFloat
+    var accelPedalPosition : CGFloat {
+        set {_accelPedalPosition = newValue as SDLFloat}
+        get {return _accelPedalPosition as! CGFloat}
+    }
     //TODO: figure out braking status
     //var brakingStatus : SDLVehicleDataEventStatus = SDLVehicleDataEventStatus(rawValue: .NO)
     
@@ -69,9 +77,11 @@ class ProxyManager: NSObject, SDLStreamingMediaManagerDataSource {
             return
         }
         bodyData = onVehicleData.bodyInformation ?? bodyData
-        steeringWheelAngle = onVehicleData.steeringWheelAngle ?? steeringWheelAngle
+        
+        print("Driver door: \(bodyData.driverDoorAjar ?? 666)")
+        _steeringWheelAngle = onVehicleData.steeringWheelAngle ?? _steeringWheelAngle
         headLampStatus = onVehicleData.headLampStatus ?? headLampStatus
-        accelPedalPosition = onVehicleData.accPedalPosition ?? accelPedalPosition
+        _accelPedalPosition = onVehicleData.accPedalPosition ?? _accelPedalPosition
         
         //TODO: figure out braking status
         //brakingStatus = onVehicleData.driverBraking ?? brakingStatus

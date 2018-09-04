@@ -23,12 +23,15 @@ bool vehicleControllerIsAvailable(){
 void vehicleControllerInput(ticcmd_t* cmd){
     if(vehicleControllerIsAvailable()) {
         // Perform standard gamepad updates
+        //[ProxyManager.sharedManager.steeringWheelAngle ]
         
-        cmd->angleturn += ([NSNumber numberWithFloat:ProxyManager.sharedManager.steeringWheelAngle] * -ROTATETHRESHOLD);
-        cmd->forwardmove += ([NSNumber numberWithFloat:ProxyManager.sharedManager.accelPedalPosition] * TURBOTHRESHOLD);
+        
+        
+        cmd->angleturn += (ProxyManager.sharedManager.steeringWheelAngle * -ROTATETHRESHOLD);
+        cmd->forwardmove += (ProxyManager.sharedManager.accelPedalPosition * TURBOTHRESHOLD);
         //cmd->sidemove += (gamepad.leftThumbstick.xAxis.value * TURBOTHRESHOLD);
         
-        if(ProxyManager.sharedManager.bodyData.driverDoorAjar) {
+        if(ProxyManager.sharedManager.bodyData.driverDoorAjar == 0) {
             cmd->buttons |= BT_ATTACK;
         }
         
@@ -39,9 +42,9 @@ void vehicleControllerInput(ticcmd_t* cmd){
         int newWeapon = wp_nochange;
         
         // Switch weapons using Passenger Door
-        if(ProxyManager.sharedManager.bodyData.passengerDoorAjar && players[consoleplayer].pendingweapon == wp_nochange) {
-            newWeapon = SwitchWeapon(WEAPON_PREVIOUS);
-        }
+//        if(ProxyManager.sharedManager.bodyData.passengerDoorAjar && players[consoleplayer].pendingweapon == wp_nochange) {
+//            newWeapon = SwitchWeapon(weaponswi);
+//        }
         
 //        if(gamepad.buttonY.pressed && players[consoleplayer].pendingweapon == wp_nochange) {
 //            newWeapon = SwitchWeapon(WEAPON_NEXT);
@@ -51,7 +54,7 @@ void vehicleControllerInput(ticcmd_t* cmd){
         if(newWeapon != wp_nochange) {
             cmd->buttons |= BT_CHANGE;
             cmd->buttons |= newWeapon << BT_WEAPONSHIFT;
-        
+        }
     }
 }
 //There's no pausing in the car, that would be a distraction
