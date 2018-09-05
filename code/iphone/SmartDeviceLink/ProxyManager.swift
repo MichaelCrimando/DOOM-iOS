@@ -18,19 +18,39 @@ class ProxyManager: NSObject, SDLStreamingMediaManagerDataSource {
     var currentHmiLevel : SDLHMILevel = .none
     var isVehicleDataSubscribed : Bool = false
     var bodyData : SDLBodyInformation = SDLBodyInformation() //Door - 1 = open, 0 = closed
-    private var _steeringWheelAngle : SDLFloat = 0 as SDLFloat
+    private var _steeringWheelAngle : SDLFloat = 0 as SDLFloat //On a scale from 480 (all the way left) to -480 (all the way right).
     var steeringWheelAngle: CGFloat {
-        set { _steeringWheelAngle = newValue as SDLFloat}
-        get {return _steeringWheelAngle as! CGFloat}
+        get {
+            let _x = _steeringWheelAngle as! CGFloat
+            if(_x >= -10 && _x <= 10) { //Throw some dead zone in there
+                return 0.0
+            } else {
+                return _x/95
+            }
+        }
     }
     var headLampStatus : SDLHeadLampStatus = SDLHeadLampStatus()
-    private var _accelPedalPosition : SDLFloat = 0 as SDLFloat
+    private var _accelPedalPosition : SDLFloat = 0 as SDLFloat //On scale from 0 - 100 (percent pressed down)
     var accelPedalPosition : CGFloat {
-        set {_accelPedalPosition = newValue as SDLFloat}
-        get {return _accelPedalPosition as! CGFloat}
+        get {
+            var _x = _accelPedalPosition as! CGFloat
+            //need to keep between 0 and 1
+            _x = _x/10.0
+            if(_x >= 1.0) {
+                return 1.0
+            } else {
+                return _x
+            }
+        }
     }
-    //TODO: figure out braking status
-    //var brakingStatus : SDLVehicleDataEventStatus = SDLVehicleDataEventStatus(rawValue: .NO)
+    private var _brakingStatus : SDLVehicleDataEventStatus = .no
+    func isDriverBraking() -> Bool {
+        if _brakingStatus == .yes {
+            return true
+        } else {
+            return false
+        }
+    }
     var isEncryptionEnabled : Bool = true
     
     // Singleton
@@ -96,9 +116,8 @@ class ProxyManager: NSObject, SDLStreamingMediaManagerDataSource {
         _steeringWheelAngle = onVehicleData.steeringWheelAngle ?? _steeringWheelAngle
         headLampStatus = onVehicleData.headLampStatus ?? headLampStatus
         _accelPedalPosition = onVehicleData.accPedalPosition ?? _accelPedalPosition
-        
-        //TODO: figure out braking status
-        //brakingStatus = onVehicleData.driverBraking ?? brakingStatus
+        _brakingStatus = onVehicleData.driverBraking ?? _brakingStatus
+
     }
     
     func connect() {
@@ -130,6 +149,10 @@ class ProxyManager: NSObject, SDLStreamingMediaManagerDataSource {
     func subscribeToVehicleData(){
         print("Subscribing to vehicle data...")
         subscribeVehicleData.bodyInformation = true
+        subscribeVehicleData.accPedalPosition = true
+        subscribeVehicleData.steeringWheelAngle = true
+        subscribeVehicleData.headLampStatus = true
+        subscribeVehicleData.driverBraking = true
         
         self.sdlManager.send(request: subscribeVehicleData) { (request, response, error) in
             guard let response = response as? SDLSubscribeVehicleDataResponse else { return }

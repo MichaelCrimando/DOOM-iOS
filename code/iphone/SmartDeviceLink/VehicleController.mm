@@ -23,13 +23,13 @@ bool vehicleControllerIsAvailable(){
 void vehicleControllerInput(ticcmd_t* cmd){
     if(vehicleControllerIsAvailable()) {
         // Perform standard gamepad updates
-        //[ProxyManager.sharedManager.steeringWheelAngle ]
-        
-        
-        
-        cmd->angleturn += (ProxyManager.sharedManager.steeringWheelAngle * -ROTATETHRESHOLD);
-        cmd->forwardmove += (ProxyManager.sharedManager.accelPedalPosition * TURBOTHRESHOLD);
-        //cmd->sidemove += (gamepad.leftThumbstick.xAxis.value * TURBOTHRESHOLD);
+        cmd->angleturn += (ProxyManager.sharedManager.steeringWheelAngle * ROTATETHRESHOLD);
+        if(ProxyManager.sharedManager.isDriverBraking){
+            cmd->forwardmove += (-1 * TURBOTHRESHOLD);
+        } else {
+            cmd->forwardmove += (ProxyManager.sharedManager.accelPedalPosition * TURBOTHRESHOLD);
+        }
+
         
         //If door is closed, shoot
         if(![ProxyManager.sharedManager.bodyData.driverDoorAjar boolValue]) {
