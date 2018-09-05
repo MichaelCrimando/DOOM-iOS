@@ -574,7 +574,7 @@ static void iphoneBuildTiccmd(ticcmd_t* cmd) {
             // just to keep things simple all we can do is respawn
             // load saved game and respawn with gear are not possible
             // may re-evaluate this later but for now this is a SDL change
-            if (cmd->buttons & BT_USE) {
+            if (cmd->buttons & BT_ATTACK) {
                 players[consoleplayer].playerstate = PST_REBORN;
             }
         }
