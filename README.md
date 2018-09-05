@@ -1,4 +1,6 @@
-#  DOOM for iOS 11 and tvOS for Apple TV
+#  DOOM for iOS 11 and tvOS for Apple TV and SmartDeviceLink
+1. FYI if you want encrypted streaming, you need to put the FMCSecurity folder in the code/iphone/ folder
+
 
 This is my update for DOOM for iOS to run on iOS 11, running in modern resolutions including the full width of the iPhone X. I have also made a target and version for tvOS to run on Apple TV
 
