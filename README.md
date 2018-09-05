@@ -1,5 +1,20 @@
 #  DOOM for iOS 11 and tvOS for Apple TV and SmartDeviceLink
 1. FYI if you want encrypted streaming, you need to put the FMCSecurity folder in the code/iphone/ folder
+2. Touch events don't work. So you need to first have the phone disconnected from the system, select and start your level, THEN launch it on the vehicle.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 This is my update for DOOM for iOS to run on iOS 11, running in modern resolutions including the full width of the iPhone X. I have also made a target and version for tvOS to run on Apple TV
