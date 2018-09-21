@@ -72,8 +72,11 @@ class ProxyManager: NSObject, SDLStreamingMediaManagerDataSource {
         SDLLockScreenConfiguration.enabled()
         SDLLogConfiguration.default()
         
-        lifecycleConfiguration.appType = .navigation
-
+        if(SettingsBundleHelper.apptype() == "Navigation"){
+            lifecycleConfiguration.appType = .navigation
+        } else {
+            lifecycleConfiguration.appType = .projection
+        }
         
         //setup Streaming configuration
         //Nevermind, this seems to work better when set to nil
