@@ -80,18 +80,11 @@ class ProxyManager: NSObject, SDLStreamingMediaManagerDataSource {
 //        let frameRate:Int = 30
 //        let averageBitRate:Int = 1000000
 //        let videoEncoderSettings = [kVTCompressionPropertyKey_ExpectedFrameRate as String: frameRate, kVTCompressionPropertyKey_AverageBitRate as String: averageBitRate]
-        
-        //TODO: Implement Secure streaming
+
         
         isEncryptionEnabled = SettingsBundleHelper.isEncryptionEnabled()
-        var streamingConfig : SDLStreamingMediaConfiguration
-        if(isEncryptionEnabled) {
-            streamingConfig = SDLStreamingMediaConfiguration(securityManagers: [FMCSecurityManager.self], encryptionFlag: SDLStreamingEncryptionFlag.authenticateAndEncrypt, videoSettings: nil, dataSource: self, rootViewController: self.sdlViewController)
-            //streamingConfig = SDLStreamingMediaConfiguration(securityManagers: nil, encryptionFlag: SDLStreamingEncryptionFlag.none, videoSettings: nil, dataSource: self, rootViewController: self.sdlViewController)
-        } else {
-            streamingConfig = SDLStreamingMediaConfiguration(securityManagers: nil, encryptionFlag: SDLStreamingEncryptionFlag.none, videoSettings: nil, dataSource: self, rootViewController: self.sdlViewController)
-        }
-
+        let encryptionFlag:SDLStreamingEncryptionFlag = SettingsBundleHelper.isEncryptionEnabled() ? SDLStreamingEncryptionFlag.authenticateAndEncrypt : SDLStreamingEncryptionFlag.none
+        let streamingConfig : SDLStreamingMediaConfiguration = SDLStreamingMediaConfiguration(securityManagers: [FMCSecurityManager.self], encryptionFlag: encryptionFlag, videoSettings: nil, dataSource: self, rootViewController: self.sdlViewController)
         streamingConfig.carWindowRenderingType = .viewAfterScreenUpdates
         
 

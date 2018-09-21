@@ -8,6 +8,26 @@
 	<array>
 		<dict>
 			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Titles</key>
+			<array>
+				<string>Navigation</string>
+				<string>Projection</string>
+			</array>
+			<key>Title</key>
+			<string>App Type</string>
+			<key>Values</key>
+			<array>
+				<string>Navigation</string>
+				<string>Projection</string>
+			</array>
+			<key>Key</key>
+			<string>appType</string>
+			<key>DefaultValue</key>
+			<string>Navigation</string>
+		</dict>
+		<dict>
+			<key>Type</key>
 			<string>PSToggleSwitchSpecifier</string>
 			<key>Title</key>
 			<string>Encryption</string>
