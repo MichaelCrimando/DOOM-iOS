@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		088E1248AD863802B31B4568 /* libPods-DoomTV.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A33C320EF24B974E5A33788B /* libPods-DoomTV.a */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		292D63A32123B58700516326 /* ProxyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292D63A22123B58700516326 /* ProxyManager.swift */; };
 		2941E57C213EC84B00DEE442 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2941E57B213EC84B00DEE442 /* Settings.bundle */; };
@@ -117,6 +116,7 @@
 		72F1F9BC0F96C18800AD49AC /* sweep.c in Sources */ = {isa = PBXBuildFile; fileRef = 72F1F9AE0F96C18800AD49AC /* sweep.c */; };
 		72F1F9BD0F96C18800AD49AC /* tess.c in Sources */ = {isa = PBXBuildFile; fileRef = 72F1F9B00F96C18800AD49AC /* tess.c */; };
 		72F1F9BE0F96C18800AD49AC /* tessmono.c in Sources */ = {isa = PBXBuildFile; fileRef = 72F1F9B20F96C18800AD49AC /* tessmono.c */; };
+		82A4B43E72B8892175CF6D41 /* Pods_DoomTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 670A73AF7C2EA5984C96A5E2 /* Pods_DoomTV.framework */; };
 		A11290502069B62B00BEDEB5 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A112904F2069B62B00BEDEB5 /* Launch Screen.storyboard */; };
 		A12302E3205737F50075CBAD /* Label.mm in Sources */ = {isa = PBXBuildFile; fileRef = A12302D6205737F40075CBAD /* Label.mm */; };
 		A12302E4205737F50075CBAD /* LabelButton.mm in Sources */ = {isa = PBXBuildFile; fileRef = A12302D7205737F40075CBAD /* LabelButton.mm */; };
@@ -573,6 +573,7 @@
 		43E8D4DF0F51B48B003F09B2 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = /System/Library/Frameworks/OpenAL.framework; sourceTree = "<absolute>"; };
 		52DF86F9E22FF278E6847C1A /* Pods-DoomTV.distribution.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoomTV.distribution.xcconfig"; path = "Pods/Target Support Files/Pods-DoomTV/Pods-DoomTV.distribution.xcconfig"; sourceTree = "<group>"; };
 		66CF97D6BE0F9AB2473EE120 /* Pods-Doom.distribution.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Doom.distribution.xcconfig"; path = "Pods/Target Support Files/Pods-Doom/Pods-Doom.distribution.xcconfig"; sourceTree = "<group>"; };
+		670A73AF7C2EA5984C96A5E2 /* Pods_DoomTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DoomTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F41E56221A0669BF3633D77 /* Pods-DoomTV.debuglite.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoomTV.debuglite.xcconfig"; path = "Pods/Target Support Files/Pods-DoomTV/Pods-DoomTV.debuglite.xcconfig"; sourceTree = "<group>"; };
 		720EBBAD0F82E0BB003F989A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = /System/Library/Frameworks/QuartzCore.framework; sourceTree = "<absolute>"; };
 		7229CC8E0F6B3363004123C5 /* doomiphone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = doomiphone.h; path = ../doomiphone.h; sourceTree = SOURCE_ROOT; };
@@ -977,7 +978,6 @@
 		A1EA3B84207F1D310038650E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS11.3.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
 		A1EA3B86207F9DE20038650E /* DOOM_400.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DOOM_400.png; sourceTree = "<group>"; };
 		A1EA3B8F208020B60038650E /* EpisodeCell-tvos.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = "EpisodeCell-tvos.xib"; sourceTree = "<group>"; };
-		A33C320EF24B974E5A33788B /* libPods-DoomTV.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DoomTV.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEB6485B3DCB3AF18DAFF4D2 /* Pods_Doom.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Doom.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8139AB213FADA800094C2C0 /* SliderSkull@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SliderSkull@2x.png"; path = "../../IB Images/SliderSkull@2x.png"; sourceTree = SOURCE_ROOT; };
 		C8139AB413FADA9D0094C2C0 /* SliderSkull~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SliderSkull~ipad.png"; path = "../../IB Images/SliderSkull~ipad.png"; sourceTree = SOURCE_ROOT; };
@@ -1080,7 +1080,7 @@
 				A1B98E10207EFF8B00827A46 /* CoreGraphics.framework in Frameworks */,
 				A1B98E11207EFF8B00827A46 /* GameController.framework in Frameworks */,
 				A1B98E12207EFF8B00827A46 /* OpenAL.framework in Frameworks */,
-				088E1248AD863802B31B4568 /* libPods-DoomTV.a in Frameworks */,
+				82A4B43E72B8892175CF6D41 /* Pods_DoomTV.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1256,7 +1256,7 @@
 				EDD2760811C2B19E004A9B9B /* OpenGLES.framework */,
 				EDD2760A11C2B19E004A9B9B /* UIKit.framework */,
 				AEB6485B3DCB3AF18DAFF4D2 /* Pods_Doom.framework */,
-				A33C320EF24B974E5A33788B /* libPods-DoomTV.a */,
+				670A73AF7C2EA5984C96A5E2 /* Pods_DoomTV.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1813,7 +1813,7 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0940;
+				LastUpgradeCheck = 1000;
 				TargetAttributes = {
 					1D6058900D05DD3D006BFB54 = {
 						LastSwiftMigration = 0940;
@@ -2488,6 +2488,12 @@
 				DEVELOPMENT_TEAM = SS66SKR6TQ;
 				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/BiSON\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SmartDeviceLink\"",
+					"$(SRCROOT)/**",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -2545,6 +2551,12 @@
 				DEVELOPMENT_TEAM = SS66SKR6TQ;
 				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/BiSON\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SmartDeviceLink\"",
+					"$(SRCROOT)/**",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = doom_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -2605,6 +2617,7 @@
 				DEFINES_MODULE = YES;
 				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/**";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_NO_COMMON_BLOCKS = NO;
 				GCC_THUMB_SUPPORT = NO;
@@ -2618,7 +2631,6 @@
 				LD_GENERATE_MAP_FILE = YES;
 				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/FMCSecurity/FMCSecurity/debug";
 				MACOSX_DEPLOYMENT_TARGET = "";
-				PREBINDING = NO;
 				PRODUCT_NAME = Doom;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -2641,6 +2653,12 @@
 				DEVELOPMENT_TEAM = SS66SKR6TQ;
 				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/BiSON\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SmartDeviceLink\"",
+					"$(SRCROOT)/**",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = doom_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -2695,6 +2713,7 @@
 				DEFINES_MODULE = YES;
 				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/**";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_NO_COMMON_BLOCKS = NO;
 				GCC_THUMB_SUPPORT = NO;
@@ -2708,7 +2727,6 @@
 				LD_GENERATE_MAP_FILE = YES;
 				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/FMCSecurity/FMCSecurity/release";
 				MACOSX_DEPLOYMENT_TARGET = "";
-				PREBINDING = NO;
 				PRODUCT_NAME = Doom;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -2731,6 +2749,12 @@
 				DEVELOPMENT_TEAM = SS66SKR6TQ;
 				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/BiSON\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SmartDeviceLink\"",
+					"$(SRCROOT)/**",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = doom_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -2787,6 +2811,7 @@
 				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/**";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_NO_COMMON_BLOCKS = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -2800,7 +2825,6 @@
 				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/FMCSecurity/FMCSecurity/debug";
 				MACOSX_DEPLOYMENT_TARGET = "";
 				ONLY_ACTIVE_ARCH = YES;
-				PREBINDING = NO;
 				PRODUCT_NAME = Doom;
 				SDKROOT = iphoneos;
 			};
@@ -2823,6 +2847,12 @@
 				DEVELOPMENT_TEAM = SS66SKR6TQ;
 				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/BiSON\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SmartDeviceLink\"",
+					"$(SRCROOT)/**",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -3185,6 +3215,7 @@
 				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/**";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_NO_COMMON_BLOCKS = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -3203,7 +3234,6 @@
 				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/FMCSecurity/FMCSecurity/debug";
 				MACOSX_DEPLOYMENT_TARGET = "";
 				ONLY_ACTIVE_ARCH = YES;
-				PREBINDING = NO;
 				PRODUCT_NAME = Doom;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -3237,6 +3267,7 @@
 				DEFINES_MODULE = YES;
 				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/**";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_NO_COMMON_BLOCKS = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -3255,7 +3286,6 @@
 				LD_GENERATE_MAP_FILE = YES;
 				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/FMCSecurity/FMCSecurity/release";
 				MACOSX_DEPLOYMENT_TARGET = "";
-				PREBINDING = NO;
 				PRODUCT_NAME = Doom;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -3290,6 +3320,7 @@
 				DEFINES_MODULE = YES;
 				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/**";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_NO_COMMON_BLOCKS = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -3308,7 +3339,6 @@
 				LD_GENERATE_MAP_FILE = YES;
 				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/FMCSecurity/FMCSecurity/debug";
 				MACOSX_DEPLOYMENT_TARGET = "";
-				PREBINDING = NO;
 				PRODUCT_NAME = Doom;
 				PROVISIONING_PROFILE = "31C73095-0DD9-4ABA-BB25-8D23F661F10F";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "31C73095-0DD9-4ABA-BB25-8D23F661F10F";
@@ -3332,6 +3362,12 @@
 				DEVELOPMENT_TEAM = SS66SKR6TQ;
 				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/BiSON\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SmartDeviceLink\"",
+					"$(SRCROOT)/**",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = doom_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (
