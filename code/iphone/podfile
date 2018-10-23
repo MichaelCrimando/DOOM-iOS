@@ -7,7 +7,7 @@ target 'Doom' do
   use_frameworks!
 
   # Pods for Doom
-  pod 'SmartDeviceLink', '~> 6.0'
+  pod 'SmartDeviceLink', '~> 6.1'
 end
 
 target 'DoomTV' do
