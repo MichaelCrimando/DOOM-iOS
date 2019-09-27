@@ -105,6 +105,17 @@ extern SDLRequestType const SDLRequestTypeEmergency;
 extern SDLRequestType const SDLRequestTypeMedia;
 
 /**
- A firmeware over-the-air request
+ A firmware over-the-air request
  */
 extern SDLRequestType const SDLRequestTypeFOTA;
+
+/**
+ A request that is OEM specific using the `RequestSubType` in SystemRequest
+ */
+extern SDLRequestType const SDLRequestTypeOEMSpecific;
+
+/**
+ A request for an icon url
+ */
+extern SDLRequestType const SDLRequestTypeIconURL;
+

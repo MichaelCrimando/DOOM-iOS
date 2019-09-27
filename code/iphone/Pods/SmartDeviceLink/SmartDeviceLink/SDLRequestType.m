@@ -24,3 +24,5 @@ SDLRequestType const SDLRequestTypeVehicleDiagnostics = @"VEHICLE_DIAGNOSTICS";
 SDLRequestType const SDLRequestTypeEmergency = @"EMERGENCY";
 SDLRequestType const SDLRequestTypeMedia = @"MEDIA";
 SDLRequestType const SDLRequestTypeFOTA = @"FOTA";
+SDLRequestType const SDLRequestTypeOEMSpecific = @"OEM_SPECIFIC";
+SDLRequestType const SDLRequestTypeIconURL = @"ICON_URL";

@@ -7,8 +7,8 @@
 //
 
 #import "SDLScreenManager.h"
-
 #import "SDLArtwork.h"
+#import "SDLChoiceSetManager.h"
 #import "SDLMenuManager.h"
 #import "SDLSoftButtonManager.h"
 #import "SDLTextAndGraphicManager.h"
@@ -22,6 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (strong, nonatomic) SDLSoftButtonManager *softButtonManager;
 @property (strong, nonatomic) SDLMenuManager *menuManager;
 @property (strong, nonatomic) SDLVoiceCommandManager *voiceCommandMenuManager;
+@property (strong, nonatomic) SDLChoiceSetManager *choiceSetManager;
 
 @property (weak, nonatomic) id<SDLConnectionManagerType> connectionManager;
 @property (weak, nonatomic) SDLFileManager *fileManager;
@@ -41,8 +42,15 @@ NS_ASSUME_NONNULL_BEGIN
     _softButtonManager = [[SDLSoftButtonManager alloc] initWithConnectionManager:connectionManager fileManager:fileManager];
     _menuManager = [[SDLMenuManager alloc] initWithConnectionManager:connectionManager fileManager:fileManager];
     _voiceCommandMenuManager = [[SDLVoiceCommandManager alloc] initWithConnectionManager:connectionManager];
+    _choiceSetManager = [[SDLChoiceSetManager alloc] initWithConnectionManager:connectionManager fileManager:fileManager];
 
     return self;
+}
+
+- (void)startWithCompletionHandler:(void (^)(NSError * _Nullable))handler {
+    [self.choiceSetManager start];
+
+    handler(nil);
 }
 
 - (void)stop {
@@ -50,6 +58,7 @@ NS_ASSUME_NONNULL_BEGIN
     [self.softButtonManager stop];
     [self.menuManager stop];
     [self.voiceCommandMenuManager stop];
+    [self.choiceSetManager stop];
 }
 
 - (nullable SDLSoftButtonObject *)softButtonObjectNamed:(NSString *)name {
@@ -129,6 +138,14 @@ NS_ASSUME_NONNULL_BEGIN
     self.voiceCommandMenuManager.voiceCommands = voiceCommands;
 }
 
+- (void)setKeyboardConfiguration:(nullable SDLKeyboardProperties *)keyboardConfiguration {
+    self.choiceSetManager.keyboardConfiguration = keyboardConfiguration;
+}
+
+- (void)setDynamicMenuUpdatesMode:(SDLDynamicMenuUpdatesMode)dynamicMenuUpdatesMode {
+    self.menuManager.dynamicMenuUpdatesMode = dynamicMenuUpdatesMode;
+}
+
 #pragma mark - Getters
 
 - (nullable NSString *)textField1 {
@@ -199,6 +216,14 @@ NS_ASSUME_NONNULL_BEGIN
     return _voiceCommandMenuManager.voiceCommands;
 }
 
+- (NSSet<SDLChoiceCell *> *)preloadedChoices {
+    return _choiceSetManager.preloadedChoices;
+}
+
+- (SDLKeyboardProperties *)keyboardConfiguration {
+    return _choiceSetManager.keyboardConfiguration;
+}
+
 #pragma mark - Begin / End Updates
 
 - (void)beginUpdates {
@@ -206,12 +231,37 @@ NS_ASSUME_NONNULL_BEGIN
     self.textAndGraphicManager.batchUpdates = YES;
 }
 
+- (void)endUpdates {
+    [self endUpdatesWithCompletionHandler:nil];
+}
+
 - (void)endUpdatesWithCompletionHandler:(nullable SDLScreenManagerUpdateCompletionHandler)handler {
     self.softButtonManager.batchUpdates = NO;
     self.textAndGraphicManager.batchUpdates = NO;
 
     [self.textAndGraphicManager updateWithCompletionHandler:handler];
-    [self.softButtonManager updateWithCompletionHandler:handler];
+}
+
+#pragma mark - Choice Sets
+
+- (void)deleteChoices:(NSArray<SDLChoiceCell *> *)choices {
+    [self.choiceSetManager deleteChoices:choices];
+}
+
+- (void)preloadChoices:(NSArray<SDLChoiceCell *> *)choices withCompletionHandler:(nullable SDLPreloadChoiceCompletionHandler)handler {
+    [self.choiceSetManager preloadChoices:choices withCompletionHandler:handler];
+}
+
+- (void)presentChoiceSet:(SDLChoiceSet *)choiceSet mode:(SDLInteractionMode)mode {
+    [self.choiceSetManager presentChoiceSet:choiceSet mode:mode withKeyboardDelegate:nil];
+}
+
+- (void)presentSearchableChoiceSet:(SDLChoiceSet *)choiceSet mode:(SDLInteractionMode)mode withKeyboardDelegate:(id<SDLKeyboardDelegate>)delegate {
+    [self.choiceSetManager presentChoiceSet:choiceSet mode:mode withKeyboardDelegate:delegate];
+}
+
+- (void)presentKeyboardWithInitialText:(NSString *)initialText delegate:(id<SDLKeyboardDelegate>)delegate {
+    [self.choiceSetManager presentKeyboardWithInitialText:initialText delegate:delegate];
 }
 
 @end
