@@ -108,7 +108,7 @@ static const char * const EpisodeNames[TOTAL_EPISODES][4] = {
     [self handleSelectionAtIndexPath:initialPath];
     self.episodeList.separatorStyle = UITableViewCellSeparatorStyleNone;
 #endif
-    ProxyManager.sharedManager.sdlManager.streamManager.rootViewController = self;
+    [[ProxyManager sharedManager] setStreamViewController:self];
 }
 
 /*

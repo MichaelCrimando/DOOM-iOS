@@ -76,7 +76,7 @@ static bool inTransition = false;
 #if TARGET_OS_TV
         EAGLView *glView = [[EAGLView alloc] initWithFrame:[UIScreen mainScreen].bounds];
 #else
-        EAGLView *glView = [[EAGLView alloc] initWithFrame:[UIScreen mainScreen].applicationFrame];
+        EAGLView *glView = [[EAGLView alloc] initWithFrame:[UIScreen mainScreen].bounds];
 #endif
         self.view = glView;
         [glView release];
@@ -133,8 +133,7 @@ shouldAutorotateToInterfaceOrientation
     // Stop the Display link.
     [self.displayLink invalidate];
     self.displayLink = nil;
-    
-    ProxyManager.sharedManager.sdlManager.streamManager.rootViewController = self;
+    [[ProxyManager sharedManager] setStreamViewController:self];
 }
 
 

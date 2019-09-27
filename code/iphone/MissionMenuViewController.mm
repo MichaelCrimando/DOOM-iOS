@@ -106,7 +106,8 @@ static const char * const MissionNames[TOTAL_EPISODES][9] = {
     nightmareSelectionLabel.hidden = YES;
     
     [missionList reloadData];
-    ProxyManager.sharedManager.sdlManager.streamManager.rootViewController = self;
+    
+    [[ProxyManager sharedManager] setStreamViewController:self];
 }
 
 /*

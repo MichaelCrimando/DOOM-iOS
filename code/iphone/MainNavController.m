@@ -42,7 +42,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    ProxyManager.sharedManager.sdlManager.streamManager.rootViewController = self;
+    
+    [[ProxyManager sharedManager] setStreamViewController:self];
 }
 
 - (void)didReceiveMemoryWarning

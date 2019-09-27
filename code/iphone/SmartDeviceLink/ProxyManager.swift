@@ -16,10 +16,10 @@ class ProxyManager: NSObject, SDLStreamingMediaManagerDataSource {
     var sdlViewController:UIViewController? = blankViewController()
     var subscribeVehicleData : SDLSubscribeVehicleData
     var currentHmiLevel : SDLHMILevel = .none
-    var isVehicleDataSubscribed : Bool = false
-    var bodyData : SDLBodyInformation = SDLBodyInformation() //Door - 1 = open, 0 = closed
+    @objc public var isVehicleDataSubscribed : Bool = false
+    @objc public var bodyData : SDLBodyInformation = SDLBodyInformation() //Door - 1 = open, 0 = closed
     private var _steeringWheelAngle : SDLFloat = 0 as SDLFloat //On a scale from 480 (all the way left) to -480 (all the way right).
-    var steeringWheelAngle: CGFloat {
+    @objc public var steeringWheelAngle: CGFloat {
         get {
             let _x = _steeringWheelAngle as! CGFloat
             if(_x >= -10 && _x <= 10) { //Throw some dead zone in there
@@ -29,9 +29,9 @@ class ProxyManager: NSObject, SDLStreamingMediaManagerDataSource {
             }
         }
     }
-    var headLampStatus : SDLHeadLampStatus = SDLHeadLampStatus()
+    @objc public var headLampStatus : SDLHeadLampStatus = SDLHeadLampStatus()
     private var _accelPedalPosition : SDLFloat = 0 as SDLFloat //On scale from 0 - 100 (percent pressed down)
-    var accelPedalPosition : CGFloat {
+    @objc public var accelPedalPosition : CGFloat {
         get {
             var _x = _accelPedalPosition as! CGFloat
             //need to keep between 0 and 1
@@ -44,17 +44,19 @@ class ProxyManager: NSObject, SDLStreamingMediaManagerDataSource {
         }
     }
     private var _brakingStatus : SDLVehicleDataEventStatus = .no
-    func isDriverBraking() -> Bool {
+    @objc public func isDriverBraking() -> Bool {
         if _brakingStatus == .yes {
             return true
         } else {
             return false
         }
     }
-    var isEncryptionEnabled : Bool = true
+    @objc public var isEncryptionEnabled : Bool = true
+    
+    
     
     // Singleton
-    static let sharedManager = ProxyManager()
+    @objc public static let sharedManager = ProxyManager()
     
     private override init() {
         subscribeVehicleData = SDLSubscribeVehicleData()
@@ -102,13 +104,13 @@ class ProxyManager: NSObject, SDLStreamingMediaManagerDataSource {
         
     }
     
-    func vehicleDataAvailable(_ notification: SDLRPCNotificationNotification) {
+    @objc func vehicleDataAvailable(_ notification: SDLRPCNotificationNotification) {
         guard let onVehicleData = notification.notification as? SDLOnVehicleData else {
             return
         }
         bodyData = onVehicleData.bodyInformation ?? bodyData
-        
-        print("Driver door: \(bodyData.driverDoorAjar ?? 666)")
+
+        print("Driver door: \(bodyData.driverDoorAjar ?? NSNumber(value: 666))")
         _steeringWheelAngle = onVehicleData.steeringWheelAngle ?? _steeringWheelAngle
         headLampStatus = onVehicleData.headLampStatus ?? headLampStatus
         _accelPedalPosition = onVehicleData.accPedalPosition ?? _accelPedalPosition
@@ -116,7 +118,7 @@ class ProxyManager: NSObject, SDLStreamingMediaManagerDataSource {
 
     }
     
-    func connect() {
+    @objc public func connect() {
         // Start watching for a connection with a SDL Core
         sdlManager.start { (success, error) in
             if success {
@@ -141,14 +143,17 @@ class ProxyManager: NSObject, SDLStreamingMediaManagerDataSource {
     var streamManager: SDLStreamingMediaManager? {
         return self.sdlManager.streamManager
     }
- 
+    
+    @objc public func setStreamViewController(_ vc:UIViewController) {
+        self.sdlManager.streamManager?.rootViewController = vc
+    }
     func subscribeToVehicleData(){
         print("Subscribing to vehicle data...")
-        subscribeVehicleData.bodyInformation = true
-        subscribeVehicleData.accPedalPosition = true
-        subscribeVehicleData.steeringWheelAngle = true
-        subscribeVehicleData.headLampStatus = true
-        subscribeVehicleData.driverBraking = true
+        subscribeVehicleData.bodyInformation = true as NSNumber & SDLBool
+        subscribeVehicleData.accPedalPosition = true as NSNumber & SDLBool
+        subscribeVehicleData.steeringWheelAngle = true as NSNumber & SDLBool
+        subscribeVehicleData.headLampStatus = true as NSNumber & SDLBool
+        subscribeVehicleData.driverBraking = true as NSNumber & SDLBool
         
         self.sdlManager.send(request: subscribeVehicleData) { (request, response, error) in
             guard let response = response as? SDLSubscribeVehicleDataResponse else { return }

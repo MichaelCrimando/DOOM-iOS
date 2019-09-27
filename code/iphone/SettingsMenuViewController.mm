@@ -83,7 +83,7 @@ UIFocusGuide *focusGuide;
     focusGuide.preferredFocusEnvironments = @[resetButton];
 
 #endif
-    ProxyManager.sharedManager.sdlManager.streamManager.rootViewController = self;
+    [[ProxyManager sharedManager] setStreamViewController:self];
 }
 
 /*

@@ -150,7 +150,7 @@
 {
     [super viewDidLoad];
     [ self Initialize ];
-    ProxyManager.sharedManager.sdlManager.streamManager.rootViewController = self;
+    [[ProxyManager sharedManager] setStreamViewController:self];
 }
 
 #if !TARGET_OS_TV

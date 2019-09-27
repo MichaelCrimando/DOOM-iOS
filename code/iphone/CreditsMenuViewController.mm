@@ -172,7 +172,7 @@ static const int CreditSizes[CREDITS_LINES] = {
 {
     [super viewDidLoad];
     creditsList.allowsSelection = NO;
-    ProxyManager.sharedManager.sdlManager.streamManager.rootViewController = self;
+    [[ProxyManager sharedManager] setStreamViewController:self];
 }
 
 /*

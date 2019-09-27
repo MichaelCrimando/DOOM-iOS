@@ -126,7 +126,7 @@
     self->levelPicker.dataSource = self;
     self->levelPicker.delegate = self;
     
-    ProxyManager.sharedManager.sdlManager.streamManager.rootViewController = self;
+    [[ProxyManager sharedManager] setStreamViewController:self];
 
 }
 
