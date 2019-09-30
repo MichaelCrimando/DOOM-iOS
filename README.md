@@ -1,6 +1,8 @@
 #  DOOM for iOS 11 and tvOS for Apple TV and SmartDeviceLink
 1. FYI if you want encrypted streaming, you need to put the FMCSecurity folder in the code/iphone/ folder
 2. Touch events don't work. So you need to first have the phone disconnected from the system, select and start your level, THEN launch it on the vehicle.
+3. When implementing the FMCSecurity manager, you may need to modify a line in `FMCSecurityManager.h` from `//#import "SDLSecurityType.h"` to  `#import <SmartDeviceLink/SDLSecurityType.h>`
+
 
 
 

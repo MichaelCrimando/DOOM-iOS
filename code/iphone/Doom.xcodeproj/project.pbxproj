@@ -2483,6 +2483,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 2.8;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = SS66SKR6TQ;
@@ -2515,7 +2516,7 @@
 				);
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_GENERATE_MAP_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -2523,6 +2524,7 @@
 					"$(PROJECT_DIR)/FMCSecurity/FMCSecurity/release",
 					"$(PROJECT_DIR)/FMCSecurity/FMCSecurity/debug",
 				);
+				MARKETING_VERSION = 2.8;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mcriman1.Doom;
 				PRODUCT_NAME = Doom;
 				PROFILE_PREFIX = com.idsoftware;
@@ -2547,6 +2549,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 2.8;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = SS66SKR6TQ;
 				ENABLE_BITCODE = NO;
@@ -2580,7 +2583,7 @@
 				);
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_GENERATE_MAP_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -2588,6 +2591,7 @@
 					"$(PROJECT_DIR)/FMCSecurity/FMCSecurity/release",
 					"$(PROJECT_DIR)/FMCSecurity/FMCSecurity/debug",
 				);
+				MARKETING_VERSION = 2.8;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mcriman1.Doom;
 				PRODUCT_NAME = Doom;
 				PROFILE_PREFIX = com.idsoftware;
@@ -2659,6 +2663,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 2.8;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = SS66SKR6TQ;
 				ENABLE_BITCODE = NO;
@@ -2677,7 +2682,7 @@
 				);
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_GENERATE_MAP_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -2685,6 +2690,7 @@
 					"$(PROJECT_DIR)/FMCSecurity/FMCSecurity/release",
 					"$(PROJECT_DIR)/FMCSecurity/FMCSecurity/debug",
 				);
+				MARKETING_VERSION = 2.8;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mcriman1.Doom;
 				PRODUCT_NAME = Doom;
 				PROFILE_PREFIX = com.idsoftware;
@@ -2755,6 +2761,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 2.8;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = SS66SKR6TQ;
 				ENABLE_BITCODE = NO;
@@ -2773,7 +2780,7 @@
 				);
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_GENERATE_MAP_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -2781,6 +2788,7 @@
 					"$(PROJECT_DIR)/FMCSecurity/FMCSecurity/release",
 					"$(PROJECT_DIR)/FMCSecurity/FMCSecurity/debug",
 				);
+				MARKETING_VERSION = 2.8;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mcriman1.Doom;
 				PRODUCT_NAME = DoomLite;
 				PROFILE_PREFIX = com.idsoftware;
@@ -2852,6 +2860,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 2.8;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = SS66SKR6TQ;
@@ -2873,7 +2882,7 @@
 				);
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_GENERATE_MAP_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -2881,6 +2890,7 @@
 					"$(PROJECT_DIR)/FMCSecurity/FMCSecurity/release",
 					"$(PROJECT_DIR)/FMCSecurity/FMCSecurity/debug",
 				);
+				MARKETING_VERSION = 2.8;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mcriman1.Doom;
 				PRODUCT_NAME = DoomLite;
 				PROFILE_PREFIX = com.idsoftware;
@@ -3368,6 +3378,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 2.8;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = SS66SKR6TQ;
 				ENABLE_BITCODE = NO;
@@ -3387,7 +3398,7 @@
 				);
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_GENERATE_MAP_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -3395,6 +3406,7 @@
 					"$(PROJECT_DIR)/FMCSecurity/FMCSecurity/release",
 					"$(PROJECT_DIR)/FMCSecurity/FMCSecurity/debug",
 				);
+				MARKETING_VERSION = 2.8;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mcriman1.Doom;
 				PRODUCT_NAME = Doom;
 				PROFILE_PREFIX = com.idsoftware;

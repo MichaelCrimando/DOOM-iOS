@@ -36,11 +36,11 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>2.7</string>
+	<string>$(MARKETING_VERSION)</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>2.7</string>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UIAppFonts</key>
@@ -59,16 +59,47 @@
 	<string>Launch Screen</string>
 	<key>UIPrerenderedIcon</key>
 	<true/>
-	<key>UIRequiredDeviceCapabilities</key>
-	<array>
-		<string>gamekit</string>
-	</array>
 	<key>UIRequiresFullScreen</key>
 	<true/>
 	<key>UIRequiresPersistentWiFi</key>
 	<true/>
 	<key>UIStatusBarHidden</key>
 	<true/>
+	<key>UISupportedExternalAccessoryProtocols</key>
+	<array>
+		<string>com.smartdevicelink.prot29</string>
+		<string>com.smartdevicelink.prot28</string>
+		<string>com.smartdevicelink.prot27</string>
+		<string>com.smartdevicelink.prot26</string>
+		<string>com.smartdevicelink.prot25</string>
+		<string>com.smartdevicelink.prot24</string>
+		<string>com.smartdevicelink.prot23</string>
+		<string>com.smartdevicelink.prot22</string>
+		<string>com.smartdevicelink.prot21</string>
+		<string>com.smartdevicelink.prot20</string>
+		<string>com.smartdevicelink.prot19</string>
+		<string>com.smartdevicelink.prot18</string>
+		<string>com.smartdevicelink.prot17</string>
+		<string>com.smartdevicelink.prot16</string>
+		<string>com.smartdevicelink.prot15</string>
+		<string>com.smartdevicelink.prot14</string>
+		<string>com.smartdevicelink.prot13</string>
+		<string>com.smartdevicelink.prot12</string>
+		<string>com.smartdevicelink.prot11</string>
+		<string>com.smartdevicelink.prot10</string>
+		<string>com.smartdevicelink.prot9</string>
+		<string>com.smartdevicelink.prot8</string>
+		<string>com.smartdevicelink.prot7</string>
+		<string>com.smartdevicelink.prot6</string>
+		<string>com.smartdevicelink.prot5</string>
+		<string>com.smartdevicelink.prot4</string>
+		<string>com.smartdevicelink.prot3</string>
+		<string>com.smartdevicelink.prot2</string>
+		<string>com.smartdevicelink.prot1</string>
+		<string>com.smartdevicelink.prot0</string>
+		<string>com.smartdevicelink.multisession</string>
+		<string>com.ford.sync.prot0</string>
+	</array>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
@@ -81,40 +112,5 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
-	<key>UISupportedExternalAccessoryProtocols</key>
-<array>
-<string>com.smartdevicelink.prot29</string>
-<string>com.smartdevicelink.prot28</string>
-<string>com.smartdevicelink.prot27</string>
-<string>com.smartdevicelink.prot26</string>
-<string>com.smartdevicelink.prot25</string>
-<string>com.smartdevicelink.prot24</string>
-<string>com.smartdevicelink.prot23</string>
-<string>com.smartdevicelink.prot22</string>
-<string>com.smartdevicelink.prot21</string>
-<string>com.smartdevicelink.prot20</string>
-<string>com.smartdevicelink.prot19</string>
-<string>com.smartdevicelink.prot18</string>
-<string>com.smartdevicelink.prot17</string>
-<string>com.smartdevicelink.prot16</string>
-<string>com.smartdevicelink.prot15</string>
-<string>com.smartdevicelink.prot14</string>
-<string>com.smartdevicelink.prot13</string>
-<string>com.smartdevicelink.prot12</string>
-<string>com.smartdevicelink.prot11</string>
-<string>com.smartdevicelink.prot10</string>
-<string>com.smartdevicelink.prot9</string>
-<string>com.smartdevicelink.prot8</string>
-<string>com.smartdevicelink.prot7</string>
-<string>com.smartdevicelink.prot6</string>
-<string>com.smartdevicelink.prot5</string>
-<string>com.smartdevicelink.prot4</string>
-<string>com.smartdevicelink.prot3</string>
-<string>com.smartdevicelink.prot2</string>
-<string>com.smartdevicelink.prot1</string>
-<string>com.smartdevicelink.prot0</string>
-<string>com.smartdevicelink.multisession</string>
-<string>com.ford.sync.prot0</string>
-</array>
 </dict>
 </plist>
