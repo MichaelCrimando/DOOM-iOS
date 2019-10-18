@@ -80,13 +80,18 @@ class ProxyManager: NSObject, SDLStreamingMediaManagerDataSource {
             lifecycleConfiguration.appType = .projection
         }
         
+        if(SettingsBundleHelper.apptype() == "Media Projection"){
+            lifecycleConfiguration.additionalAppTypes = [.media]
+        } else {
+            lifecycleConfiguration.additionalAppTypes = []
+        }
+        
         //setup Streaming configuration
         //Nevermind, this seems to work better when set to nil
 //        let frameRate:Int = 30
 //        let averageBitRate:Int = 1000000
 //        let videoEncoderSettings = [kVTCompressionPropertyKey_ExpectedFrameRate as String: frameRate, kVTCompressionPropertyKey_AverageBitRate as String: averageBitRate]
 
-        
         isEncryptionEnabled = SettingsBundleHelper.isEncryptionEnabled()
         let encryptionFlag:SDLStreamingEncryptionFlag = SettingsBundleHelper.isEncryptionEnabled() ? SDLStreamingEncryptionFlag.authenticateAndEncrypt : SDLStreamingEncryptionFlag.none
         let streamingConfig : SDLStreamingMediaConfiguration = SDLStreamingMediaConfiguration(securityManagers: [FMCSecurityManager.self], encryptionFlag: encryptionFlag, videoSettings: nil, dataSource: self, rootViewController: self.sdlViewController)

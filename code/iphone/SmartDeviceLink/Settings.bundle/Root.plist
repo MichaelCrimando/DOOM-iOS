@@ -11,15 +11,17 @@
 			<string>PSMultiValueSpecifier</string>
 			<key>Titles</key>
 			<array>
+				<string>Media Projection</string>
 				<string>Navigation</string>
-				<string>Projection</string>
+				<string>Non-Media Projection</string>
 			</array>
 			<key>Title</key>
 			<string>App Type</string>
 			<key>Values</key>
 			<array>
+				<string>Media Projection</string>
 				<string>Navigation</string>
-				<string>Projection</string>
+				<string>Non-Media Projection</string>
 			</array>
 			<key>Key</key>
 			<string>appType</string>
