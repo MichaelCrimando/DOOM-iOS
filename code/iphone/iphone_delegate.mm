@@ -41,7 +41,7 @@ touch_t		gameTouches[MAX_TOUCHES];
 
 #define FRAME_HERTZ 30.0f
 #if !TARGET_OS_TV
-const static float ACCELEROMETER_UPDATE_INTERVAL = 1.0f / FRAME_HERTZ;
+//const static float ACCELEROMETER_UPDATE_INTERVAL = 1.0f / FRAME_HERTZ;
 #endif
 //FIXME: JadingTsunami (fix) const static float ACCELEROMETER_UPDATE_INTERVAL = 1.0f / FRAME_HERTZ;
 
@@ -245,6 +245,13 @@ const static float ACCELEROMETER_UPDATE_INTERVAL = 1.0f / FRAME_HERTZ;
 #endif
     
     return [NSString stringWithFormat:@"%@%@", nibName, extension];
+}
+
+- (NSString*) GetFontName
+{
+    // To restore usage of the original font, un-comment out this line and comment out the next line
+    //return @"idGinza Narrow";
+    return @"Chicago";
 }
 
 @end
