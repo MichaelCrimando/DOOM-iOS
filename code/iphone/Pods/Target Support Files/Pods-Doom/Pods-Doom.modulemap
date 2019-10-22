@@ -1,6 +1,0 @@
-framework module Pods_Doom {
-  umbrella header "Pods-Doom-umbrella.h"
-
-  export *
-  module * { export * }
-}

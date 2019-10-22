@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		29BB831B235F3CF700BE07CA /* doomiphone.h in Headers */ = {isa = PBXBuildFile; fileRef = 29BB831A235F3CF600BE07CA /* doomiphone.h */; };
+		29BB831C235F3CF700BE07CA /* doomiphone.h in Headers */ = {isa = PBXBuildFile; fileRef = 29BB831A235F3CF600BE07CA /* doomiphone.h */; };
+		29BB831D235F3CF700BE07CA /* doomiphone.h in Headers */ = {isa = PBXBuildFile; fileRef = 29BB831A235F3CF600BE07CA /* doomiphone.h */; };
+		29BB831E235F3CF700BE07CA /* doomiphone.h in Headers */ = {isa = PBXBuildFile; fileRef = 29BB831A235F3CF600BE07CA /* doomiphone.h */; };
+		29BB831F235F3CF700BE07CA /* doomiphone.h in Headers */ = {isa = PBXBuildFile; fileRef = 29BB831A235F3CF600BE07CA /* doomiphone.h */; };
+		29BB8320235F3CF700BE07CA /* doomiphone.h in Headers */ = {isa = PBXBuildFile; fileRef = 29BB831A235F3CF600BE07CA /* doomiphone.h */; };
+		29BB8321235F3CF700BE07CA /* doomiphone.h in Headers */ = {isa = PBXBuildFile; fileRef = 29BB831A235F3CF600BE07CA /* doomiphone.h */; };
+		29BB8322235F3CF700BE07CA /* doomiphone.h in Headers */ = {isa = PBXBuildFile; fileRef = 29BB831A235F3CF600BE07CA /* doomiphone.h */; };
+		29CDAFB9235A5E2100B0AD0D /* SmartDeviceLink in Resources */ = {isa = PBXBuildFile; fileRef = 29CDAFB8235A5E2100B0AD0D /* SmartDeviceLink */; };
 		4333CCE80F5CC23E00AE2B6F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4333CCE70F5CC23E00AE2B6F /* AudioToolbox.framework */; };
 		4364BF3F0F5CB25900F29317 /* dist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4364BF3E0F5CB25900F29317 /* dist.plist */; };
 		43CF02FF0F56974E00E4A23D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 43CF02FE0F56974E00E4A23D /* Default.png */; };
@@ -105,6 +114,8 @@
 		72F1F9BC0F96C18800AD49AC /* sweep.c in Sources */ = {isa = PBXBuildFile; fileRef = 72F1F9AE0F96C18800AD49AC /* sweep.c */; };
 		72F1F9BD0F96C18800AD49AC /* tess.c in Sources */ = {isa = PBXBuildFile; fileRef = 72F1F9B00F96C18800AD49AC /* tess.c */; };
 		72F1F9BE0F96C18800AD49AC /* tessmono.c in Sources */ = {isa = PBXBuildFile; fileRef = 72F1F9B20F96C18800AD49AC /* tessmono.c */; };
+		90C74A1F761838DE5E02FC40 /* Pods_FInalDOOM_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFBD4081E21208730942AAD5 /* Pods_FInalDOOM_iOS.framework */; };
+		987947F1B83BD78125F3B4AE /* Pods_DOOM2_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB60C3D6A587885FD40E8340 /* Pods_DOOM2_iOS.framework */; };
 		A10638C3216EBC5A00BDE196 /* doom2.wad in Resources */ = {isa = PBXBuildFile; fileRef = A10638C2216EBC5A00BDE196 /* doom2.wad */; };
 		A10638C8216EF7C700BDE196 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 43CF02FE0F56974E00E4A23D /* Default.png */; };
 		A10638C9216EF7C700BDE196 /* r_drawflush.inl in Resources */ = {isa = PBXBuildFile; fileRef = A1A63E3020563345000955AE /* r_drawflush.inl */; };
@@ -2109,6 +2120,8 @@
 		C8D1CF8813DF79BC00F0EAC6 /* Default~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = C8D1CF8713DF79BC00F0EAC6 /* Default~ipad.png */; };
 		C8D1CFA813E1CDBD00F0EAC6 /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = C8D1CFA713E1CDBD00F0EAC6 /* Default-Portrait~ipad.png */; };
 		C8D1CFAA13E1CDC600F0EAC6 /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = C8D1CFA913E1CDC600F0EAC6 /* Default-Landscape~ipad.png */; };
+		CE7028BE9D507A283B33F05A /* Pods_DOOM_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1126D29D8AF82270D84ED6C4 /* Pods_DOOM_iOS.framework */; };
+		EB1DC80BF31E8A5C66A3DF27 /* Pods_SIGIL_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D883C52E7AD6CE45C0F8C94 /* Pods_SIGIL_iOS.framework */; };
 		ED9AB3D110966E85000B5852 /* iphone_email.m in Sources */ = {isa = PBXBuildFile; fileRef = ED9AB3D010966E85000B5852 /* iphone_email.m */; };
 		EDD2760511C2B19E004A9B9B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDD2760411C2B19E004A9B9B /* CoreGraphics.framework */; };
 		EDD2760711C2B19E004A9B9B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDD2760611C2B19E004A9B9B /* Foundation.framework */; };
@@ -2117,8 +2130,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		060AAD8C85E59BC49C5B03E1 /* Pods-FInalDOOM-iOS.releaselite.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FInalDOOM-iOS.releaselite.xcconfig"; path = "Target Support Files/Pods-FInalDOOM-iOS/Pods-FInalDOOM-iOS.releaselite.xcconfig"; sourceTree = "<group>"; };
+		0E47B3F94FE03067F7E780C9 /* Pods-FInalDOOM-iOS.adhocdist.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FInalDOOM-iOS.adhocdist.xcconfig"; path = "Target Support Files/Pods-FInalDOOM-iOS/Pods-FInalDOOM-iOS.adhocdist.xcconfig"; sourceTree = "<group>"; };
+		11075BFF79A220B99505F846 /* Pods-DOOM2-iOS.debuglite.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DOOM2-iOS.debuglite.xcconfig"; path = "Target Support Files/Pods-DOOM2-iOS/Pods-DOOM2-iOS.debuglite.xcconfig"; sourceTree = "<group>"; };
+		1126D29D8AF82270D84ED6C4 /* Pods_DOOM_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DOOM_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		164C198A32578157CC404A08 /* Pods-SIGIL-iOS.debuglite.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SIGIL-iOS.debuglite.xcconfig"; path = "Target Support Files/Pods-SIGIL-iOS/Pods-SIGIL-iOS.debuglite.xcconfig"; sourceTree = "<group>"; };
+		1C8868BEFAE703EE19C64ABA /* Pods-DOOM-iOS.releaselite.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DOOM-iOS.releaselite.xcconfig"; path = "Target Support Files/Pods-DOOM-iOS/Pods-DOOM-iOS.releaselite.xcconfig"; sourceTree = "<group>"; };
 		1D6058910D05DD3D006BFB54 /* DOOM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DOOM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		29683B05235F321D000CD891 /* DOOM.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DOOM.entitlements; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29BB831A235F3CF600BE07CA /* doomiphone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = doomiphone.h; path = ../doomiphone.h; sourceTree = "<group>"; };
+		29CDAFB8235A5E2100B0AD0D /* SmartDeviceLink */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SmartDeviceLink; sourceTree = "<group>"; };
+		3AD3578DB595D5EC2F3464C3 /* Pods-DOOM-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DOOM-iOS.debug.xcconfig"; path = "Target Support Files/Pods-DOOM-iOS/Pods-DOOM-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		4333CCE70F5CC23E00AE2B6F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = /System/Library/Frameworks/AudioToolbox.framework; sourceTree = "<absolute>"; };
 		434669A30F8D08C000EA7D6D /* doom_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = doom_Prefix.pch; sourceTree = "<group>"; };
 		4364BF3E0F5CB25900F29317 /* dist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = dist.plist; sourceTree = "<group>"; };
@@ -2126,6 +2149,10 @@
 		43CF03090F56D5C200E4A23D /* iphone_loop.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = iphone_loop.c; sourceTree = "<group>"; };
 		43E8D2DF0F4FC61E003F09B2 /* iphone_main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = iphone_main.c; sourceTree = "<group>"; };
 		43E8D4DF0F51B48B003F09B2 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = /System/Library/Frameworks/OpenAL.framework; sourceTree = "<absolute>"; };
+		5114E3F7315A403A75756053 /* Pods-DOOM2-iOS.adhocdist.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DOOM2-iOS.adhocdist.xcconfig"; path = "Target Support Files/Pods-DOOM2-iOS/Pods-DOOM2-iOS.adhocdist.xcconfig"; sourceTree = "<group>"; };
+		575408449FC48CCD4497E560 /* Pods-DOOM-iOS.debuglite.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DOOM-iOS.debuglite.xcconfig"; path = "Target Support Files/Pods-DOOM-iOS/Pods-DOOM-iOS.debuglite.xcconfig"; sourceTree = "<group>"; };
+		67E0ECF8E594373E15AD921E /* Pods-DOOM-iOS.distribution.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DOOM-iOS.distribution.xcconfig"; path = "Target Support Files/Pods-DOOM-iOS/Pods-DOOM-iOS.distribution.xcconfig"; sourceTree = "<group>"; };
+		6D883C52E7AD6CE45C0F8C94 /* Pods_SIGIL_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SIGIL_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		720EBBAD0F82E0BB003F989A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = /System/Library/Frameworks/QuartzCore.framework; sourceTree = "<absolute>"; };
 		7229CC8E0F6B3363004123C5 /* doomiphone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = doomiphone.h; path = ../doomiphone.h; sourceTree = SOURCE_ROOT; };
 		7229CE450F6C89F8004123C5 /* EAGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAGLView.h; sourceTree = "<group>"; };
@@ -2317,6 +2344,9 @@
 		72F1F9B10F96C18800AD49AC /* tess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tess.h; path = ../libtess/tess.h; sourceTree = SOURCE_ROOT; };
 		72F1F9B20F96C18800AD49AC /* tessmono.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = tessmono.c; path = ../libtess/tessmono.c; sourceTree = SOURCE_ROOT; };
 		72F1F9B30F96C18800AD49AC /* tessmono.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tessmono.h; path = ../libtess/tessmono.h; sourceTree = SOURCE_ROOT; };
+		84641C0A4EF69BA557C9721A /* Pods-FInalDOOM-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FInalDOOM-iOS.debug.xcconfig"; path = "Target Support Files/Pods-FInalDOOM-iOS/Pods-FInalDOOM-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		88A885EB72FAAA946F489BE3 /* Pods-DOOM-iOS.adhocdist.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DOOM-iOS.adhocdist.xcconfig"; path = "Target Support Files/Pods-DOOM-iOS/Pods-DOOM-iOS.adhocdist.xcconfig"; sourceTree = "<group>"; };
+		8B56F02861CCE18E64057077 /* Pods-FInalDOOM-iOS.debuglite.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FInalDOOM-iOS.debuglite.xcconfig"; path = "Target Support Files/Pods-FInalDOOM-iOS/Pods-FInalDOOM-iOS.debuglite.xcconfig"; sourceTree = "<group>"; };
 		A10638C2216EBC5A00BDE196 /* doom2.wad */ = {isa = PBXFileReference; lastKnownFileType = file; name = doom2.wad; path = ../../base/doom2.wad; sourceTree = "<group>"; };
 		A10639D2216EF7C700BDE196 /* DOOM II.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DOOM II.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1063AEE216EFCEE00BDE196 /* FInal DOOM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FInal DOOM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -2612,12 +2642,26 @@
 		C8D1CF8713DF79BC00F0EAC6 /* Default~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default~ipad.png"; sourceTree = "<group>"; };
 		C8D1CFA713E1CDBD00F0EAC6 /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = "<group>"; };
 		C8D1CFA913E1CDC600F0EAC6 /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
+		D8018A38E1D6E8A36350E383 /* Pods-DOOM2-iOS.releaselite.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DOOM2-iOS.releaselite.xcconfig"; path = "Target Support Files/Pods-DOOM2-iOS/Pods-DOOM2-iOS.releaselite.xcconfig"; sourceTree = "<group>"; };
+		DB60C3D6A587885FD40E8340 /* Pods_DOOM2_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DOOM2_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD26526990015BAFE183AE0D /* Pods-FInalDOOM-iOS.distribution.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FInalDOOM-iOS.distribution.xcconfig"; path = "Target Support Files/Pods-FInalDOOM-iOS/Pods-FInalDOOM-iOS.distribution.xcconfig"; sourceTree = "<group>"; };
+		E1EFC188ECDFA4F4ED90D8C9 /* Pods-DOOM2-iOS.distribution.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DOOM2-iOS.distribution.xcconfig"; path = "Target Support Files/Pods-DOOM2-iOS/Pods-DOOM2-iOS.distribution.xcconfig"; sourceTree = "<group>"; };
+		E372F8542137EDCBAD17DD51 /* Pods-SIGIL-iOS.distribution.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SIGIL-iOS.distribution.xcconfig"; path = "Target Support Files/Pods-SIGIL-iOS/Pods-SIGIL-iOS.distribution.xcconfig"; sourceTree = "<group>"; };
+		E58729088B151FCB640C2DDA /* Pods-DOOM2-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DOOM2-iOS.release.xcconfig"; path = "Target Support Files/Pods-DOOM2-iOS/Pods-DOOM2-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		E5D6F49F90498502D21AD3C9 /* Pods-SIGIL-iOS.releaselite.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SIGIL-iOS.releaselite.xcconfig"; path = "Target Support Files/Pods-SIGIL-iOS/Pods-SIGIL-iOS.releaselite.xcconfig"; sourceTree = "<group>"; };
+		E8535D210C5B6334BE76DABC /* Pods-DOOM2-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DOOM2-iOS.debug.xcconfig"; path = "Target Support Files/Pods-DOOM2-iOS/Pods-DOOM2-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		ED7AF676930F89E6744221DF /* Pods-SIGIL-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SIGIL-iOS.release.xcconfig"; path = "Target Support Files/Pods-SIGIL-iOS/Pods-SIGIL-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		ED9AB3CF10966E85000B5852 /* iphone_email.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iphone_email.h; sourceTree = "<group>"; };
 		ED9AB3D010966E85000B5852 /* iphone_email.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iphone_email.m; sourceTree = "<group>"; };
 		EDD2760411C2B19E004A9B9B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		EDD2760611C2B19E004A9B9B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EDD2760811C2B19E004A9B9B /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		EDD2760A11C2B19E004A9B9B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EFBD4081E21208730942AAD5 /* Pods_FInalDOOM_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FInalDOOM_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7D6A516015FEF933338FF4F /* Pods-SIGIL-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SIGIL-iOS.debug.xcconfig"; path = "Target Support Files/Pods-SIGIL-iOS/Pods-SIGIL-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		F8B3CACFB2EB254D2FD70139 /* Pods-DOOM-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DOOM-iOS.release.xcconfig"; path = "Target Support Files/Pods-DOOM-iOS/Pods-DOOM-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		FE62C49BD07F93004BC58F23 /* Pods-SIGIL-iOS.adhocdist.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SIGIL-iOS.adhocdist.xcconfig"; path = "Target Support Files/Pods-SIGIL-iOS/Pods-SIGIL-iOS.adhocdist.xcconfig"; sourceTree = "<group>"; };
+		FEA44CB08A096DC6D587C6E8 /* Pods-FInalDOOM-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FInalDOOM-iOS.release.xcconfig"; path = "Target Support Files/Pods-FInalDOOM-iOS/Pods-FInalDOOM-iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2634,6 +2678,7 @@
 				EDD2760711C2B19E004A9B9B /* Foundation.framework in Frameworks */,
 				EDD2760911C2B19E004A9B9B /* OpenGLES.framework in Frameworks */,
 				EDD2760B11C2B19E004A9B9B /* UIKit.framework in Frameworks */,
+				CE7028BE9D507A283B33F05A /* Pods_DOOM_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2666,6 +2711,7 @@
 				A1063AE3216EFCEE00BDE196 /* Foundation.framework in Frameworks */,
 				A1063AE4216EFCEE00BDE196 /* OpenGLES.framework in Frameworks */,
 				A1063AE5216EFCEE00BDE196 /* UIKit.framework in Frameworks */,
+				90C74A1F761838DE5E02FC40 /* Pods_FInalDOOM_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2698,6 +2744,7 @@
 				A1870914216EB633006C013F /* Foundation.framework in Frameworks */,
 				A1870915216EB633006C013F /* OpenGLES.framework in Frameworks */,
 				A1870916216EB633006C013F /* UIKit.framework in Frameworks */,
+				987947F1B83BD78125F3B4AE /* Pods_DOOM2_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2730,6 +2777,7 @@
 				A1DE85AD229F60BE0041E450 /* Foundation.framework in Frameworks */,
 				A1DE85AE229F60BE0041E450 /* OpenGLES.framework in Frameworks */,
 				A1DE85AF229F60BE0041E450 /* UIKit.framework in Frameworks */,
+				EB1DC80BF31E8A5C66A3DF27 /* Pods_SIGIL_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2776,6 +2824,7 @@
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
+				A4ED1F179142058B9EA600B8 /* Pods */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -2783,6 +2832,9 @@
 		29B97315FDCFA39411CA2CEA /* DOOM-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				29683B05235F321D000CD891 /* DOOM.entitlements */,
+				29BB831A235F3CF600BE07CA /* doomiphone.h */,
+				29CDAFB8235A5E2100B0AD0D /* SmartDeviceLink */,
 				A1A63E0B20562FB0000955AE /* arialGlyphRects.h */,
 				724C531E0FBDBCEE000E4348 /* BackgroundMusic.cpp */,
 				72E84A280F9503F100AB3C99 /* cmd.c */,
@@ -2906,6 +2958,10 @@
 				EDD2760611C2B19E004A9B9B /* Foundation.framework */,
 				EDD2760811C2B19E004A9B9B /* OpenGLES.framework */,
 				EDD2760A11C2B19E004A9B9B /* UIKit.framework */,
+				1126D29D8AF82270D84ED6C4 /* Pods_DOOM_iOS.framework */,
+				DB60C3D6A587885FD40E8340 /* Pods_DOOM2_iOS.framework */,
+				EFBD4081E21208730942AAD5 /* Pods_FInalDOOM_iOS.framework */,
+				6D883C52E7AD6CE45C0F8C94 /* Pods_SIGIL_iOS.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -3288,6 +3344,37 @@
 			name = "DOOM-tvOS";
 			sourceTree = "<group>";
 		};
+		A4ED1F179142058B9EA600B8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3AD3578DB595D5EC2F3464C3 /* Pods-DOOM-iOS.debug.xcconfig */,
+				575408449FC48CCD4497E560 /* Pods-DOOM-iOS.debuglite.xcconfig */,
+				F8B3CACFB2EB254D2FD70139 /* Pods-DOOM-iOS.release.xcconfig */,
+				1C8868BEFAE703EE19C64ABA /* Pods-DOOM-iOS.releaselite.xcconfig */,
+				88A885EB72FAAA946F489BE3 /* Pods-DOOM-iOS.adhocdist.xcconfig */,
+				67E0ECF8E594373E15AD921E /* Pods-DOOM-iOS.distribution.xcconfig */,
+				E8535D210C5B6334BE76DABC /* Pods-DOOM2-iOS.debug.xcconfig */,
+				11075BFF79A220B99505F846 /* Pods-DOOM2-iOS.debuglite.xcconfig */,
+				E58729088B151FCB640C2DDA /* Pods-DOOM2-iOS.release.xcconfig */,
+				D8018A38E1D6E8A36350E383 /* Pods-DOOM2-iOS.releaselite.xcconfig */,
+				5114E3F7315A403A75756053 /* Pods-DOOM2-iOS.adhocdist.xcconfig */,
+				E1EFC188ECDFA4F4ED90D8C9 /* Pods-DOOM2-iOS.distribution.xcconfig */,
+				84641C0A4EF69BA557C9721A /* Pods-FInalDOOM-iOS.debug.xcconfig */,
+				8B56F02861CCE18E64057077 /* Pods-FInalDOOM-iOS.debuglite.xcconfig */,
+				FEA44CB08A096DC6D587C6E8 /* Pods-FInalDOOM-iOS.release.xcconfig */,
+				060AAD8C85E59BC49C5B03E1 /* Pods-FInalDOOM-iOS.releaselite.xcconfig */,
+				0E47B3F94FE03067F7E780C9 /* Pods-FInalDOOM-iOS.adhocdist.xcconfig */,
+				DD26526990015BAFE183AE0D /* Pods-FInalDOOM-iOS.distribution.xcconfig */,
+				F7D6A516015FEF933338FF4F /* Pods-SIGIL-iOS.debug.xcconfig */,
+				164C198A32578157CC404A08 /* Pods-SIGIL-iOS.debuglite.xcconfig */,
+				ED7AF676930F89E6744221DF /* Pods-SIGIL-iOS.release.xcconfig */,
+				E5D6F49F90498502D21AD3C9 /* Pods-SIGIL-iOS.releaselite.xcconfig */,
+				FE62C49BD07F93004BC58F23 /* Pods-SIGIL-iOS.adhocdist.xcconfig */,
+				E372F8542137EDCBAD17DD51 /* Pods-SIGIL-iOS.distribution.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C84F820613D73D28006D01AB /* Interface Builder Images */ = {
 			isa = PBXGroup;
 			children = (
@@ -3405,6 +3492,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29BB831E235F3CF700BE07CA /* doomiphone.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3412,6 +3500,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29BB831F235F3CF700BE07CA /* doomiphone.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3419,6 +3508,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29BB8320235F3CF700BE07CA /* doomiphone.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3426,6 +3516,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29BB831B235F3CF700BE07CA /* doomiphone.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3433,6 +3524,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29BB831D235F3CF700BE07CA /* doomiphone.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3440,6 +3532,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29BB831C235F3CF700BE07CA /* doomiphone.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3447,6 +3540,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29BB8321235F3CF700BE07CA /* doomiphone.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3454,6 +3548,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29BB8322235F3CF700BE07CA /* doomiphone.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3464,10 +3559,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "DOOM-iOS" */;
 			buildPhases = (
+				1E459B80E7FDB01F78F74A7B /* [CP] Check Pods Manifest.lock */,
 				1D60588D0D05DD3D006BFB54 /* Resources */,
 				1D60588E0D05DD3D006BFB54 /* Sources */,
 				1D60588F0D05DD3D006BFB54 /* Frameworks */,
 				A12302A32057365B0075CBAD /* Headers */,
+				63454BC6E5DCA30B83A10A1A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -3500,10 +3597,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A1063AE7216EFCEE00BDE196 /* Build configuration list for PBXNativeTarget "FInalDOOM-iOS" */;
 			buildPhases = (
+				213C98CC9887AFE000842F9B /* [CP] Check Pods Manifest.lock */,
 				A10639D6216EFCEE00BDE196 /* Resources */,
 				A1063A34216EFCEE00BDE196 /* Sources */,
 				A1063ADC216EFCEE00BDE196 /* Frameworks */,
 				A1063AE6216EFCEE00BDE196 /* Headers */,
+				67AEC007C3FEBBEEF13CD058 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -3536,10 +3635,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A1870918216EB633006C013F /* Build configuration list for PBXNativeTarget "DOOM2-iOS" */;
 			buildPhases = (
+				F5A94A0E73911EB83DA2EB4C /* [CP] Check Pods Manifest.lock */,
 				A1870807216EB633006C013F /* Resources */,
 				A1870865216EB633006C013F /* Sources */,
 				A187090D216EB633006C013F /* Frameworks */,
 				A1870917216EB633006C013F /* Headers */,
+				4C62F1EAEA26DF941F85278F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -3572,10 +3673,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A1DE85B1229F60BE0041E450 /* Build configuration list for PBXNativeTarget "SIGIL-iOS" */;
 			buildPhases = (
+				9DC862ECBBDE6E4EB3BC9427 /* [CP] Check Pods Manifest.lock */,
 				A1DE849F229F60BE0041E450 /* Resources */,
 				A1DE84FE229F60BE0041E450 /* Sources */,
 				A1DE85A6229F60BE0041E450 /* Frameworks */,
 				A1DE85B0229F60BE0041E450 /* Headers */,
+				30A53F649D4B3CB32FC803BB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -3617,7 +3720,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "DOOM" */;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Doom" */;
 			compatibilityVersion = "Xcode 3.1";
 			developmentRegion = en;
 			hasScannedForEncodings = 1;
@@ -3629,6 +3732,7 @@
 				fr,
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			productRefGroup = 19C28FACFE9D520D11CA2CBB /* Products */;
 			projectDirPath = "";
 			projectRoot = ../..;
 			targets = (
@@ -3681,6 +3785,7 @@
 				A1A63DBF20562B2B000955AE /* ControlsMenuView.xib in Resources */,
 				C81E105513E1CCA000B1049A /* Nightmare.png in Resources */,
 				C81E105613E1CCA000B1049A /* ResumeButton.png in Resources */,
+				29CDAFB9235A5E2100B0AD0D /* SmartDeviceLink in Resources */,
 				A1A63DE720562B76000955AE /* EpisodeMenuView.xib in Resources */,
 				A1A63E3620563345000955AE /* Makefile.am in Resources */,
 				C81E105713E1CCA000B1049A /* SelectedBracket.png in Resources */,
@@ -4413,6 +4518,177 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1E459B80E7FDB01F78F74A7B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DOOM-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		213C98CC9887AFE000842F9B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FInalDOOM-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		30A53F649D4B3CB32FC803BB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SIGIL-iOS/Pods-SIGIL-iOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BiSON/BiSON.framework",
+				"${BUILT_PRODUCTS_DIR}/SmartDeviceLink/SmartDeviceLink.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BiSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SmartDeviceLink.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SIGIL-iOS/Pods-SIGIL-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4C62F1EAEA26DF941F85278F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DOOM2-iOS/Pods-DOOM2-iOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BiSON/BiSON.framework",
+				"${BUILT_PRODUCTS_DIR}/SmartDeviceLink/SmartDeviceLink.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BiSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SmartDeviceLink.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DOOM2-iOS/Pods-DOOM2-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		63454BC6E5DCA30B83A10A1A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DOOM-iOS/Pods-DOOM-iOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BiSON/BiSON.framework",
+				"${BUILT_PRODUCTS_DIR}/SmartDeviceLink/SmartDeviceLink.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BiSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SmartDeviceLink.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DOOM-iOS/Pods-DOOM-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		67AEC007C3FEBBEEF13CD058 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FInalDOOM-iOS/Pods-FInalDOOM-iOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BiSON/BiSON.framework",
+				"${BUILT_PRODUCTS_DIR}/SmartDeviceLink/SmartDeviceLink.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BiSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SmartDeviceLink.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FInalDOOM-iOS/Pods-FInalDOOM-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DC862ECBBDE6E4EB3BC9427 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SIGIL-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5A94A0E73911EB83DA2EB4C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DOOM2-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1D60588E0D05DD3D006BFB54 /* Sources */ = {
@@ -5800,41 +6076,35 @@
 /* Begin XCBuildConfiguration section */
 		1D6058940D05DD3E006BFB54 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AD3578DB595D5EC2F3464C3 /* Pods-DOOM-iOS.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = NO;
+				CODE_SIGN_ENTITLEMENTS = DOOM.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 3.0;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = 9UY8SFDNQ8;
+				DEVELOPMENT_TEAM = SS66SKR6TQ;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = doom_Prefix.pch;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					HAVE_CONFIG_H,
-					IPHONE,
-					_DEBUG,
-					_SAMPLE_RATE_22050,
-					EAS_WT_SYNTH,
-					_8_BIT_SAMPLES,
-					_REVERB_ENABLED,
-					_CHORUS_ENABLED,
-					_FILTER_ENABLED,
-					"MAX_SYNTH_VOICES=32",
-					"NUM_OUTPUT_CHANNELS=2",
-					UNIFIED_DEBUG_MESSAGES,
-					DLS_SYNTHESIZER,
-					GAME_DOOM,
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/BiSON/BiSON.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SmartDeviceLink/SmartDeviceLink.framework/Headers\"",
+					"$(inherited)",
 				);
-				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "DOOM-iOS-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.idsoftware.${PRODUCT_NAME:identifier}";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 3.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mcriman1.Doom;
 				PRODUCT_NAME = DOOM;
 				PROFILE_PREFIX = com.idsoftware;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -5846,32 +6116,36 @@
 		};
 		1D6058950D05DD3E006BFB54 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8B3CACFB2EB254D2FD70139 /* Pods-DOOM-iOS.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = NO;
+				CODE_SIGN_ENTITLEMENTS = DOOM.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				DEVELOPMENT_TEAM = 9UY8SFDNQ8;
+				CURRENT_PROJECT_VERSION = 3.0;
+				DEVELOPMENT_TEAM = SS66SKR6TQ;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = doom_Prefix.pch;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					HAVE_CONFIG_H,
-					IPHONE,
-					_SAMPLE_RATE_22050,
-					GAME_DOOM,
-				);
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
 				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = (
 					HAVE_CONFIG_H,
 					IPHONE,
 				);
-				HEADER_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/BiSON/BiSON.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SmartDeviceLink/SmartDeviceLink.framework/Headers\"",
+					"$(inherited)",
+				);
 				INFOPLIST_FILE = "DOOM-iOS-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.idsoftware.${PRODUCT_NAME:identifier}";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 3.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mcriman1.Doom;
 				PRODUCT_NAME = DOOM;
 				PROFILE_PREFIX = com.idsoftware;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -5884,6 +6158,7 @@
 		4364BF480F5CB27300F29317 /* AdHocDist */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
@@ -5915,6 +6190,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/FMCSecurity/FMCSecurity/common";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/FMCSecurity/FMCSecurity/release";
 				MACOSX_DEPLOYMENT_TARGET = "";
 				PRODUCT_NAME = Doom;
 				PROVISIONING_PROFILE = "";
@@ -5925,26 +6202,32 @@
 		};
 		4364BF490F5CB27300F29317 /* AdHocDist */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88A885EB72FAAA946F489BE3 /* Pods-DOOM-iOS.adhocdist.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = NO;
+				CODE_SIGN_ENTITLEMENTS = DOOM.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				DEVELOPMENT_TEAM = 9UY8SFDNQ8;
+				CURRENT_PROJECT_VERSION = 3.0;
+				DEVELOPMENT_TEAM = SS66SKR6TQ;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = doom_Prefix.pch;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					HAVE_CONFIG_H,
-					IPHONE,
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/BiSON/BiSON.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SmartDeviceLink/SmartDeviceLink.framework/Headers\"",
+					"$(inherited)",
 				);
-				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "DOOM-iOS-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.idsoftware.${PRODUCT_NAME:identifier}";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 3.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mcriman1.Doom;
 				PRODUCT_NAME = DOOM;
 				PROFILE_PREFIX = com.idsoftware;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -5957,6 +6240,7 @@
 		43AE7CA40F61EC4E00B2F562 /* ReleaseLite */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
@@ -5987,6 +6271,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/FMCSecurity/FMCSecurity/common";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/FMCSecurity/FMCSecurity/release";
 				MACOSX_DEPLOYMENT_TARGET = "";
 				PRODUCT_NAME = Doom;
 				SDKROOT = iphoneos;
@@ -5995,27 +6281,33 @@
 		};
 		43AE7CA50F61EC4E00B2F562 /* ReleaseLite */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C8868BEFAE703EE19C64ABA /* Pods-DOOM-iOS.releaselite.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = NO;
+				CODE_SIGN_ENTITLEMENTS = DOOM.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				DEVELOPMENT_TEAM = 9UY8SFDNQ8;
+				CURRENT_PROJECT_VERSION = 3.0;
+				DEVELOPMENT_TEAM = SS66SKR6TQ;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = doom_Prefix.pch;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					EPISODE1,
-					IPHONE,
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/BiSON/BiSON.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SmartDeviceLink/SmartDeviceLink.framework/Headers\"",
+					"$(inherited)",
 				);
-				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "DOOM-iOS-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.idsoftware.${PRODUCT_NAME:identifier}";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 3.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mcriman1.Doom;
 				PRODUCT_NAME = DOOM;
 				PROFILE_PREFIX = com.idsoftware;
 				PROVISIONING_PROFILE = "";
@@ -6029,6 +6321,7 @@
 		43AE7CAE0F61FC9200B2F562 /* DebugLite */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
@@ -6059,6 +6352,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/FMCSecurity/FMCSecurity/common";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/FMCSecurity/FMCSecurity/debug";
 				MACOSX_DEPLOYMENT_TARGET = "";
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = Doom;
@@ -6068,30 +6363,36 @@
 		};
 		43AE7CAF0F61FC9200B2F562 /* DebugLite */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 575408449FC48CCD4497E560 /* Pods-DOOM-iOS.debuglite.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = NO;
+				CODE_SIGN_ENTITLEMENTS = DOOM.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 3.0;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = 9UY8SFDNQ8;
+				DEVELOPMENT_TEAM = SS66SKR6TQ;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = doom_Prefix.pch;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					EPISODE1,
-					IPHONE,
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/BiSON/BiSON.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SmartDeviceLink/SmartDeviceLink.framework/Headers\"",
+					"$(inherited)",
 				);
-				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "DOOM-iOS-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.idsoftware.${PRODUCT_NAME:identifier}";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 3.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mcriman1.Doom;
 				PRODUCT_NAME = DOOM;
 				PROFILE_PREFIX = com.idsoftware;
 				PROVISIONING_PROFILE = "";
@@ -6107,7 +6408,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "Brand Assets";
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES_NONAGGRESSIVE;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
@@ -6167,7 +6468,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "Brand Assets";
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES_NONAGGRESSIVE;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
@@ -6215,7 +6516,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "Brand Assets";
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES_NONAGGRESSIVE;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
@@ -6267,7 +6568,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "Brand Assets";
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES_NONAGGRESSIVE;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
@@ -6313,7 +6614,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "Brand Assets";
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES_NONAGGRESSIVE;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
@@ -6359,7 +6660,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "Brand Assets";
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES_NONAGGRESSIVE;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
@@ -6404,7 +6705,9 @@
 		};
 		A1063AE8216EFCEE00BDE196 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84641C0A4EF69BA557C9721A /* Pods-FInalDOOM-iOS.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -6412,33 +6715,24 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 3.0;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = 9UY8SFDNQ8;
+				DEVELOPMENT_TEAM = SS66SKR6TQ;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = doom_Prefix.pch;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					HAVE_CONFIG_H,
-					IPHONE,
-					_DEBUG,
-					_SAMPLE_RATE_22050,
-					EAS_WT_SYNTH,
-					_8_BIT_SAMPLES,
-					_REVERB_ENABLED,
-					_CHORUS_ENABLED,
-					_FILTER_ENABLED,
-					"MAX_SYNTH_VOICES=32",
-					"NUM_OUTPUT_CHANNELS=2",
-					UNIFIED_DEBUG_MESSAGES,
-					DLS_SYNTHESIZER,
-					GAME_FINALDOOM,
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SmartDeviceLink/SmartDeviceLink.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/BiSON/BiSON.framework/Headers\"",
 				);
-				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "FinalDOOM-iOS-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.idsoftware.FInalDOOM;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 3.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mcriman1.FInalDoom;
 				PRODUCT_NAME = "FInal DOOM";
 				PROFILE_PREFIX = com.idsoftware;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -6450,7 +6744,9 @@
 		};
 		A1063AE9216EFCEE00BDE196 /* DebugLite */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B56F02861CCE18E64057077 /* Pods-FInalDOOM-iOS.debuglite.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -6459,6 +6755,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 3.0;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = 9UY8SFDNQ8;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
@@ -6466,14 +6763,16 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = doom_Prefix.pch;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					EPISODE1,
-					IPHONE,
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SmartDeviceLink/SmartDeviceLink.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/BiSON/BiSON.framework/Headers\"",
 				);
-				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "FinalDOOM-iOS-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.idsoftware.FInalDOOM;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 3.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mcriman1.FInalDOOM;
 				PRODUCT_NAME = "FInal DOOM";
 				PROFILE_PREFIX = com.idsoftware;
 				PROVISIONING_PROFILE = "";
@@ -6486,7 +6785,9 @@
 		};
 		A1063AEA216EFCEE00BDE196 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEA44CB08A096DC6D587C6E8 /* Pods-FInalDOOM-iOS.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -6494,24 +6795,25 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 3.0;
 				DEVELOPMENT_TEAM = 9UY8SFDNQ8;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = doom_Prefix.pch;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					HAVE_CONFIG_H,
-					IPHONE,
-					_SAMPLE_RATE_22050,
-					GAME_FINALDOOM,
-				);
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
 				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = (
 					HAVE_CONFIG_H,
 					IPHONE,
 				);
-				HEADER_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SmartDeviceLink/SmartDeviceLink.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/BiSON/BiSON.framework/Headers\"",
+				);
 				INFOPLIST_FILE = "FinalDOOM-iOS-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.idsoftware.FInalDOOM;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 3.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mcriman1.FInalDOOM;
 				PRODUCT_NAME = "FInal DOOM";
 				PROFILE_PREFIX = com.idsoftware;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -6523,7 +6825,9 @@
 		};
 		A1063AEB216EFCEE00BDE196 /* ReleaseLite */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 060AAD8C85E59BC49C5B03E1 /* Pods-FInalDOOM-iOS.releaselite.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -6532,18 +6836,21 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 3.0;
 				DEVELOPMENT_TEAM = 9UY8SFDNQ8;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = doom_Prefix.pch;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					EPISODE1,
-					IPHONE,
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SmartDeviceLink/SmartDeviceLink.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/BiSON/BiSON.framework/Headers\"",
 				);
-				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "FinalDOOM-iOS-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.idsoftware.FInalDOOM;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 3.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mcriman1.FInalDOOM;
 				PRODUCT_NAME = "FInal DOOM";
 				PROFILE_PREFIX = com.idsoftware;
 				PROVISIONING_PROFILE = "";
@@ -6556,7 +6863,9 @@
 		};
 		A1063AEC216EFCEE00BDE196 /* AdHocDist */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E47B3F94FE03067F7E780C9 /* Pods-FInalDOOM-iOS.adhocdist.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -6564,18 +6873,21 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 3.0;
 				DEVELOPMENT_TEAM = 9UY8SFDNQ8;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = doom_Prefix.pch;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					HAVE_CONFIG_H,
-					IPHONE,
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SmartDeviceLink/SmartDeviceLink.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/BiSON/BiSON.framework/Headers\"",
 				);
-				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "FinalDOOM-iOS-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.idsoftware.FInalDOOM;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 3.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mcriman1.FInalDOOM;
 				PRODUCT_NAME = "FInal DOOM";
 				PROFILE_PREFIX = com.idsoftware;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -6587,7 +6899,9 @@
 		};
 		A1063AED216EFCEE00BDE196 /* Distribution */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD26526990015BAFE183AE0D /* Pods-FInalDOOM-iOS.distribution.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -6596,20 +6910,21 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 3.0;
 				DEVELOPMENT_TEAM = 9UY8SFDNQ8;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = doom_Prefix.pch;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					HAVE_CONFIG_H,
-					IPHONE,
-					_SAMPLE_RATE_22050,
-					GAME_DOOM,
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SmartDeviceLink/SmartDeviceLink.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/BiSON/BiSON.framework/Headers\"",
 				);
-				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "FinalDOOM-iOS-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.idsoftware.FInalDOOM;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 3.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mcriman1.FInalDOOM;
 				PRODUCT_NAME = "FInal DOOM";
 				PROFILE_PREFIX = com.idsoftware;
 				PROVISIONING_PROFILE = "";
@@ -6625,7 +6940,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "Brand Assets";
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES_NONAGGRESSIVE;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
@@ -6685,7 +7000,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "Brand Assets";
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES_NONAGGRESSIVE;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
@@ -6733,7 +7048,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "Brand Assets";
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES_NONAGGRESSIVE;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
@@ -6785,7 +7100,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "Brand Assets";
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES_NONAGGRESSIVE;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
@@ -6831,7 +7146,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "Brand Assets";
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES_NONAGGRESSIVE;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
@@ -6877,7 +7192,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "Brand Assets";
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES_NONAGGRESSIVE;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
@@ -6922,7 +7237,9 @@
 		};
 		A1870919216EB633006C013F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8535D210C5B6334BE76DABC /* Pods-DOOM2-iOS.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -6930,33 +7247,24 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 3.0;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = 9UY8SFDNQ8;
+				DEVELOPMENT_TEAM = SS66SKR6TQ;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = doom_Prefix.pch;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					HAVE_CONFIG_H,
-					IPHONE,
-					_DEBUG,
-					_SAMPLE_RATE_22050,
-					EAS_WT_SYNTH,
-					_8_BIT_SAMPLES,
-					_REVERB_ENABLED,
-					_CHORUS_ENABLED,
-					_FILTER_ENABLED,
-					"MAX_SYNTH_VOICES=32",
-					"NUM_OUTPUT_CHANNELS=2",
-					UNIFIED_DEBUG_MESSAGES,
-					DLS_SYNTHESIZER,
-					GAME_DOOM2,
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SmartDeviceLink/SmartDeviceLink.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/BiSON/BiSON.framework/Headers\"",
 				);
-				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "DOOM2-iOS-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.idsoftware.DOOM2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 3.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mcriman1.Doom2;
 				PRODUCT_NAME = "DOOM II";
 				PROFILE_PREFIX = com.idsoftware;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -6968,7 +7276,9 @@
 		};
 		A187091A216EB633006C013F /* DebugLite */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11075BFF79A220B99505F846 /* Pods-DOOM2-iOS.debuglite.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -6977,21 +7287,24 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 3.0;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = 9UY8SFDNQ8;
+				DEVELOPMENT_TEAM = SS66SKR6TQ;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = doom_Prefix.pch;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					EPISODE1,
-					IPHONE,
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SmartDeviceLink/SmartDeviceLink.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/BiSON/BiSON.framework/Headers\"",
 				);
-				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "DOOM2-iOS-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.idsoftware.DOOM2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 3.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mcriman1.Doom2;
 				PRODUCT_NAME = "DOOM II";
 				PROFILE_PREFIX = com.idsoftware;
 				PROVISIONING_PROFILE = "";
@@ -7004,7 +7317,9 @@
 		};
 		A187091B216EB633006C013F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E58729088B151FCB640C2DDA /* Pods-DOOM2-iOS.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -7012,24 +7327,25 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				DEVELOPMENT_TEAM = 9UY8SFDNQ8;
+				CURRENT_PROJECT_VERSION = 3.0;
+				DEVELOPMENT_TEAM = SS66SKR6TQ;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = doom_Prefix.pch;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					HAVE_CONFIG_H,
-					IPHONE,
-					_SAMPLE_RATE_22050,
-					GAME_DOOM2,
-				);
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
 				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = (
 					HAVE_CONFIG_H,
 					IPHONE,
 				);
-				HEADER_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SmartDeviceLink/SmartDeviceLink.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/BiSON/BiSON.framework/Headers\"",
+				);
 				INFOPLIST_FILE = "DOOM2-iOS-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.idsoftware.DOOM2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 3.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mcriman1.Doom2;
 				PRODUCT_NAME = "DOOM II";
 				PROFILE_PREFIX = com.idsoftware;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -7041,7 +7357,9 @@
 		};
 		A187091C216EB633006C013F /* ReleaseLite */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8018A38E1D6E8A36350E383 /* Pods-DOOM2-iOS.releaselite.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -7050,18 +7368,21 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				DEVELOPMENT_TEAM = 9UY8SFDNQ8;
+				CURRENT_PROJECT_VERSION = 3.0;
+				DEVELOPMENT_TEAM = SS66SKR6TQ;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = doom_Prefix.pch;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					EPISODE1,
-					IPHONE,
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SmartDeviceLink/SmartDeviceLink.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/BiSON/BiSON.framework/Headers\"",
 				);
-				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "DOOM2-iOS-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.idsoftware.DOOM2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 3.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mcriman1.Doom2;
 				PRODUCT_NAME = "DOOM II";
 				PROFILE_PREFIX = com.idsoftware;
 				PROVISIONING_PROFILE = "";
@@ -7074,7 +7395,9 @@
 		};
 		A187091D216EB633006C013F /* AdHocDist */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5114E3F7315A403A75756053 /* Pods-DOOM2-iOS.adhocdist.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -7082,18 +7405,21 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				DEVELOPMENT_TEAM = 9UY8SFDNQ8;
+				CURRENT_PROJECT_VERSION = 3.0;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = doom_Prefix.pch;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					HAVE_CONFIG_H,
-					IPHONE,
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SmartDeviceLink/SmartDeviceLink.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/BiSON/BiSON.framework/Headers\"",
 				);
-				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "DOOM2-iOS-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.idsoftware.DOOM2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 3.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mcriman1.Doom2;
 				PRODUCT_NAME = "DOOM II";
 				PROFILE_PREFIX = com.idsoftware;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -7105,7 +7431,9 @@
 		};
 		A187091E216EB633006C013F /* Distribution */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1EFC188ECDFA4F4ED90D8C9 /* Pods-DOOM2-iOS.distribution.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -7114,20 +7442,21 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				DEVELOPMENT_TEAM = 9UY8SFDNQ8;
+				CURRENT_PROJECT_VERSION = 3.0;
+				DEVELOPMENT_TEAM = SS66SKR6TQ;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = doom_Prefix.pch;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					HAVE_CONFIG_H,
-					IPHONE,
-					_SAMPLE_RATE_22050,
-					GAME_DOOM2,
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SmartDeviceLink/SmartDeviceLink.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/BiSON/BiSON.framework/Headers\"",
 				);
-				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "DOOM2-iOS-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.idsoftware.DOOM2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 3.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mcriman1.distribution.Doom2;
 				PRODUCT_NAME = "DOOM II";
 				PROFILE_PREFIX = com.idsoftware;
 				PROVISIONING_PROFILE = "";
@@ -7143,7 +7472,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "Brand Assets";
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES_NONAGGRESSIVE;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
@@ -7203,7 +7532,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "Brand Assets";
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES_NONAGGRESSIVE;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
@@ -7251,7 +7580,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "Brand Assets";
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES_NONAGGRESSIVE;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
@@ -7303,7 +7632,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "Brand Assets";
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES_NONAGGRESSIVE;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
@@ -7349,7 +7678,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "Brand Assets";
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES_NONAGGRESSIVE;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
@@ -7395,7 +7724,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "Brand Assets";
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES_NONAGGRESSIVE;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
@@ -7440,42 +7769,35 @@
 		};
 		A1DE85B2229F60BE0041E450 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7D6A516015FEF933338FF4F /* Pods-SIGIL-iOS.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = NO;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 3.0;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = 9UY8SFDNQ8;
+				DEVELOPMENT_TEAM = SS66SKR6TQ;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = doom_Prefix.pch;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					HAVE_CONFIG_H,
-					IPHONE,
-					_DEBUG,
-					_SAMPLE_RATE_22050,
-					EAS_WT_SYNTH,
-					_8_BIT_SAMPLES,
-					_REVERB_ENABLED,
-					_CHORUS_ENABLED,
-					_FILTER_ENABLED,
-					"MAX_SYNTH_VOICES=32",
-					"NUM_OUTPUT_CHANNELS=2",
-					UNIFIED_DEBUG_MESSAGES,
-					DLS_SYNTHESIZER,
-					GAME_SIGIL,
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SmartDeviceLink/SmartDeviceLink.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/BiSON/BiSON.framework/Headers\"",
 				);
-				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "SIGIL-iOS-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.idsoftware.SIGIL;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 3.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mcriman1.SIGIL;
 				PRODUCT_NAME = SIGIL;
 				PROFILE_PREFIX = com.idsoftware;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -7487,16 +7809,19 @@
 		};
 		A1DE85B3229F60BE0041E450 /* DebugLite */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 164C198A32578157CC404A08 /* Pods-SIGIL-iOS.debuglite.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 3.0;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = 9UY8SFDNQ8;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
@@ -7504,14 +7829,16 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = doom_Prefix.pch;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					EPISODE1,
-					IPHONE,
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SmartDeviceLink/SmartDeviceLink.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/BiSON/BiSON.framework/Headers\"",
 				);
-				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "SIGIL-iOS-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.idsoftware.SIGIL;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 3.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mcriman1.SIGIL;
 				PRODUCT_NAME = SIGIL;
 				PROFILE_PREFIX = com.idsoftware;
 				PROVISIONING_PROFILE = "";
@@ -7524,33 +7851,36 @@
 		};
 		A1DE85B4229F60BE0041E450 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED7AF676930F89E6744221DF /* Pods-SIGIL-iOS.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = NO;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 3.0;
 				DEVELOPMENT_TEAM = 9UY8SFDNQ8;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = doom_Prefix.pch;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					HAVE_CONFIG_H,
-					IPHONE,
-					_SAMPLE_RATE_22050,
-					GAME_SIGIL,
-				);
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
 				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = (
 					HAVE_CONFIG_H,
 					IPHONE,
 				);
-				HEADER_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SmartDeviceLink/SmartDeviceLink.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/BiSON/BiSON.framework/Headers\"",
+				);
 				INFOPLIST_FILE = "SIGIL-iOS-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.idsoftware.SIGIL;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 3.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mcriman1.SIGIL;
 				PRODUCT_NAME = SIGIL;
 				PROFILE_PREFIX = com.idsoftware;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -7562,28 +7892,33 @@
 		};
 		A1DE85B5229F60BE0041E450 /* ReleaseLite */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5D6F49F90498502D21AD3C9 /* Pods-SIGIL-iOS.releaselite.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 3.0;
 				DEVELOPMENT_TEAM = 9UY8SFDNQ8;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = doom_Prefix.pch;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					EPISODE1,
-					IPHONE,
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SmartDeviceLink/SmartDeviceLink.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/BiSON/BiSON.framework/Headers\"",
 				);
-				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "SIGIL-iOS-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.idsoftware.SIGIL;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 3.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mcriman1.SIGIL;
 				PRODUCT_NAME = SIGIL;
 				PROFILE_PREFIX = com.idsoftware;
 				PROVISIONING_PROFILE = "";
@@ -7596,27 +7931,32 @@
 		};
 		A1DE85B6229F60BE0041E450 /* AdHocDist */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE62C49BD07F93004BC58F23 /* Pods-SIGIL-iOS.adhocdist.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = NO;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 3.0;
 				DEVELOPMENT_TEAM = 9UY8SFDNQ8;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = doom_Prefix.pch;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					HAVE_CONFIG_H,
-					IPHONE,
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SmartDeviceLink/SmartDeviceLink.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/BiSON/BiSON.framework/Headers\"",
 				);
-				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "SIGIL-iOS-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.idsoftware.SIGIL;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 3.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mcriman1.SIGIL;
 				PRODUCT_NAME = SIGIL;
 				PROFILE_PREFIX = com.idsoftware;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -7628,30 +7968,33 @@
 		};
 		A1DE85B7229F60BE0041E450 /* Distribution */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E372F8542137EDCBAD17DD51 /* Pods-SIGIL-iOS.distribution.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = NO;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: id Software";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 3.0;
 				DEVELOPMENT_TEAM = 9UY8SFDNQ8;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = doom_Prefix.pch;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					HAVE_CONFIG_H,
-					IPHONE,
-					_SAMPLE_RATE_22050,
-					GAME_SIGIL,
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SmartDeviceLink/SmartDeviceLink.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/BiSON/BiSON.framework/Headers\"",
 				);
-				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "SIGIL-iOS-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.idsoftware.SIGIL;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 3.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mcriman1.SIGIL;
 				PRODUCT_NAME = SIGIL;
 				PROFILE_PREFIX = com.idsoftware;
 				PROVISIONING_PROFILE = "";
@@ -7667,7 +8010,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "Brand Assets";
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES_NONAGGRESSIVE;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
@@ -7727,7 +8070,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "Brand Assets";
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES_NONAGGRESSIVE;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
@@ -7775,7 +8118,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "Brand Assets";
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES_NONAGGRESSIVE;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
@@ -7827,7 +8170,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "Brand Assets";
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES_NONAGGRESSIVE;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
@@ -7873,7 +8216,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "Brand Assets";
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES_NONAGGRESSIVE;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
@@ -7919,7 +8262,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "Brand Assets";
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES_NONAGGRESSIVE;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
@@ -7965,6 +8308,7 @@
 		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
@@ -8000,6 +8344,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/FMCSecurity/FMCSecurity/common";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/FMCSecurity/FMCSecurity/debug";
 				MACOSX_DEPLOYMENT_TARGET = "";
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = Doom;
@@ -8012,6 +8358,7 @@
 		C01FCF5008A954540054247B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
@@ -8047,6 +8394,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/FMCSecurity/FMCSecurity/common";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/FMCSecurity/FMCSecurity/release";
 				MACOSX_DEPLOYMENT_TARGET = "";
 				PRODUCT_NAME = Doom;
 				PROVISIONING_PROFILE = "";
@@ -8058,6 +8407,7 @@
 		ED06595B1087C51800E5450B /* Distribution */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
@@ -8093,6 +8443,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/FMCSecurity/FMCSecurity/common";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/FMCSecurity/FMCSecurity/release";
 				MACOSX_DEPLOYMENT_TARGET = "";
 				PRODUCT_NAME = Doom;
 				PROVISIONING_PROFILE = "31C73095-0DD9-4ABA-BB25-8D23F661F10F";
@@ -8103,29 +8455,33 @@
 		};
 		ED06595C1087C51800E5450B /* Distribution */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67E0ECF8E594373E15AD921E /* Pods-DOOM-iOS.distribution.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = NO;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: id Software";
+				CODE_SIGN_ENTITLEMENTS = DOOM.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				DEVELOPMENT_TEAM = 9UY8SFDNQ8;
+				CURRENT_PROJECT_VERSION = 3.0;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = doom_Prefix.pch;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					HAVE_CONFIG_H,
-					IPHONE,
-					_SAMPLE_RATE_22050,
-					GAME_DOOM,
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/BiSON/BiSON.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SmartDeviceLink/SmartDeviceLink.framework/Headers\"",
+					"$(inherited)",
 				);
-				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "DOOM-iOS-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.idsoftware.${PRODUCT_NAME:identifier}";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 3.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mcriman1.DOOM;
 				PRODUCT_NAME = DOOM;
 				PROFILE_PREFIX = com.idsoftware;
 				PROVISIONING_PROFILE = "";
@@ -8243,7 +8599,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "DOOM" */ = {
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Doom" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C01FCF4F08A954540054247B /* Debug */,
