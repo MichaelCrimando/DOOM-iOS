@@ -34,7 +34,7 @@
 //#include "ios/GameCenter.h"
 
 #include "GameController.h"
-#import "VehicleController.h"
+#import "SmartDeviceLink/VehicleController.h"
 
 typedef struct {
 	int	msecFromLast;

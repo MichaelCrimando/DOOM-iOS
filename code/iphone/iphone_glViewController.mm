@@ -20,7 +20,7 @@
 #import "iphone_glViewController.h"
 #import "EAGLView.h"
 #import <QuartzCore/CADisplayLink.h>
-#include "../doomiphone.h"
+#include "doomiphone.h"
 #include "iphone_delegate.h"
 #import "SmartDeviceLink.h"
 #import "DOOM-Swift.h"
