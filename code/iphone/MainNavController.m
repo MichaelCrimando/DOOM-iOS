@@ -20,7 +20,7 @@
 
 #import "MainNavController.h"
 #import "SmartDeviceLink.h"
-#import "Doom-Swift.h"
+#import "DOOM-Swift.h"
 //#import "doomiphone.h"
 
 @interface MainNavController ()

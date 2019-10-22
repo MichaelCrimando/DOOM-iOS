@@ -23,7 +23,7 @@
 #include "../doomiphone.h"
 #include "iphone_delegate.h"
 #import "SmartDeviceLink.h"
-#import "Doom-Swift.h"
+#import "DOOM-Swift.h"
 
 #if TARGET_OS_TV
 const static int   DISPLAY_LINK_FRAME_INTERVAL = 30;

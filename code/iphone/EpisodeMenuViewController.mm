@@ -23,7 +23,7 @@
 #include "iphone_delegate.h"
 #import "MissionMenuViewController.h"
 #import "SmartDeviceLink.h"
-#import "Doom-Swift.h"
+#import "DOOM-Swift.h"
 
 #if GAME_DOOM
 

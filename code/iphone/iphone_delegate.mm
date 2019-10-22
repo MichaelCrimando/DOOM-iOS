@@ -27,7 +27,7 @@
 //#include "ios/InAppStore.h"
 //#include "ios/GameCenter.h"
 #import "SmartDeviceLink.h"
-#import "Doom-Swift.h"
+#import "DOOM-Swift.h"
 
 @implementation iphoneApp
 

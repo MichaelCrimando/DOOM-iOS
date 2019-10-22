@@ -28,7 +28,7 @@
 #import "ControlsMenuViewController.h"
 #import "LegalMenuViewController.h"
 #import "SmartDeviceLink.h"
-#import "Doom-Swift.h"
+#import "DOOM-Swift.h"
 
 /*
  ================================================================================================
