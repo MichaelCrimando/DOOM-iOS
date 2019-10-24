@@ -3728,7 +3728,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "DOOM" */;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Doom" */;
 			compatibilityVersion = "Xcode 3.1";
 			developmentRegion = en;
 			hasScannedForEncodings = 1;
@@ -6219,13 +6219,16 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/SmartDeviceLink/";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../",
+					"$(SRCROOT)/SmartDeviceLink",
+				);
 				MACOSX_DEPLOYMENT_TARGET = "";
 				PRODUCT_NAME = Doom;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
-				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/SmartDeviceLink/";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/SmartDeviceLink/ $(SRCROOT)/../";
 			};
 			name = AdHocDist;
 		};
@@ -6299,11 +6302,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/SmartDeviceLink/";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../",
+					"$(SRCROOT)/SmartDeviceLink",
+				);
 				MACOSX_DEPLOYMENT_TARGET = "";
 				PRODUCT_NAME = Doom;
 				SDKROOT = iphoneos;
-				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/SmartDeviceLink/";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/SmartDeviceLink/ $(SRCROOT)/../";
 			};
 			name = ReleaseLite;
 		};
@@ -6379,12 +6385,15 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/SmartDeviceLink/";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../",
+					"$(SRCROOT)/SmartDeviceLink",
+				);
 				MACOSX_DEPLOYMENT_TARGET = "";
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = Doom;
 				SDKROOT = iphoneos;
-				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/SmartDeviceLink/";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/SmartDeviceLink/ $(SRCROOT)/../";
 			};
 			name = DebugLite;
 		};
@@ -8502,14 +8511,17 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/SmartDeviceLink/";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../",
+					"$(SRCROOT)/SmartDeviceLink",
+				);
 				MACOSX_DEPLOYMENT_TARGET = "";
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = Doom;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
-				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/SmartDeviceLink/";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/SmartDeviceLink/ $(SRCROOT)/../";
 			};
 			name = Debug;
 		};
@@ -8551,13 +8563,16 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/SmartDeviceLink/";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../",
+					"$(SRCROOT)/SmartDeviceLink",
+				);
 				MACOSX_DEPLOYMENT_TARGET = "";
 				PRODUCT_NAME = Doom;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
-				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/SmartDeviceLink/";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/SmartDeviceLink/ $(SRCROOT)/../";
 			};
 			name = Release;
 		};
@@ -8599,13 +8614,16 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/SmartDeviceLink/";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../",
+					"$(SRCROOT)/SmartDeviceLink",
+				);
 				MACOSX_DEPLOYMENT_TARGET = "";
 				PRODUCT_NAME = Doom;
 				PROVISIONING_PROFILE = "31C73095-0DD9-4ABA-BB25-8D23F661F10F";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "31C73095-0DD9-4ABA-BB25-8D23F661F10F";
 				SDKROOT = iphoneos;
-				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/SmartDeviceLink/";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/SmartDeviceLink/ $(SRCROOT)/../";
 			};
 			name = Distribution;
 		};
@@ -8757,7 +8775,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "DOOM" */ = {
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Doom" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C01FCF4F08A954540054247B /* Debug */,
