@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		292505F12368938200EAD5A3 /* SWIFTY.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292505F02368938200EAD5A3 /* SWIFTY.swift */; };
+		292505F22368938200EAD5A3 /* SWIFTY.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292505F02368938200EAD5A3 /* SWIFTY.swift */; };
+		292505F32368938200EAD5A3 /* SWIFTY.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292505F02368938200EAD5A3 /* SWIFTY.swift */; };
+		292505F42368938200EAD5A3 /* SWIFTY.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292505F02368938200EAD5A3 /* SWIFTY.swift */; };
+		292505F52368938200EAD5A3 /* SWIFTY.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292505F02368938200EAD5A3 /* SWIFTY.swift */; };
+		292505F62368938200EAD5A3 /* SWIFTY.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292505F02368938200EAD5A3 /* SWIFTY.swift */; };
+		292505F72368938200EAD5A3 /* SWIFTY.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292505F02368938200EAD5A3 /* SWIFTY.swift */; };
+		292505F82368938200EAD5A3 /* SWIFTY.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292505F02368938200EAD5A3 /* SWIFTY.swift */; };
 		29F3D93F235F5B1B00772912 /* SmartDeviceLink in Resources */ = {isa = PBXBuildFile; fileRef = 29F3D93E235F5B1B00772912 /* SmartDeviceLink */; };
 		29F3D940235F5B1B00772912 /* SmartDeviceLink in Resources */ = {isa = PBXBuildFile; fileRef = 29F3D93E235F5B1B00772912 /* SmartDeviceLink */; };
 		29F3D941235F5B1B00772912 /* SmartDeviceLink in Resources */ = {isa = PBXBuildFile; fileRef = 29F3D93E235F5B1B00772912 /* SmartDeviceLink */; };
@@ -2132,6 +2140,7 @@
 		0E7ADC950A4BC3CBC2EA55EA /* Pods-DOOM-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DOOM-iOS.debug.xcconfig"; path = "Target Support Files/Pods-DOOM-iOS/Pods-DOOM-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		1B92A0AE5F116E2C78F2F468 /* Pods-SIGIL-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SIGIL-iOS.debug.xcconfig"; path = "Target Support Files/Pods-SIGIL-iOS/Pods-SIGIL-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		1D6058910D05DD3D006BFB54 /* DOOM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DOOM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		292505F02368938200EAD5A3 /* SWIFTY.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SWIFTY.swift; path = ../SWIFTY.swift; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		29F3D93E235F5B1B00772912 /* SmartDeviceLink */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SmartDeviceLink; sourceTree = "<group>"; };
 		2F3E0EC2CE93CD192DE03414 /* Pods-FInalDOOM-iOS.adhocdist.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FInalDOOM-iOS.adhocdist.xcconfig"; path = "Target Support Files/Pods-FInalDOOM-iOS/Pods-FInalDOOM-iOS.adhocdist.xcconfig"; sourceTree = "<group>"; };
@@ -2815,6 +2824,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				292505F02368938200EAD5A3 /* SWIFTY.swift */,
 				29B97315FDCFA39411CA2CEA /* DOOM-iOS */,
 				A1B9E45B216FFD6A003E9731 /* DOOM-tvOS */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
@@ -3728,7 +3738,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Doom" */;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "DOOM" */;
 			compatibilityVersion = "Xcode 3.1";
 			developmentRegion = en;
 			hasScannedForEncodings = 1;
@@ -4834,6 +4844,7 @@
 				72E848600F941ADC00AB3C99 /* v_video.c in Sources */,
 				72E848610F941ADC00AB3C99 /* version.c in Sources */,
 				A1A63F2E20563B60000955AE /* eas_flog.c in Sources */,
+				292505F12368938200EAD5A3 /* SWIFTY.swift in Sources */,
 				A1A63E4F205634E8000955AE /* eas_config.c in Sources */,
 				72E848630F941ADC00AB3C99 /* w_mmap.c in Sources */,
 				A1A63F3520563B60000955AE /* eas_reverb.c in Sources */,
@@ -4891,6 +4902,7 @@
 				A1063920216EF7C700BDE196 /* eas_otadata.c in Sources */,
 				A1063921216EF7C700BDE196 /* st_lib.c in Sources */,
 				A1063922216EF7C700BDE196 /* eas_tcdata.c in Sources */,
+				292505F42368938200EAD5A3 /* SWIFTY.swift in Sources */,
 				A1063923216EF7C700BDE196 /* dict.c in Sources */,
 				A1063924216EF7C700BDE196 /* iphone_sys.mm in Sources */,
 				A1063925216EF7C700BDE196 /* r_main.c in Sources */,
@@ -5179,6 +5191,7 @@
 				A1063AAF216EFCEE00BDE196 /* v_video.c in Sources */,
 				A1063AB0216EFCEE00BDE196 /* version.c in Sources */,
 				A1063AB1216EFCEE00BDE196 /* eas_flog.c in Sources */,
+				292505F52368938200EAD5A3 /* SWIFTY.swift in Sources */,
 				A1063AB2216EFCEE00BDE196 /* eas_config.c in Sources */,
 				A1063AB3216EFCEE00BDE196 /* w_mmap.c in Sources */,
 				A1063AB4216EFCEE00BDE196 /* eas_reverb.c in Sources */,
@@ -5273,6 +5286,7 @@
 				A1063B74216F012000BDE196 /* p_mobj.c in Sources */,
 				A1063B75216F012000BDE196 /* p_tick.c in Sources */,
 				A1063B76216F012000BDE196 /* p_doors.c in Sources */,
+				292505F62368938200EAD5A3 /* SWIFTY.swift in Sources */,
 				A1063B77216F012000BDE196 /* tables.c in Sources */,
 				A1063B78216F012000BDE196 /* p_telept.c in Sources */,
 				A1063B79216F012000BDE196 /* eas_xmf.c in Sources */,
@@ -5459,6 +5473,7 @@
 				A187089F216EB633006C013F /* eas_pan.c in Sources */,
 				A18708A0216EB633006C013F /* p_floor.c in Sources */,
 				A18708A1216EB633006C013F /* mmus2mid.c in Sources */,
+				292505F32368938200EAD5A3 /* SWIFTY.swift in Sources */,
 				A18708A2216EB633006C013F /* p_genlin.c in Sources */,
 				A18708A3216EB633006C013F /* Carousel.mm in Sources */,
 				A18708A4216EB633006C013F /* eas_rtttldata.c in Sources */,
@@ -5618,6 +5633,7 @@
 				A1B98F76207F07D400827A46 /* p_mobj.c in Sources */,
 				A1B98F7F207F07D400827A46 /* p_tick.c in Sources */,
 				A1B98F6E207F07D400827A46 /* p_doors.c in Sources */,
+				292505F22368938200EAD5A3 /* SWIFTY.swift in Sources */,
 				A1CF62B0207F138A0096F91C /* tables.c in Sources */,
 				A1B98F7E207F07D400827A46 /* p_telept.c in Sources */,
 				A1B98FB6207F090700827A46 /* eas_xmf.c in Sources */,
@@ -5804,6 +5820,7 @@
 				A1DE8538229F60BE0041E450 /* eas_pan.c in Sources */,
 				A1DE8539229F60BE0041E450 /* p_floor.c in Sources */,
 				A1DE853A229F60BE0041E450 /* mmus2mid.c in Sources */,
+				292505F72368938200EAD5A3 /* SWIFTY.swift in Sources */,
 				A1DE853B229F60BE0041E450 /* p_genlin.c in Sources */,
 				A1DE853C229F60BE0041E450 /* Carousel.mm in Sources */,
 				A1DE853D229F60BE0041E450 /* eas_rtttldata.c in Sources */,
@@ -5926,6 +5943,7 @@
 				A1DE8622229F88D20041E450 /* eas_otadata.c in Sources */,
 				A1DE8623229F88D20041E450 /* st_lib.c in Sources */,
 				A1DE8624229F88D20041E450 /* eas_tcdata.c in Sources */,
+				292505F82368938200EAD5A3 /* SWIFTY.swift in Sources */,
 				A1DE8625229F88D20041E450 /* dict.c in Sources */,
 				A1DE8626229F88D20041E450 /* iphone_sys.mm in Sources */,
 				A1DE8627229F88D20041E450 /* r_main.c in Sources */,
@@ -6092,6 +6110,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0E7ADC950A4BC3CBC2EA55EA /* Pods-DOOM-iOS.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -6101,6 +6120,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = SS66SKR6TQ;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -6145,6 +6165,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A6754FC218AA0FFD7FFD0082 /* Pods-DOOM-iOS.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -6153,6 +6174,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = SS66SKR6TQ;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -6236,6 +6258,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5E7F3A849FEF720F45F37F97 /* Pods-DOOM-iOS.adhocdist.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -6244,6 +6267,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = SS66SKR6TQ;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -6317,6 +6341,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B387EA289A2A91419C5C31E0 /* Pods-DOOM-iOS.releaselite.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -6326,6 +6351,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = SS66SKR6TQ;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -6401,6 +6427,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E1D8F1F690AAD730500F4742 /* Pods-DOOM-iOS.debuglite.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -6411,6 +6438,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = SS66SKR6TQ;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -8631,6 +8659,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5F7F2CB7C565532AB486914D /* Pods-DOOM-iOS.distribution.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -8640,6 +8669,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = SS66SKR6TQ;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -8775,7 +8805,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Doom" */ = {
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "DOOM" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C01FCF4F08A954540054247B /* Debug */,
