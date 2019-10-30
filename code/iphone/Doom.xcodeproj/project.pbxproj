@@ -8,14 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
-		29F311EC2369DD8B00E1CB09 /* SmartDeviceLink in Resources */ = {isa = PBXBuildFile; fileRef = 29F311EB2369DD8B00E1CB09 /* SmartDeviceLink */; };
-		29F311ED2369DD8B00E1CB09 /* SmartDeviceLink in Resources */ = {isa = PBXBuildFile; fileRef = 29F311EB2369DD8B00E1CB09 /* SmartDeviceLink */; };
-		29F311EE2369DD8B00E1CB09 /* SmartDeviceLink in Resources */ = {isa = PBXBuildFile; fileRef = 29F311EB2369DD8B00E1CB09 /* SmartDeviceLink */; };
-		29F311EF2369DD8B00E1CB09 /* SmartDeviceLink in Resources */ = {isa = PBXBuildFile; fileRef = 29F311EB2369DD8B00E1CB09 /* SmartDeviceLink */; };
-		29F311F02369DD8B00E1CB09 /* SmartDeviceLink in Resources */ = {isa = PBXBuildFile; fileRef = 29F311EB2369DD8B00E1CB09 /* SmartDeviceLink */; };
-		29F311F12369DD8B00E1CB09 /* SmartDeviceLink in Resources */ = {isa = PBXBuildFile; fileRef = 29F311EB2369DD8B00E1CB09 /* SmartDeviceLink */; };
-		29F311F22369DD8B00E1CB09 /* SmartDeviceLink in Resources */ = {isa = PBXBuildFile; fileRef = 29F311EB2369DD8B00E1CB09 /* SmartDeviceLink */; };
-		29F311F32369DD8B00E1CB09 /* SmartDeviceLink in Resources */ = {isa = PBXBuildFile; fileRef = 29F311EB2369DD8B00E1CB09 /* SmartDeviceLink */; };
+		29F311EC2369DD8B00E1CB09 /* SDL in Resources */ = {isa = PBXBuildFile; fileRef = 29F311EB2369DD8B00E1CB09 /* SDL */; };
+		29F311ED2369DD8B00E1CB09 /* SDL in Resources */ = {isa = PBXBuildFile; fileRef = 29F311EB2369DD8B00E1CB09 /* SDL */; };
+		29F311EE2369DD8B00E1CB09 /* SDL in Resources */ = {isa = PBXBuildFile; fileRef = 29F311EB2369DD8B00E1CB09 /* SDL */; };
+		29F311EF2369DD8B00E1CB09 /* SDL in Resources */ = {isa = PBXBuildFile; fileRef = 29F311EB2369DD8B00E1CB09 /* SDL */; };
+		29F311F02369DD8B00E1CB09 /* SDL in Resources */ = {isa = PBXBuildFile; fileRef = 29F311EB2369DD8B00E1CB09 /* SDL */; };
+		29F311F12369DD8B00E1CB09 /* SDL in Resources */ = {isa = PBXBuildFile; fileRef = 29F311EB2369DD8B00E1CB09 /* SDL */; };
+		29F311F22369DD8B00E1CB09 /* SDL in Resources */ = {isa = PBXBuildFile; fileRef = 29F311EB2369DD8B00E1CB09 /* SDL */; };
+		29F311F32369DD8B00E1CB09 /* SDL in Resources */ = {isa = PBXBuildFile; fileRef = 29F311EB2369DD8B00E1CB09 /* SDL */; };
 		29F311FD2369DDB100E1CB09 /* SWIFTY.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F311FC2369DDB100E1CB09 /* SWIFTY.swift */; };
 		29F311FE2369DDB100E1CB09 /* SWIFTY.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F311FC2369DDB100E1CB09 /* SWIFTY.swift */; };
 		29F311FF2369DDB100E1CB09 /* SWIFTY.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F311FC2369DDB100E1CB09 /* SWIFTY.swift */; };
@@ -2144,7 +2144,7 @@
 		1D6058910D05DD3D006BFB54 /* DOOM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DOOM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23D9A37FC23AB3399BBA8426 /* Pods-DOOM2-iOS.distribution.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DOOM2-iOS.distribution.xcconfig"; path = "Target Support Files/Pods-DOOM2-iOS/Pods-DOOM2-iOS.distribution.xcconfig"; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		29F311EB2369DD8B00E1CB09 /* SmartDeviceLink */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SmartDeviceLink; sourceTree = "<group>"; };
+		29F311EB2369DD8B00E1CB09 /* SDL */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SDL; sourceTree = "<group>"; };
 		29F311F42369DDB000E1CB09 /* DOOM-iOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DOOM-iOS-Bridging-Header.h"; sourceTree = "<group>"; };
 		29F311F52369DDB000E1CB09 /* DOOM-tvOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DOOM-tvOS-Bridging-Header.h"; sourceTree = "<group>"; };
 		29F311F62369DDB000E1CB09 /* DOOM2-iOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DOOM2-iOS-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -2865,7 +2865,7 @@
 			isa = PBXGroup;
 			children = (
 				29F311FC2369DDB100E1CB09 /* SWIFTY.swift */,
-				29F311EB2369DD8B00E1CB09 /* SmartDeviceLink */,
+				29F311EB2369DD8B00E1CB09 /* SDL */,
 				29B97315FDCFA39411CA2CEA /* DOOM-iOS */,
 				A1B9E45B216FFD6A003E9731 /* DOOM-tvOS */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
@@ -3820,7 +3820,7 @@
 				A1A63DBF20562B2B000955AE /* ControlsMenuView.xib in Resources */,
 				C81E105513E1CCA000B1049A /* Nightmare.png in Resources */,
 				C81E105613E1CCA000B1049A /* ResumeButton.png in Resources */,
-				29F311EC2369DD8B00E1CB09 /* SmartDeviceLink in Resources */,
+				29F311EC2369DD8B00E1CB09 /* SDL in Resources */,
 				A1A63DE720562B76000955AE /* EpisodeMenuView.xib in Resources */,
 				A1A63E3620563345000955AE /* Makefile.am in Resources */,
 				C81E105713E1CCA000B1049A /* SelectedBracket.png in Resources */,
@@ -3920,7 +3920,7 @@
 				A10638E3216EF7C700BDE196 /* Episode1Background.png in Resources */,
 				A10638E4216EF7C700BDE196 /* Episode2Background.png in Resources */,
 				A10638E5216EF7C700BDE196 /* Episode3Background.png in Resources */,
-				29F311EF2369DD8B00E1CB09 /* SmartDeviceLink in Resources */,
+				29F311EF2369DD8B00E1CB09 /* SDL in Resources */,
 				A10638E6216EF7C700BDE196 /* r_drawcolpipeline.inl in Resources */,
 				A10638E7216EF7C700BDE196 /* Episode4Background.png in Resources */,
 				A10638E8216EF7C700BDE196 /* MissonBackground.png in Resources */,
@@ -4057,7 +4057,7 @@
 				A1063A1D216EFCEE00BDE196 /* LayoutDualButton_Highlighted.png in Resources */,
 				A1063A1E216EFCEE00BDE196 /* LayoutDualButton.png in Resources */,
 				A1063A1F216EFCEE00BDE196 /* DOOM_120.png in Resources */,
-				29F311F02369DD8B00E1CB09 /* SmartDeviceLink in Resources */,
+				29F311F02369DD8B00E1CB09 /* SDL in Resources */,
 				A1063A20216EFCEE00BDE196 /* LayoutSingleButton_Highlighted.png in Resources */,
 				A1063A21216EFCEE00BDE196 /* LayoutSingleButton.png in Resources */,
 				A1063A22216EFCEE00BDE196 /* LayoutWheelButton_Highlighted.png in Resources */,
@@ -4100,7 +4100,7 @@
 				A1063B03216F012000BDE196 /* LayoutWheelButton.png in Resources */,
 				A1063B04216F012000BDE196 /* SettingsButton_Highlighted.png in Resources */,
 				A1063B05216F012000BDE196 /* SettingsButton.png in Resources */,
-				29F311F12369DD8B00E1CB09 /* SmartDeviceLink in Resources */,
+				29F311F12369DD8B00E1CB09 /* SDL in Resources */,
 				A1063B06216F012000BDE196 /* r_drawspan.inl in Resources */,
 				A1063B07216F012000BDE196 /* SliderBackground.png in Resources */,
 				A1063B08216F012000BDE196 /* SliderBar.png in Resources */,
@@ -4227,7 +4227,7 @@
 				A1870837216EB633006C013F /* Episode1Background.png in Resources */,
 				A1870838216EB633006C013F /* Episode2Background.png in Resources */,
 				A1870839216EB633006C013F /* Episode3Background.png in Resources */,
-				29F311EE2369DD8B00E1CB09 /* SmartDeviceLink in Resources */,
+				29F311EE2369DD8B00E1CB09 /* SDL in Resources */,
 				A187083A216EB633006C013F /* Localizable.strings in Resources */,
 				A187083B216EB633006C013F /* Episode4Background.png in Resources */,
 				A187083C216EB633006C013F /* MissonBackground.png in Resources */,
@@ -4308,7 +4308,7 @@
 				A1B98E49207F025600827A46 /* DownArrow.png in Resources */,
 				A1B98E4A207F025600827A46 /* Episode1Background.png in Resources */,
 				A1B98E4B207F025600827A46 /* Episode2Background.png in Resources */,
-				29F311ED2369DD8B00E1CB09 /* SmartDeviceLink in Resources */,
+				29F311ED2369DD8B00E1CB09 /* SDL in Resources */,
 				A1B98E4C207F025600827A46 /* Episode3Background.png in Resources */,
 				A1B98F8E207F07E300827A46 /* r_drawcolpipeline.inl in Resources */,
 				A1B98E4D207F025600827A46 /* Episode4Background.png in Resources */,
@@ -4445,7 +4445,7 @@
 				A1DE84E9229F60BE0041E450 /* LayoutDualButton.png in Resources */,
 				A1DE85BD229F610C0041E450 /* SIGIL.wad in Resources */,
 				A1DE84EA229F60BE0041E450 /* DOOM_120.png in Resources */,
-				29F311F22369DD8B00E1CB09 /* SmartDeviceLink in Resources */,
+				29F311F22369DD8B00E1CB09 /* SDL in Resources */,
 				A1DE84EB229F60BE0041E450 /* LayoutSingleButton_Highlighted.png in Resources */,
 				A1DE84EC229F60BE0041E450 /* LayoutSingleButton.png in Resources */,
 				A1DE84ED229F60BE0041E450 /* LayoutWheelButton_Highlighted.png in Resources */,
@@ -4488,7 +4488,7 @@
 				A1DE85D6229F88D20041E450 /* LayoutWheelButton_Highlighted.png in Resources */,
 				A1DE85D7229F88D20041E450 /* LayoutWheelButton.png in Resources */,
 				A1DE85D8229F88D20041E450 /* SettingsButton_Highlighted.png in Resources */,
-				29F311F32369DD8B00E1CB09 /* SmartDeviceLink in Resources */,
+				29F311F32369DD8B00E1CB09 /* SDL in Resources */,
 				A1DE85D9229F88D20041E450 /* SettingsButton.png in Resources */,
 				A1DE85DA229F88D20041E450 /* r_drawspan.inl in Resources */,
 				A1DE85DB229F88D20041E450 /* SliderBackground.png in Resources */,
@@ -6166,7 +6166,11 @@
 					DLS_SYNTHESIZER,
 					GAME_DOOM,
 				);
-				HEADER_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/BiSON/BiSON.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SmartDeviceLink/SmartDeviceLink.framework/Headers\"",
+				);
 				INFOPLIST_FILE = "DOOM-iOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -6223,7 +6227,11 @@
 					HAVE_CONFIG_H,
 					IPHONE,
 				);
-				HEADER_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/BiSON/BiSON.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SmartDeviceLink/SmartDeviceLink.framework/Headers\"",
+				);
 				INFOPLIST_FILE = "DOOM-iOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -6270,6 +6278,7 @@
 				CODE_SIGN_ENTITLEMENTS = dist.plist;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEFINES_MODULE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_NO_COMMON_BLOCKS = NO;
@@ -6280,8 +6289,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/FMCSecurity/FMCSecurity/common",
+					"$(PROJECT_DIR)/SDL",
+					"$(PROJECT_DIR)/../",
+				);
 				MACOSX_DEPLOYMENT_TARGET = "";
-				PRODUCT_NAME = Doom;
+				PRODUCT_NAME = DOOM;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
@@ -6315,7 +6329,11 @@
 					HAVE_CONFIG_H,
 					IPHONE,
 				);
-				HEADER_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/BiSON/BiSON.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SmartDeviceLink/SmartDeviceLink.framework/Headers\"",
+				);
 				INFOPLIST_FILE = "DOOM-iOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -6361,6 +6379,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Gregory Hodges (255R7FQ4L3)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Gregory Hodges (255R7FQ4L3)";
+				DEFINES_MODULE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_NO_COMMON_BLOCKS = NO;
@@ -6371,8 +6390,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/FMCSecurity/FMCSecurity/common",
+					"$(PROJECT_DIR)/SDL",
+					"$(PROJECT_DIR)/../",
+				);
 				MACOSX_DEPLOYMENT_TARGET = "";
-				PRODUCT_NAME = Doom;
+				PRODUCT_NAME = DOOM;
 				SDKROOT = iphoneos;
 			};
 			name = ReleaseLite;
@@ -6405,7 +6429,11 @@
 					EPISODE1,
 					IPHONE,
 				);
-				HEADER_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/BiSON/BiSON.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SmartDeviceLink/SmartDeviceLink.framework/Headers\"",
+				);
 				INFOPLIST_FILE = "DOOM-iOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -6452,6 +6480,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Gregory Hodges (255R7FQ4L3)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Gregory Hodges (255R7FQ4L3)";
+				DEFINES_MODULE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = c99;
@@ -6462,9 +6491,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/FMCSecurity/FMCSecurity/common",
+					"$(PROJECT_DIR)/SDL",
+					"$(PROJECT_DIR)/../",
+				);
 				MACOSX_DEPLOYMENT_TARGET = "";
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_NAME = Doom;
+				PRODUCT_NAME = DOOM;
 				SDKROOT = iphoneos;
 			};
 			name = DebugLite;
@@ -6500,7 +6534,11 @@
 					EPISODE1,
 					IPHONE,
 				);
-				HEADER_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/BiSON/BiSON.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SmartDeviceLink/SmartDeviceLink.framework/Headers\"",
+				);
 				INFOPLIST_FILE = "DOOM-iOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -6874,7 +6912,11 @@
 					DLS_SYNTHESIZER,
 					GAME_FINALDOOM,
 				);
-				HEADER_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/BiSON/BiSON.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SmartDeviceLink/SmartDeviceLink.framework/Headers\"",
+				);
 				INFOPLIST_FILE = "FinalDOOM-iOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -6915,7 +6957,11 @@
 					EPISODE1,
 					IPHONE,
 				);
-				HEADER_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/BiSON/BiSON.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SmartDeviceLink/SmartDeviceLink.framework/Headers\"",
+				);
 				INFOPLIST_FILE = "FinalDOOM-iOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -6959,7 +7005,11 @@
 					HAVE_CONFIG_H,
 					IPHONE,
 				);
-				HEADER_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/BiSON/BiSON.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SmartDeviceLink/SmartDeviceLink.framework/Headers\"",
+				);
 				INFOPLIST_FILE = "FinalDOOM-iOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -6996,7 +7046,11 @@
 					EPISODE1,
 					IPHONE,
 				);
-				HEADER_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/BiSON/BiSON.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SmartDeviceLink/SmartDeviceLink.framework/Headers\"",
+				);
 				INFOPLIST_FILE = "FinalDOOM-iOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -7033,7 +7087,11 @@
 					HAVE_CONFIG_H,
 					IPHONE,
 				);
-				HEADER_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/BiSON/BiSON.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SmartDeviceLink/SmartDeviceLink.framework/Headers\"",
+				);
 				INFOPLIST_FILE = "FinalDOOM-iOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -7072,7 +7130,11 @@
 					_SAMPLE_RATE_22050,
 					GAME_DOOM,
 				);
-				HEADER_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/BiSON/BiSON.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SmartDeviceLink/SmartDeviceLink.framework/Headers\"",
+				);
 				INFOPLIST_FILE = "FinalDOOM-iOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -7438,7 +7500,11 @@
 					DLS_SYNTHESIZER,
 					GAME_DOOM2,
 				);
-				HEADER_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/BiSON/BiSON.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SmartDeviceLink/SmartDeviceLink.framework/Headers\"",
+				);
 				INFOPLIST_FILE = "DOOM2-iOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -7479,7 +7545,11 @@
 					EPISODE1,
 					IPHONE,
 				);
-				HEADER_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/BiSON/BiSON.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SmartDeviceLink/SmartDeviceLink.framework/Headers\"",
+				);
 				INFOPLIST_FILE = "DOOM2-iOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -7523,7 +7593,11 @@
 					HAVE_CONFIG_H,
 					IPHONE,
 				);
-				HEADER_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/BiSON/BiSON.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SmartDeviceLink/SmartDeviceLink.framework/Headers\"",
+				);
 				INFOPLIST_FILE = "DOOM2-iOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -7560,7 +7634,11 @@
 					EPISODE1,
 					IPHONE,
 				);
-				HEADER_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/BiSON/BiSON.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SmartDeviceLink/SmartDeviceLink.framework/Headers\"",
+				);
 				INFOPLIST_FILE = "DOOM2-iOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -7597,7 +7675,11 @@
 					HAVE_CONFIG_H,
 					IPHONE,
 				);
-				HEADER_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/BiSON/BiSON.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SmartDeviceLink/SmartDeviceLink.framework/Headers\"",
+				);
 				INFOPLIST_FILE = "DOOM2-iOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -7636,7 +7718,11 @@
 					_SAMPLE_RATE_22050,
 					GAME_DOOM2,
 				);
-				HEADER_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/BiSON/BiSON.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SmartDeviceLink/SmartDeviceLink.framework/Headers\"",
+				);
 				INFOPLIST_FILE = "DOOM2-iOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -8003,7 +8089,11 @@
 					DLS_SYNTHESIZER,
 					GAME_SIGIL,
 				);
-				HEADER_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/BiSON/BiSON.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SmartDeviceLink/SmartDeviceLink.framework/Headers\"",
+				);
 				INFOPLIST_FILE = "SIGIL-iOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -8045,7 +8135,11 @@
 					EPISODE1,
 					IPHONE,
 				);
-				HEADER_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/BiSON/BiSON.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SmartDeviceLink/SmartDeviceLink.framework/Headers\"",
+				);
 				INFOPLIST_FILE = "SIGIL-iOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -8090,7 +8184,11 @@
 					HAVE_CONFIG_H,
 					IPHONE,
 				);
-				HEADER_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/BiSON/BiSON.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SmartDeviceLink/SmartDeviceLink.framework/Headers\"",
+				);
 				INFOPLIST_FILE = "SIGIL-iOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -8128,7 +8226,11 @@
 					EPISODE1,
 					IPHONE,
 				);
-				HEADER_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/BiSON/BiSON.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SmartDeviceLink/SmartDeviceLink.framework/Headers\"",
+				);
 				INFOPLIST_FILE = "SIGIL-iOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -8166,7 +8268,11 @@
 					HAVE_CONFIG_H,
 					IPHONE,
 				);
-				HEADER_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/BiSON/BiSON.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SmartDeviceLink/SmartDeviceLink.framework/Headers\"",
+				);
 				INFOPLIST_FILE = "SIGIL-iOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -8206,7 +8312,11 @@
 					_SAMPLE_RATE_22050,
 					GAME_SIGIL,
 				);
-				HEADER_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/BiSON/BiSON.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SmartDeviceLink/SmartDeviceLink.framework/Headers\"",
+				);
 				INFOPLIST_FILE = "SIGIL-iOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -8560,6 +8670,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = c99;
@@ -8575,9 +8686,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/FMCSecurity/FMCSecurity/common",
+					"$(PROJECT_DIR)/SDL",
+					"$(PROJECT_DIR)/../",
+				);
 				MACOSX_DEPLOYMENT_TARGET = "";
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_NAME = Doom;
+				PRODUCT_NAME = DOOM;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
@@ -8607,6 +8723,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_NO_COMMON_BLOCKS = NO;
@@ -8622,8 +8739,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/FMCSecurity/FMCSecurity/common",
+					"$(PROJECT_DIR)/SDL",
+					"$(PROJECT_DIR)/../",
+				);
 				MACOSX_DEPLOYMENT_TARGET = "";
-				PRODUCT_NAME = Doom;
+				PRODUCT_NAME = DOOM;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
@@ -8653,6 +8775,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: id Software";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: id Software";
+				DEFINES_MODULE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_NO_COMMON_BLOCKS = NO;
@@ -8668,8 +8791,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/FMCSecurity/FMCSecurity/common",
+					"$(PROJECT_DIR)/SDL",
+					"$(PROJECT_DIR)/../",
+				);
 				MACOSX_DEPLOYMENT_TARGET = "";
-				PRODUCT_NAME = Doom;
+				PRODUCT_NAME = DOOM;
 				PROVISIONING_PROFILE = "31C73095-0DD9-4ABA-BB25-8D23F661F10F";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "31C73095-0DD9-4ABA-BB25-8D23F661F10F";
 				SDKROOT = iphoneos;
@@ -8706,7 +8834,11 @@
 					_SAMPLE_RATE_22050,
 					GAME_DOOM,
 				);
-				HEADER_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/BiSON/BiSON.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SmartDeviceLink/SmartDeviceLink.framework/Headers\"",
+				);
 				INFOPLIST_FILE = "DOOM-iOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

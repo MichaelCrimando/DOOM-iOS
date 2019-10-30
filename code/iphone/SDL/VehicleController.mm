@@ -7,7 +7,7 @@
 
 #import "VehicleController.h"
 #import "SmartDeviceLink.h"
-#import "DOOM-Swift.h"
+#import "Doom-Swift.h"
 
 typedef enum {
     WEAPON_PREVIOUS = 0,
