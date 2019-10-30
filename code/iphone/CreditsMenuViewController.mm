@@ -21,7 +21,7 @@
 #import "CreditsMenuViewController.h"
 #include "doomiphone.h"
 #include "iphone_delegate.h"
-#import "SmartDeviceLink.h"
+#import <SmartDeviceLink/SmartDeviceLink.h>
 #import "DOOM-Swift.h"
 
 @interface Doom_CreditsMenuViewController ()

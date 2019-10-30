@@ -26,7 +26,7 @@
 // disabling all app store and game center stuff, not sure if used
 //#include "ios/InAppStore.h"
 //#include "ios/GameCenter.h"
-#import "SmartDeviceLink.h"
+#import <SmartDeviceLink/SmartDeviceLink.h>
 #import "DOOM-Swift.h"
 
 @implementation iphoneApp

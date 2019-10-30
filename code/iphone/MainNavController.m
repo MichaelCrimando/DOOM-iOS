@@ -19,7 +19,7 @@
  */
 
 #import "MainNavController.h"
-#import "SmartDeviceLink.h"
+#import <SmartDeviceLink/SmartDeviceLink.h>
 #import "DOOM-Swift.h"
 //#import "doomiphone.h"
 

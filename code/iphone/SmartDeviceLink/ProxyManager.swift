@@ -8,7 +8,7 @@
 import Foundation
 import SmartDeviceLink
 
-class ProxyManager: NSObject, SDLStreamingMediaManagerDataSource {
+@objc public class ProxyManager: NSObject, SDLStreamingMediaManagerDataSource {
     // Manager
     private let appName = "DOOM"
     private let appId = "666"
