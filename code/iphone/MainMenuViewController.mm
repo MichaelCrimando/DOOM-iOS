@@ -28,13 +28,14 @@
 #import "ControlsMenuViewController.h"
 #import "LegalMenuViewController.h"
 #import <SmartDeviceLink/SmartDeviceLink.h>
-#import "Doom-Swift.h"
+#import "DOOM-Swift.h"
 
 /*
  ================================================================================================
  Doom Sub Menu Banner Interface object
  ================================================================================================
  */
+@class ProxyManager;
 
 @implementation Banner_SubItem
 @end

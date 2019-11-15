@@ -37,6 +37,8 @@ const static int   DISPLAY_LINK_FRAME_INTERVAL = 2;
 // This flag will be set to true in StartDisplay, and reset to false after one display link
 // frame has fired. 
 static bool inTransition = false;
+@class ProxyManager;
+
 
 @implementation iphone_glViewController
 

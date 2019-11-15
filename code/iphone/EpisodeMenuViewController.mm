@@ -23,8 +23,8 @@
 #include "iphone_delegate.h"
 #import "MissionMenuViewController.h"
 #import <SmartDeviceLink/SmartDeviceLink.h>
-#import "Doom-Swift.h"
-
+#import "DOOM-Swift.h"
+@class ProxyManager;
 #if GAME_DOOM
 
 #define TOTAL_EPISODES 4

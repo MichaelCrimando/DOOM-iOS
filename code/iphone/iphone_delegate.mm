@@ -27,8 +27,9 @@
 //#include "ios/InAppStore.h"
 //#include "ios/GameCenter.h"
 #import <SmartDeviceLink/SmartDeviceLink.h>
-#import "Doom-Swift.h"
+#import "DOOM-Swift.h"
 
+@class ProxyManager;
 @implementation iphoneApp
 
 @synthesize window;
