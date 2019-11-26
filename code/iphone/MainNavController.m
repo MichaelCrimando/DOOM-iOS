@@ -19,10 +19,10 @@
  */
 
 #import "MainNavController.h"
-#import <SmartDeviceLink/SmartDeviceLink.h>
-#import "DOOM-Swift.h"
+#import "SmartDeviceLink.h"
+#import "Doom-Swift.h"
 //#import "doomiphone.h"
-@class ProxyManager;
+
 @interface MainNavController ()
 
 @end

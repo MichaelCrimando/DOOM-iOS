@@ -4,45 +4,15 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>DOOM-iOS.xcscheme_^#shared#^_</key>
+		<key>Doom.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>7</integer>
+			<integer>5</integer>
 		</dict>
-		<key>DOOM-tvOS.xcscheme_^#shared#^_</key>
+		<key>DoomTV.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>8</integer>
-		</dict>
-		<key>DOOM2-iOS.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>9</integer>
-		</dict>
-		<key>DOOM2-tvOS.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>10</integer>
-		</dict>
-		<key>FInalDOOM-iOS.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>11</integer>
-		</dict>
-		<key>FInalDOOM-tvOS.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>12</integer>
-		</dict>
-		<key>SIGIL-iOS.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>13</integer>
-		</dict>
-		<key>SIGL-tvOS.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>14</integer>
+			<integer>6</integer>
 		</dict>
 	</dict>
 </dict>

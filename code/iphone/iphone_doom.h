@@ -117,7 +117,6 @@ extern int		consoleActive;
 extern boolean	iphoneTimeDemo;
 extern int		timeDemoStart;
 extern char		timeDemoResultString[80];
-extern float    screenResolutionScale;
 
 extern cvar_t	*skill;
 extern cvar_t	*episode;
@@ -543,7 +542,6 @@ void iphoneStartLevel(void);
 void iphoneStartMusic(void);
 void iphoneStopMusic(void);
 void iphonePlayMusic( const char *name );
-void iphoneStartMP3(const char *filename);
 void iphonePauseMusic(void);
 void iphoneResumeMusic(void);
 void iphoneDoomStartup(void);
@@ -591,8 +589,6 @@ void iphoneTiltEvent( float *tilts );
 void iphoneMainMenu(void);
 void iphonePopGL(void);
 void iphoneNSLog(const char* message);
-
-extern boolean    sigilShredsLoaded;    // Buckethead!
 
 #ifdef __cplusplus
 }

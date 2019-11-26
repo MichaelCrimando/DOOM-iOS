@@ -382,7 +382,7 @@ void I_Error(const char *error, ...)
     MessageBox(con_hWnd,errmsg,"PrBoom",MB_OK | MB_TASKMODAL | MB_TOPMOST);
   }
 #endif
-
+ 
     while( true ) {
         printf( " SAFE EXIT \n" );
         // it's likely our WADs are bad. Wipe them out next time.

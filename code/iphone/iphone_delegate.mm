@@ -26,10 +26,9 @@
 // disabling all app store and game center stuff, not sure if used
 //#include "ios/InAppStore.h"
 //#include "ios/GameCenter.h"
-#import <SmartDeviceLink/SmartDeviceLink.h>
-#import "DOOM-Swift.h"
+#import "SmartDeviceLink.h"
+#import "Doom-Swift.h"
 
-@class ProxyManager;
 @implementation iphoneApp
 
 @synthesize window;
@@ -42,7 +41,7 @@ touch_t		gameTouches[MAX_TOUCHES];
 
 #define FRAME_HERTZ 30.0f
 #if !TARGET_OS_TV
-//const static float ACCELEROMETER_UPDATE_INTERVAL = 1.0f / FRAME_HERTZ;
+const static float ACCELEROMETER_UPDATE_INTERVAL = 1.0f / FRAME_HERTZ;
 #endif
 //FIXME: JadingTsunami (fix) const static float ACCELEROMETER_UPDATE_INTERVAL = 1.0f / FRAME_HERTZ;
 
@@ -246,13 +245,6 @@ touch_t		gameTouches[MAX_TOUCHES];
 #endif
     
     return [NSString stringWithFormat:@"%@%@", nibName, extension];
-}
-
-- (NSString*) GetFontName
-{
-    // To restore usage of the original font, un-comment out this line and comment out the next line
-    //return @"idGinza Narrow";
-    return @"Chicago";
 }
 
 @end

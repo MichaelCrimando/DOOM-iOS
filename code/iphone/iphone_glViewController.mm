@@ -22,8 +22,8 @@
 #import <QuartzCore/CADisplayLink.h>
 #include "doomiphone.h"
 #include "iphone_delegate.h"
-#import <SmartDeviceLink/SmartDeviceLink.h>
-#import "DOOM-Swift.h"
+#import "SmartDeviceLink.h"
+#import "Doom-Swift.h"
 
 #if TARGET_OS_TV
 const static int   DISPLAY_LINK_FRAME_INTERVAL = 30;
@@ -37,8 +37,6 @@ const static int   DISPLAY_LINK_FRAME_INTERVAL = 2;
 // This flag will be set to true in StartDisplay, and reset to false after one display link
 // frame has fired. 
 static bool inTransition = false;
-@class ProxyManager;
-
 
 @implementation iphone_glViewController
 

@@ -21,10 +21,9 @@
 #import "SecretMenuViewController.h"
 #include "doomiphone.h"
 #include "iphone_delegate.h"
-#import <SmartDeviceLink/SmartDeviceLink.h>
-#import "DOOM-Swift.h"
+#import "SmartDeviceLink.h"
+#import "Doom-Swift.h"
 
-@class ProxyManager;
 @implementation Doom_SecretMenuViewController
 
 /*

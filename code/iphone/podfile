@@ -2,7 +2,7 @@
 platform :ios, '12.0'
 use_frameworks!
 
-target 'DOOM-iOS' do
+target 'Doom' do
   # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
   use_frameworks!
 
@@ -10,26 +10,10 @@ target 'DOOM-iOS' do
   pod 'SmartDeviceLink', '~> 6.3'
 end
 
-target 'DOOM2-iOS' do
+target 'DoomTV' do
   # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
-  use_frameworks!
+  # use_frameworks!
 
-  # Pods for Doom
-  pod 'SmartDeviceLink', '~> 6.3'
-end
+  # Pods for DoomTV
 
-target 'FInalDOOM-iOS' do
-  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
-  use_frameworks!
-
-  # Pods for Doom
-  pod 'SmartDeviceLink', '~> 6.3'
-end
-
-target 'SIGIL-iOS' do
-  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
-  use_frameworks!
-
-  # Pods for Doom
-  pod 'SmartDeviceLink', '~> 6.3'
 end

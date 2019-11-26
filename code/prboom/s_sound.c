@@ -207,25 +207,10 @@ void S_Start(void)
           mus_e1m9      // Tim          e4m9
         };
 
-          static const int sigilmus[] =     // Song - Who? - Where?
-          {
-              mus_e5m1,     // Buckethead   e5m1
-              mus_e5m2,     // Buckethead   e5m2
-              mus_e5m3,     // Buckethead   e5m3
-              mus_e5m4,     // Buckethead   e5m4
-              mus_e5m5,     // Buckethead   e5m5
-              mus_e5m6,     // Buckethead   e5m6
-              mus_e5m7,     // Buckethead   e5m7
-              mus_e5m8,     // Buckethead   e5m8
-              mus_e5m9      // Buckethead   e5m9
-          };
-          
         if (gameepisode < 4)
           mnum = mus_e1m1 + (gameepisode-1)*9 + gamemap-1;
-        else if (gameepisode == 4)
-          mnum = spmus[gamemap-1];
         else
-          mnum = sigilmus[gamemap-1];
+          mnum = spmus[gamemap-1];
       }
   S_ChangeMusic(mnum, true);
 }
@@ -347,7 +332,7 @@ void S_StartSoundAtVolume(void *origin_p, int sfx_id, int volume)
 	
 	if ( cnum == numChannels ) {
 		// nothing available
-		printf( "dropping sound for no channels available (%i)\n", numChannels );
+		printf( "dropping sound for no channels available\n" );
 		return;
 	}
 	
@@ -568,49 +553,33 @@ void S_ChangeMusic(int musicnum, int looping)
       sprintf(namebuf, "d_%s", music->name);
       music->lumpnum = W_GetNumForName(namebuf);
     }
-    
+
   music_file_failed = 1;
 
   // proff_fs - only load when from IWAD
-  //if (lumpinfo[music->lumpnum].source == source_iwad)
-//    {
+  if (lumpinfo[music->lumpnum].source == source_iwad)
+    {
       // cournia - check to see if we can play a higher quality music file
       //           rather than the default MIDI
-
-    I_FindFile(S_music_files[musicnum], "", music_filename);
+      I_FindFile(S_music_files[musicnum], "", music_filename);
       if ( music_filename[0] != '\0' )
         {
           music_file_failed = I_RegisterMusic(music_filename, music);
-          //free(music_filename);
+          free(music_filename);
         }
-
-    //    }
+    }
 
   if (music_file_failed)
     {
       //cournia - could not load music file, play default MIDI music
-        
+
       // load & register it
       music->data = W_CacheLumpNum(music->lumpnum);
       music->handle = I_RegisterSong(music->data, W_LumpLength(music->lumpnum));
     }
-    
-    extern void iphoneStartMP3( const char *name );
-    extern boolean    sigilShredsLoaded;    // Buckethead!
-
-    if (sigilShredsLoaded) {
-        
-        char* mp3filename = I_RegisterMusic_MP3(music, music->data, W_LumpLength(music->lumpnum));
-        
-        iphoneStartMP3(mp3filename);
-
-    } else {
 
   // play it
-        I_PlaySong(music->handle, looping);
-    }
-    
-    
+  I_PlaySong(music->handle, looping);
 //#endif
 
   mus_playing = music;

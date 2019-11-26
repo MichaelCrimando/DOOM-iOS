@@ -422,9 +422,6 @@ boolean HandleButton( ibutton_t *button ) {
         } else {
             y = button->y + button->drawHeight + 16;
         }
-        
-        textScale *= screenResolutionScale * 2;
-        
         iphoneDrawText( x, y, textScale, button->title );
     }
 
@@ -488,9 +485,6 @@ while ( *str ) {
         float    xoff = ( glyph->xoff - 1 ) * scale;
         float    yoff = ( glyph->yoff - 1 ) * scale;
         
-        // red would be awesome here but it's kinda hard to read
-//        glColor4f( 1, 0, 0, 1 );
-        
         glTexCoord2f( x0, y0 );
         glVertex2f( fx + xoff, fy + yoff );
         
@@ -529,9 +523,9 @@ float iphoneCenterText( float x, float y, float scale, const char *str ) {
     x *= ((float)displaywidth) / 480.0f;
     y *= ((float)displayheight) / 320.0f;
     
-	x -= l * scale * 0.5 * screenResolutionScale * 2;
+	x -= l * scale * 0.5;
     
-	return iphoneDrawText( x, y, scale * screenResolutionScale * 2, str );
+	return iphoneDrawText( x, y, scale, str );
 }
 
 

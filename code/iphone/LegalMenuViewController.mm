@@ -21,9 +21,9 @@
 #import "LegalMenuViewController.h"
 #include "doomiphone.h"
 #include "iphone_delegate.h"
-#import <SmartDeviceLink/SmartDeviceLink.h>
-#import "DOOM-Swift.h"
-@class ProxyManager;
+#import "SmartDeviceLink.h"
+#import "Doom-Swift.h"
+
 @implementation Doom_LegalMenuViewController
 
 /*
