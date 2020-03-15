@@ -6698,6 +6698,7 @@
 					UNIFIED_DEBUG_MESSAGES,
 					DLS_SYNTHESIZER,
 					GAME_FINALDOOM,
+					"$(inherited)",
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "FinalDOOM-iOS-Info.plist";
@@ -6734,6 +6735,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					EPISODE1,
 					IPHONE,
+					"$(inherited)",
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "FinalDOOM-iOS-Info.plist";
@@ -6769,10 +6771,12 @@
 					IPHONE,
 					_SAMPLE_RATE_22050,
 					GAME_FINALDOOM,
+					"$(inherited)",
 				);
 				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = (
 					HAVE_CONFIG_H,
 					IPHONE,
+					"$(inherited)",
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "FinalDOOM-iOS-Info.plist";
@@ -6806,6 +6810,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					EPISODE1,
 					IPHONE,
+					"$(inherited)",
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "FinalDOOM-iOS-Info.plist";
@@ -6839,6 +6844,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					HAVE_CONFIG_H,
 					IPHONE,
+					"$(inherited)",
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "FinalDOOM-iOS-Info.plist";
@@ -6874,6 +6880,7 @@
 					IPHONE,
 					_SAMPLE_RATE_22050,
 					GAME_DOOM,
+					"$(inherited)",
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "FinalDOOM-iOS-Info.plist";
@@ -7222,6 +7229,7 @@
 					UNIFIED_DEBUG_MESSAGES,
 					DLS_SYNTHESIZER,
 					GAME_DOOM2,
+					"$(inherited)",
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "DOOM2-iOS-Info.plist";
@@ -7258,6 +7266,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					EPISODE1,
 					IPHONE,
+					"$(inherited)",
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "DOOM2-iOS-Info.plist";
@@ -7293,10 +7302,12 @@
 					IPHONE,
 					_SAMPLE_RATE_22050,
 					GAME_DOOM2,
+					"$(inherited)",
 				);
 				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = (
 					HAVE_CONFIG_H,
 					IPHONE,
+					"$(inherited)",
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "DOOM2-iOS-Info.plist";
@@ -7330,6 +7341,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					EPISODE1,
 					IPHONE,
+					"$(inherited)",
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "DOOM2-iOS-Info.plist";
@@ -7363,6 +7375,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					HAVE_CONFIG_H,
 					IPHONE,
+					"$(inherited)",
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "DOOM2-iOS-Info.plist";
@@ -7398,6 +7411,7 @@
 					IPHONE,
 					_SAMPLE_RATE_22050,
 					GAME_DOOM2,
+					"$(inherited)",
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "DOOM2-iOS-Info.plist";
@@ -7747,6 +7761,7 @@
 					UNIFIED_DEBUG_MESSAGES,
 					DLS_SYNTHESIZER,
 					GAME_SIGIL,
+					"$(inherited)",
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "SIGIL-iOS-Info.plist";
@@ -7784,6 +7799,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					EPISODE1,
 					IPHONE,
+					"$(inherited)",
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "SIGIL-iOS-Info.plist";
@@ -7820,10 +7836,12 @@
 					IPHONE,
 					_SAMPLE_RATE_22050,
 					GAME_SIGIL,
+					"$(inherited)",
 				);
 				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = (
 					HAVE_CONFIG_H,
 					IPHONE,
+					"$(inherited)",
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "SIGIL-iOS-Info.plist";
@@ -7858,6 +7876,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					EPISODE1,
 					IPHONE,
+					"$(inherited)",
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "SIGIL-iOS-Info.plist";
@@ -7892,6 +7911,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					HAVE_CONFIG_H,
 					IPHONE,
+					"$(inherited)",
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "SIGIL-iOS-Info.plist";
@@ -7928,6 +7948,7 @@
 					IPHONE,
 					_SAMPLE_RATE_22050,
 					GAME_SIGIL,
+					"$(inherited)",
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "SIGIL-iOS-Info.plist";
