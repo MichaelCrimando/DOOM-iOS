@@ -26,8 +26,8 @@
 // disabling all app store and game center stuff, not sure if used
 //#include "ios/InAppStore.h"
 //#include "ios/GameCenter.h"
-#import "SmartDeviceLink.h"
-#import "Doom-Swift.h"
+
+
 
 @implementation iphoneApp
 
@@ -41,7 +41,7 @@ touch_t		gameTouches[MAX_TOUCHES];
 
 #define FRAME_HERTZ 30.0f
 #if !TARGET_OS_TV
-const static float ACCELEROMETER_UPDATE_INTERVAL = 1.0f / FRAME_HERTZ;
+//const static float ACCELEROMETER_UPDATE_INTERVAL = 1.0f / FRAME_HERTZ;
 #endif
 //FIXME: JadingTsunami (fix) const static float ACCELEROMETER_UPDATE_INTERVAL = 1.0f / FRAME_HERTZ;
 
@@ -61,8 +61,7 @@ const static float ACCELEROMETER_UPDATE_INTERVAL = 1.0f / FRAME_HERTZ;
     
     // Disable Screen Dimming.
     [[ UIApplication sharedApplication] setIdleTimerDisabled: YES ];
-
-
+    
 #if !TARGET_OS_TV
     
     // Initial Application Style config.
@@ -90,9 +89,6 @@ const static float ACCELEROMETER_UPDATE_INTERVAL = 1.0f / FRAME_HERTZ;
 	[window setRootViewController:navigationController];
     [window setBackgroundColor: [UIColor blackColor] ];
 	[window makeKeyAndVisible];
-    
-    // Initialize and start the SmartDeviceLink proxy
-    [[ProxyManager sharedManager] connect];
 }
 
 /*
@@ -201,7 +197,6 @@ const static float ACCELEROMETER_UPDATE_INTERVAL = 1.0f / FRAME_HERTZ;
 		[NSTimer scheduledTimerWithTimeInterval:0.2f target:self selector:@selector(HACK_PushController) userInfo:nil repeats:NO];
 
 		[ openGLViewController StartDisplay ];
-        [[ProxyManager sharedManager] setStreamViewController:openGLViewController];
     }
 }
 
@@ -245,6 +240,13 @@ const static float ACCELEROMETER_UPDATE_INTERVAL = 1.0f / FRAME_HERTZ;
 #endif
     
     return [NSString stringWithFormat:@"%@%@", nibName, extension];
+}
+
+- (NSString*) GetFontName
+{
+    // To restore usage of the original font, un-comment out this line and comment out the next line
+    //return @"idGinza Narrow";
+    return @"Chicago";
 }
 
 @end

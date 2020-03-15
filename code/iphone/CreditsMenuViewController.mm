@@ -21,8 +21,6 @@
 #import "CreditsMenuViewController.h"
 #include "doomiphone.h"
 #include "iphone_delegate.h"
-#import "SmartDeviceLink.h"
-#import "Doom-Swift.h"
 
 @interface Doom_CreditsMenuViewController ()
 
@@ -172,7 +170,6 @@ static const int CreditSizes[CREDITS_LINES] = {
 {
     [super viewDidLoad];
     creditsList.allowsSelection = NO;
-    [[ProxyManager sharedManager] setStreamViewController:self];
 }
 
 /*
@@ -236,9 +233,9 @@ static const int CreditSizes[CREDITS_LINES] = {
     }
     
     if (IS_IPAD) {
-        cell.textLabel.font = [UIFont fontWithName:@"idGinza Narrow" size:points * 2];
+        cell.textLabel.font = [UIFont fontWithName:[gAppDelegate GetFontName] size:points * 2];
     } else {
-        cell.textLabel.font = [UIFont fontWithName:@"idGinza Narrow" size:points];
+        cell.textLabel.font = [UIFont fontWithName:[gAppDelegate GetFontName] size:points];
     }
     
     cell.textLabel.textAlignment = NSTextAlignmentCenter;

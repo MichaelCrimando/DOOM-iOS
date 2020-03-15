@@ -302,7 +302,7 @@ default_t defaults[] =
   {"music_volume",{&snd_MusicVolume,NULL},{8,NULL},0,15, def_int,ss_none,NULL,NULL},
   {"mus_pause_opt",{&mus_pause_opt,NULL},{2,NULL},0,2, // CPhipps - music pausing
    def_int, ss_none,NULL,NULL}, // 0 = kill music when paused, 1 = pause music, 2 = let music continue
-  {"snd_channels",{&default_numChannels,NULL},{8,NULL},1,32,
+  {"snd_channels",{&default_numChannels,NULL},{16,NULL},1,32,
    def_int,ss_none,NULL,NULL}, // number of audio events simultaneously // killough
 
   {"Video settings",{NULL,NULL},{0,NULL},UL,UL,def_none,ss_none,NULL,NULL},
@@ -842,8 +842,26 @@ def_bool,ss_none}, // enables translucency
    def_str,ss_none,NULL,NULL},
   {"mus_dm2ttl", {0,&S_music_files[mus_dm2ttl]}, {0,"dm2ttl.mp3"},UL,UL,
    def_str,ss_none,NULL,NULL},
-  {"mus_dm2int", {0,&S_music_files[mus_dm2int]}, {0,"dm2int.mp3"},UL,UL,
-   def_str,ss_none,NULL,NULL},
+    {"mus_dm2int", {0,&S_music_files[mus_dm2int]}, {0,"dm2int.mp3"},UL,UL,
+        def_str,ss_none,NULL,NULL},
+    {"mus_e5m1", {0,&S_music_files[mus_e5m1]}, {0,"e5m1.mp3"},UL,UL,
+        def_str,ss_none,NULL,NULL},
+    {"mus_e5m2", {0,&S_music_files[mus_e5m2]}, {0,"e5m2.mp3"},UL,UL,
+        def_str,ss_none,NULL,NULL},
+    {"mus_e5m3", {0,&S_music_files[mus_e5m3]}, {0,"e5m3.mp3"},UL,UL,
+        def_str,ss_none,NULL,NULL},
+    {"mus_e5m4", {0,&S_music_files[mus_e5m4]}, {0,"e5m4.mp3"},UL,UL,
+        def_str,ss_none,NULL,NULL},
+    {"mus_e5m5", {0,&S_music_files[mus_e5m5]}, {0,"e5m5.mp3"},UL,UL,
+        def_str,ss_none,NULL,NULL},
+    {"mus_e5m6", {0,&S_music_files[mus_e5m6]}, {0,"e5m6.mp3"},UL,UL,
+        def_str,ss_none,NULL,NULL},
+    {"mus_e5m7", {0,&S_music_files[mus_e5m7]}, {0,"e5m7.mp3"},UL,UL,
+        def_str,ss_none,NULL,NULL},
+    {"mus_e5m8", {0,&S_music_files[mus_e5m8]}, {0,"e5m8.mp3"},UL,UL,
+        def_str,ss_none,NULL,NULL},
+    {"mus_e5m9", {0,&S_music_files[mus_e5m9]}, {0,"e5m9.mp3"},UL,UL,
+        def_str,ss_none,NULL,NULL},
 };
 
 int numdefaults;

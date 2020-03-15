@@ -22,12 +22,11 @@
 #include "iphone_delegate.h"
 #include "doomiphone.h"
 #import "EpisodeMenuViewController.h"
+#import "MissionMenuViewController.h"
 #import "CreditsMenuViewController.h"
 #import "SettingsMenuViewController.h"
 #import "ControlsMenuViewController.h"
 #import "LegalMenuViewController.h"
-#import "SmartDeviceLink.h"
-#import "Doom-Swift.h"
 
 /*
  ================================================================================================
@@ -49,11 +48,43 @@
     [super awakeFromNib];
     isHidden = YES;
     
+    sigilShredsLoaded = false;
+    
+#if GAME_DOOM
+    iphoneIWADSelect("doom.wad");
+#endif
+    
+#if GAME_DOOM2
+    iphoneIWADSelect("doom2.wad");
+#endif
+    
+#if GAME_FINALDOOM
+    // just picking a wad file to make the startup happy
+    iphoneIWADSelect("tnt.wad");
+#endif
+    
+#if GAME_SIGIL
+    iphoneIWADSelect("doom.wad");
+    iphoneClearPWADs();
+    iphonePWADAdd("SIGIL.wad");
+    
+    NSString* filePath = [[NSBundle mainBundle] pathForResource:@"SIGIL_SHREDS"
+                                                         ofType:@"wad"];
+    
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+
+    if ([fileManager fileExistsAtPath:filePath]){
+        iphonePWADAdd("SIGIL_SHREDS.wad");
+        sigilShredsLoaded = true;
+    }
+    
+#endif
+    
     if( !didInit ) {
         char full_iwad[1024];
         
-        doom_iwad = strdup(Cvar_VariableString("iwadSelection"));
-        doom_pwads = strdup(Cvar_VariableString("pwadSelection"));
+//        doom_iwad = strdup(Cvar_VariableString("iwadSelection"));
+//        doom_pwads = strdup(Cvar_VariableString("pwadSelection"));
         
         I_FindFile( doom_iwad, ".wad", full_iwad );
         
@@ -191,8 +222,6 @@ BOOL settingsMenuSelected = NO;
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    
-    [[ProxyManager sharedManager] setStreamViewController:self];
 }
 
 /*
@@ -217,10 +246,21 @@ BOOL settingsMenuSelected = NO;
  */
 - (IBAction) NewGamePressed {
     
+#if GAME_DOOM2
+    Doom_MissionMenuViewController *vc = [[Doom_MissionMenuViewController alloc] initWithNibName:[gAppDelegate GetNibNameForDevice:@"MissionMenuView"] bundle:nil];
+#elif GAME_SIGIL
+    Doom_MissionMenuViewController *vc = [[Doom_MissionMenuViewController alloc] initWithNibName:[gAppDelegate GetNibNameForDevice:@"MissionMenuView"] bundle:nil];
+#else
     // Switch to episode view menu.
     Doom_EpisodeMenuViewController *vc = [[Doom_EpisodeMenuViewController alloc] initWithNibName:[gAppDelegate GetNibNameForDevice:@"EpisodeMenuView"] bundle:nil];
-
+#endif
+    
     [self.navigationController pushViewController:vc animated:NO];
+#if GAME_DOOM2
+    [vc setEpisode:0 ];
+#elif GAME_SIGIL
+    [vc setEpisode:4 ];
+#endif
     [vc release];
     
     Sound_StartLocalSound( "iphone/baborted_01.wav" );

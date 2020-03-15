@@ -34,7 +34,6 @@
 //#include "ios/GameCenter.h"
 
 #include "GameController.h"
-#import "VehicleController.h"
 
 typedef struct {
 	int	msecFromLast;
@@ -555,7 +554,6 @@ static void iphoneBuildTiccmd(ticcmd_t* cmd) {
 			cmd->buttons |= BT_ATTACK;
 		}
         iphoneControllerInput(cmd);
-        vehicleControllerInput(cmd);
 		return;
 	}
 	
@@ -566,19 +564,6 @@ static void iphoneBuildTiccmd(ticcmd_t* cmd) {
 	
 	// don't built a tic when dead, other than the respawn use
 	if ( players[consoleplayer].playerstate == PST_DEAD ) {
-        
-    //unless we're using SmartDeviceLink
-        if(vehicleControllerIsAvailable()){
-            vehicleControllerInput(cmd);
-            
-            // just to keep things simple all we can do is respawn
-            // load saved game and respawn with gear are not possible
-            // may re-evaluate this later but for now this is a SDL change
-            if (cmd->buttons & BT_ATTACK) {
-                players[consoleplayer].playerstate = PST_REBORN;
-            }
-        }
-        
 #if TARGET_OS_TV
         // unless we're on apple tv
         iphoneControllerInput(cmd);
@@ -733,9 +718,6 @@ static void iphoneBuildTiccmd(ticcmd_t* cmd) {
     
     // Use bluetooth controller input, if one is connected
     iphoneControllerInput(cmd);
-    
-    //Use vehicle data if available
-    vehicleControllerInput(cmd);
 }
 
 /*

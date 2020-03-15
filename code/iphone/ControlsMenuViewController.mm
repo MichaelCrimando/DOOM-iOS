@@ -21,8 +21,6 @@
 #import "ControlsMenuViewController.h"
 #include "doomiphone.h"
 #include "iphone_delegate.h"
-#import "SmartDeviceLink.h"
-#import "Doom-Swift.h"
 
 /*
  ================================================================================================
@@ -150,7 +148,6 @@
 {
     [super viewDidLoad];
     [ self Initialize ];
-    [[ProxyManager sharedManager] setStreamViewController:self];
 }
 
 #if !TARGET_OS_TV
