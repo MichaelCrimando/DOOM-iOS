@@ -15,6 +15,7 @@ base/base.iPack
 ## Build generated
 build/
 DerivedData/
+code/iphone/.DS_Store
 
 ## Various settings
 *.pbxuser
