@@ -70,7 +70,6 @@
     
     NSString* filePath = [[NSBundle mainBundle] pathForResource:@"SIGIL_SHREDS"
                                                          ofType:@"wad"];
-    
     NSFileManager *fileManager = [NSFileManager defaultManager];
 
     if ([fileManager fileExistsAtPath:filePath]){

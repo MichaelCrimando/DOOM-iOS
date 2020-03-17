@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		294D382F24205AC600781AFD /* SIGIL_SHREDS.wad in Resources */ = {isa = PBXBuildFile; fileRef = A1DE85BA229F610B0041E450 /* SIGIL_SHREDS.wad */; };
 		4333CCE80F5CC23E00AE2B6F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4333CCE70F5CC23E00AE2B6F /* AudioToolbox.framework */; };
 		4364BF3F0F5CB25900F29317 /* dist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4364BF3E0F5CB25900F29317 /* dist.plist */; };
 		43CF02FF0F56974E00E4A23D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 43CF02FE0F56974E00E4A23D /* Default.png */; };
@@ -2809,7 +2810,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		29B97314FDCFA39411CA2CEA = {
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
 				29B97315FDCFA39411CA2CEA /* DOOM-iOS */,
@@ -3718,7 +3719,7 @@
 				ja,
 				fr,
 			);
-			mainGroup = 29B97314FDCFA39411CA2CEA;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
 			productRefGroup = 19C28FACFE9D520D11CA2CBB /* Products */;
 			projectDirPath = "";
 			projectRoot = ../..;
@@ -4314,6 +4315,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				294D382F24205AC600781AFD /* SIGIL_SHREDS.wad in Resources */,
 				A1DE84A0229F60BE0041E450 /* Default.png in Resources */,
 				A1DE84A1229F60BE0041E450 /* dist.plist in Resources */,
 				A1DE84A3229F60BE0041E450 /* DOOM_57.png in Resources */,
@@ -6123,7 +6125,11 @@
 					GAME_DOOM,
 					"$(inherited)",
 				);
-				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = "HAVE_CONFIG_H IPHONE $(inherited)";
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = (
+					HAVE_CONFIG_H,
+					IPHONE,
+					"$(inherited)",
+				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "DOOM-iOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
@@ -6510,7 +6516,10 @@
 					_SAMPLE_RATE_22050,
 					GAME_DOOM2,
 				);
-				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = "HAVE_CONFIG_H IPHONE";
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = (
+					HAVE_CONFIG_H,
+					IPHONE,
+				);
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				INFOPLIST_FILE = "DOOM2-tvOS-Info.plist";
@@ -6775,7 +6784,11 @@
 					GAME_FINALDOOM,
 					"$(inherited)",
 				);
-				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = "HAVE_CONFIG_H IPHONE $(inherited)";
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = (
+					HAVE_CONFIG_H,
+					IPHONE,
+					"$(inherited)",
+				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "FinalDOOM-iOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
@@ -7040,7 +7053,10 @@
 					_SAMPLE_RATE_22050,
 					GAME_FINALDOOM,
 				);
-				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = "HAVE_CONFIG_H IPHONE";
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = (
+					HAVE_CONFIG_H,
+					IPHONE,
+				);
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				INFOPLIST_FILE = "FinalDOOM-tvOS-Info.plist";
@@ -7305,7 +7321,11 @@
 					GAME_DOOM2,
 					"$(inherited)",
 				);
-				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = "HAVE_CONFIG_H IPHONE $(inherited)";
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = (
+					HAVE_CONFIG_H,
+					IPHONE,
+					"$(inherited)",
+				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "DOOM2-iOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
@@ -7570,7 +7590,10 @@
 					_SAMPLE_RATE_22050,
 					GAME_DOOM,
 				);
-				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = "HAVE_CONFIG_H IPHONE";
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = (
+					HAVE_CONFIG_H,
+					IPHONE,
+				);
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				INFOPLIST_FILE = "DOOM-tvOS-Info.plist";
@@ -7838,7 +7861,11 @@
 					GAME_SIGIL,
 					"$(inherited)",
 				);
-				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = "HAVE_CONFIG_H IPHONE $(inherited)";
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = (
+					HAVE_CONFIG_H,
+					IPHONE,
+					"$(inherited)",
+				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "SIGIL-iOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
@@ -8106,7 +8133,10 @@
 					_SAMPLE_RATE_22050,
 					GAME_SIGIL,
 				);
-				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = "HAVE_CONFIG_H IPHONE";
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = (
+					HAVE_CONFIG_H,
+					IPHONE,
+				);
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				INFOPLIST_FILE = "SIGIL-tvOS-Info.plist";
