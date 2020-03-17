@@ -8,6 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		29309A1F2420658F005E5AA3 /* SmartDeviceLink in Resources */ = {isa = PBXBuildFile; fileRef = 29309A1E2420658F005E5AA3 /* SmartDeviceLink */; };
+		29309A202420658F005E5AA3 /* SmartDeviceLink in Resources */ = {isa = PBXBuildFile; fileRef = 29309A1E2420658F005E5AA3 /* SmartDeviceLink */; };
+		29309A212420658F005E5AA3 /* SmartDeviceLink in Resources */ = {isa = PBXBuildFile; fileRef = 29309A1E2420658F005E5AA3 /* SmartDeviceLink */; };
+		29309A222420658F005E5AA3 /* SmartDeviceLink in Resources */ = {isa = PBXBuildFile; fileRef = 29309A1E2420658F005E5AA3 /* SmartDeviceLink */; };
+		29309A322420687D005E5AA3 /* VehicleController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 29309A312420687D005E5AA3 /* VehicleController.mm */; };
+		29309A332420687D005E5AA3 /* VehicleController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 29309A312420687D005E5AA3 /* VehicleController.mm */; };
+		29309A342420687D005E5AA3 /* VehicleController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 29309A312420687D005E5AA3 /* VehicleController.mm */; };
+		29309A352420687D005E5AA3 /* VehicleController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 29309A312420687D005E5AA3 /* VehicleController.mm */; };
+		29309A37242068BE005E5AA3 /* VehicleController.h in Headers */ = {isa = PBXBuildFile; fileRef = 29309A36242068BE005E5AA3 /* VehicleController.h */; };
+		29309A38242068BE005E5AA3 /* VehicleController.h in Headers */ = {isa = PBXBuildFile; fileRef = 29309A36242068BE005E5AA3 /* VehicleController.h */; };
+		29309A39242068BE005E5AA3 /* VehicleController.h in Headers */ = {isa = PBXBuildFile; fileRef = 29309A36242068BE005E5AA3 /* VehicleController.h */; };
+		29309A3A242068BE005E5AA3 /* VehicleController.h in Headers */ = {isa = PBXBuildFile; fileRef = 29309A36242068BE005E5AA3 /* VehicleController.h */; };
 		294D382F24205AC600781AFD /* SIGIL_SHREDS.wad in Resources */ = {isa = PBXBuildFile; fileRef = A1DE85BA229F610B0041E450 /* SIGIL_SHREDS.wad */; };
 		4333CCE80F5CC23E00AE2B6F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4333CCE70F5CC23E00AE2B6F /* AudioToolbox.framework */; };
 		4364BF3F0F5CB25900F29317 /* dist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4364BF3E0F5CB25900F29317 /* dist.plist */; };
@@ -2127,6 +2139,13 @@
 		1AF3774141B909004B2363AF /* Pods-DOOM2-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DOOM2-iOS.release.xcconfig"; path = "Target Support Files/Pods-DOOM2-iOS/Pods-DOOM2-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		1D6058910D05DD3D006BFB54 /* DOOM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DOOM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		200C91992B66EF4F8EFE5D1D /* libPods-DOOM-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DOOM-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		29309A1E2420658F005E5AA3 /* SmartDeviceLink */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SmartDeviceLink; sourceTree = "<group>"; };
+		29309A23242067B5005E5AA3 /* DOOM-iOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DOOM-iOS-Bridging-Header.h"; sourceTree = "<group>"; };
+		29309A24242067B5005E5AA3 /* DOOM2-iOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DOOM2-iOS-Bridging-Header.h"; sourceTree = "<group>"; };
+		29309A25242067B5005E5AA3 /* FInalDOOM-iOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FInalDOOM-iOS-Bridging-Header.h"; sourceTree = "<group>"; };
+		29309A26242067B6005E5AA3 /* SIGIL-iOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SIGIL-iOS-Bridging-Header.h"; sourceTree = "<group>"; };
+		29309A312420687D005E5AA3 /* VehicleController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = VehicleController.mm; path = SmartDeviceLink/VehicleController.mm; sourceTree = "<group>"; };
+		29309A36242068BE005E5AA3 /* VehicleController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = VehicleController.h; path = SmartDeviceLink/VehicleController.h; sourceTree = "<group>"; };
 		294D381B241F050E00781AFD /* BiSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BiSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		294D381F241F051800781AFD /* BiSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BiSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		294D3823241F052100781AFD /* BiSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BiSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -2826,6 +2845,7 @@
 		29B97315FDCFA39411CA2CEA /* DOOM-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				29309A1E2420658F005E5AA3 /* SmartDeviceLink */,
 				A1A63E0B20562FB0000955AE /* arialGlyphRects.h */,
 				724C531E0FBDBCEE000E4348 /* BackgroundMusic.cpp */,
 				72E84A280F9503F100AB3C99 /* cmd.c */,
@@ -2882,6 +2902,12 @@
 				A1DE85B9229F60BE0041E450 /* SIGIL-iOS-Info.plist */,
 				A1A63E0820562FAF000955AE /* SoundEngine.cpp */,
 				A1A63DFB20562FAE000955AE /* SoundEngine.h */,
+				29309A23242067B5005E5AA3 /* DOOM-iOS-Bridging-Header.h */,
+				29309A24242067B5005E5AA3 /* DOOM2-iOS-Bridging-Header.h */,
+				29309A25242067B5005E5AA3 /* FInalDOOM-iOS-Bridging-Header.h */,
+				29309A26242067B6005E5AA3 /* SIGIL-iOS-Bridging-Header.h */,
+				29309A312420687D005E5AA3 /* VehicleController.mm */,
+				29309A36242068BE005E5AA3 /* VehicleController.h */,
 			);
 			name = "DOOM-iOS";
 			sourceTree = "<group>";
@@ -3495,6 +3521,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29309A39242068BE005E5AA3 /* VehicleController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3509,6 +3536,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29309A37242068BE005E5AA3 /* VehicleController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3516,6 +3544,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29309A38242068BE005E5AA3 /* VehicleController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3530,6 +3559,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29309A3A242068BE005E5AA3 /* VehicleController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3703,8 +3733,20 @@
 			attributes = {
 				LastUpgradeCheck = 1000;
 				TargetAttributes = {
+					1D6058900D05DD3D006BFB54 = {
+						LastSwiftMigration = 1130;
+					};
+					A10639D5216EFCEE00BDE196 = {
+						LastSwiftMigration = 1130;
+					};
+					A1870806216EB633006C013F = {
+						LastSwiftMigration = 1130;
+					};
 					A1B98DE9207EFEE800827A46 = {
 						CreatedOnToolsVersion = 9.3;
+					};
+					A1DE849E229F60BE0041E450 = {
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -3773,6 +3815,7 @@
 				A1A63DBF20562B2B000955AE /* ControlsMenuView.xib in Resources */,
 				C81E105513E1CCA000B1049A /* Nightmare.png in Resources */,
 				C81E105613E1CCA000B1049A /* ResumeButton.png in Resources */,
+				29309A1F2420658F005E5AA3 /* SmartDeviceLink in Resources */,
 				A1A63DE720562B76000955AE /* EpisodeMenuView.xib in Resources */,
 				A1A63E3620563345000955AE /* Makefile.am in Resources */,
 				C81E105713E1CCA000B1049A /* SelectedBracket.png in Resources */,
@@ -4008,6 +4051,7 @@
 				A1063A1D216EFCEE00BDE196 /* LayoutDualButton_Highlighted.png in Resources */,
 				A1063A1E216EFCEE00BDE196 /* LayoutDualButton.png in Resources */,
 				A1063A1F216EFCEE00BDE196 /* DOOM_120.png in Resources */,
+				29309A212420658F005E5AA3 /* SmartDeviceLink in Resources */,
 				A1063A20216EFCEE00BDE196 /* LayoutSingleButton_Highlighted.png in Resources */,
 				A1063A21216EFCEE00BDE196 /* LayoutSingleButton.png in Resources */,
 				A1063A22216EFCEE00BDE196 /* LayoutWheelButton_Highlighted.png in Resources */,
@@ -4176,6 +4220,7 @@
 				A1870837216EB633006C013F /* Episode1Background.png in Resources */,
 				A1870838216EB633006C013F /* Episode2Background.png in Resources */,
 				A1870839216EB633006C013F /* Episode3Background.png in Resources */,
+				29309A202420658F005E5AA3 /* SmartDeviceLink in Resources */,
 				A187083A216EB633006C013F /* Localizable.strings in Resources */,
 				A187083B216EB633006C013F /* Episode4Background.png in Resources */,
 				A187083C216EB633006C013F /* MissonBackground.png in Resources */,
@@ -4373,6 +4418,7 @@
 				A1DE84D6229F60BE0041E450 /* MissonBackground.png in Resources */,
 				A1DE84D7229F60BE0041E450 /* DOOMLaunchScreen.storyboard in Resources */,
 				A1DE84D8229F60BE0041E450 /* UpArrow_Highlighted.png in Resources */,
+				29309A222420658F005E5AA3 /* SmartDeviceLink in Resources */,
 				A1DE84D9229F60BE0041E450 /* UpArrow.png in Resources */,
 				A1DE84DA229F60BE0041E450 /* r_drawspan.inl in Resources */,
 				A1DE84DB229F60BE0041E450 /* DOOM_400.png in Resources */,
@@ -4765,6 +4811,7 @@
 				72E848190F941A5900AB3C99 /* p_telept.c in Sources */,
 				72E8481A0F941A5900AB3C99 /* p_tick.c in Sources */,
 				A1A63F2720563B60000955AE /* eas_pcm.c in Sources */,
+				29309A322420687D005E5AA3 /* VehicleController.mm in Sources */,
 				A1A63E0C20562FB0000955AE /* iphone_glViewController.mm in Sources */,
 				72E8481B0F941A5900AB3C99 /* p_user.c in Sources */,
 				72E848260F941A8300AB3C99 /* r_bsp.c in Sources */,
@@ -5110,6 +5157,7 @@
 				A1063A8C216EFCEE00BDE196 /* p_telept.c in Sources */,
 				A1063A8D216EFCEE00BDE196 /* p_tick.c in Sources */,
 				A1063A8E216EFCEE00BDE196 /* eas_pcm.c in Sources */,
+				29309A342420687D005E5AA3 /* VehicleController.mm in Sources */,
 				A1063A8F216EFCEE00BDE196 /* iphone_glViewController.mm in Sources */,
 				A1063A90216EFCEE00BDE196 /* p_user.c in Sources */,
 				A1063A91216EFCEE00BDE196 /* r_bsp.c in Sources */,
@@ -5403,6 +5451,7 @@
 				A1870888216EB633006C013F /* gl_texture.c in Sources */,
 				A1870889216EB633006C013F /* hu_lib.c in Sources */,
 				A187088A216EB633006C013F /* hu_stuff.c in Sources */,
+				29309A332420687D005E5AA3 /* VehicleController.mm in Sources */,
 				A187088B216EB633006C013F /* info.c in Sources */,
 				A187088C216EB633006C013F /* iphone_common.mm in Sources */,
 				A187088D216EB633006C013F /* lprintf.c in Sources */,
@@ -5748,6 +5797,7 @@
 				A1DE8521229F60BE0041E450 /* gl_texture.c in Sources */,
 				A1DE8522229F60BE0041E450 /* hu_lib.c in Sources */,
 				A1DE8523229F60BE0041E450 /* hu_stuff.c in Sources */,
+				29309A352420687D005E5AA3 /* VehicleController.mm in Sources */,
 				A1DE8524229F60BE0041E450 /* info.c in Sources */,
 				A1DE8525229F60BE0041E450 /* iphone_common.mm in Sources */,
 				A1DE8526229F60BE0041E450 /* lprintf.c in Sources */,
@@ -6060,6 +6110,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = NO;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -6099,6 +6150,9 @@
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "DOOM-iOS-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -6109,6 +6163,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = NO;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -6140,6 +6195,8 @@
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "DOOM-iOS-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -6192,6 +6249,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = NO;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -6216,6 +6274,8 @@
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "DOOM-iOS-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = AdHocDist;
@@ -6265,6 +6325,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -6291,6 +6352,8 @@
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "DOOM-iOS-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = ReleaseLite;
@@ -6341,6 +6404,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -6370,6 +6434,9 @@
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "DOOM-iOS-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = DebugLite;
@@ -6680,6 +6747,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = NO;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -6719,6 +6787,9 @@
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "FInalDOOM-iOS-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -6729,6 +6800,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -6758,6 +6830,9 @@
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "FInalDOOM-iOS-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = DebugLite;
@@ -6768,6 +6843,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = NO;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -6799,6 +6875,8 @@
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "FInalDOOM-iOS-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -6809,6 +6887,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -6835,6 +6914,8 @@
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "FInalDOOM-iOS-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = ReleaseLite;
@@ -6845,6 +6926,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = NO;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -6869,6 +6951,8 @@
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "FInalDOOM-iOS-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = AdHocDist;
@@ -6879,6 +6963,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = NO;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: id Software";
@@ -6907,6 +6992,8 @@
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "18BCE49D-8823-4A0C-B597-CFE83C7820BE";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "FInalDOOM-iOS-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Distribution;
@@ -7217,6 +7304,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = NO;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -7256,6 +7344,9 @@
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "DOOM2-iOS-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -7266,6 +7357,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -7295,6 +7387,9 @@
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "DOOM2-iOS-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = DebugLite;
@@ -7305,6 +7400,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = NO;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -7336,6 +7432,8 @@
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "DOOM2-iOS-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -7346,6 +7444,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -7372,6 +7471,8 @@
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "DOOM2-iOS-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = ReleaseLite;
@@ -7382,6 +7483,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = NO;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -7406,6 +7508,8 @@
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "DOOM2-iOS-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = AdHocDist;
@@ -7416,6 +7520,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = NO;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: id Software";
@@ -7444,6 +7549,8 @@
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "18BCE49D-8823-4A0C-B597-CFE83C7820BE";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "DOOM2-iOS-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Distribution;
@@ -7755,6 +7862,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = NO;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -7794,6 +7902,9 @@
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "SIGIL-iOS-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -7805,6 +7916,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -7834,6 +7946,9 @@
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "SIGIL-iOS-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = DebugLite;
@@ -7845,6 +7960,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = NO;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -7876,6 +7992,8 @@
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "SIGIL-iOS-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -7887,6 +8005,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -7913,6 +8032,8 @@
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "SIGIL-iOS-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = ReleaseLite;
@@ -7924,6 +8045,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = NO;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -7948,6 +8070,8 @@
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "SIGIL-iOS-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = AdHocDist;
@@ -7959,6 +8083,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = NO;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: id Software";
@@ -7987,6 +8112,8 @@
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "18BCE49D-8823-4A0C-B597-CFE83C7820BE";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "SIGIL-iOS-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Distribution;
@@ -8436,6 +8563,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = NO;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: id Software";
@@ -8464,6 +8592,8 @@
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "18BCE49D-8823-4A0C-B597-CFE83C7820BE";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "DOOM-iOS-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Distribution;
