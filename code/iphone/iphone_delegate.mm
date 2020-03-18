@@ -26,8 +26,23 @@
 // disabling all app store and game center stuff, not sure if used
 //#include "ios/InAppStore.h"
 //#include "ios/GameCenter.h"
+#import "SmartDeviceLink.h"
 
+#if GAME_DOOM
+#import "DOOM-Swift.h"
+#endif
 
+#if GAME_DOOM2
+#import "DOOM_II-Swift.h"
+#endif
+
+#if GAME_FINALDOOM
+#import "FInal_DOOM-Swift.h"
+#endif
+
+#if GAME_SIGIL
+#import "SIGIL-Swift.h"
+#endif
 
 @implementation iphoneApp
 
@@ -89,6 +104,9 @@ touch_t		gameTouches[MAX_TOUCHES];
 	[window setRootViewController:navigationController];
     [window setBackgroundColor: [UIColor blackColor] ];
 	[window makeKeyAndVisible];
+    
+    // Initialize and start the SmartDeviceLink proxy
+    [[ProxyManager sharedManager] connect];
 }
 
 /*

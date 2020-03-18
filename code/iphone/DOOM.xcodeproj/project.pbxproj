@@ -20,6 +20,18 @@
 		29309A38242068BE005E5AA3 /* VehicleController.h in Headers */ = {isa = PBXBuildFile; fileRef = 29309A36242068BE005E5AA3 /* VehicleController.h */; };
 		29309A39242068BE005E5AA3 /* VehicleController.h in Headers */ = {isa = PBXBuildFile; fileRef = 29309A36242068BE005E5AA3 /* VehicleController.h */; };
 		29309A3A242068BE005E5AA3 /* VehicleController.h in Headers */ = {isa = PBXBuildFile; fileRef = 29309A36242068BE005E5AA3 /* VehicleController.h */; };
+		29309A3C24206F20005E5AA3 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 29309A3B24206F20005E5AA3 /* Settings.bundle */; };
+		29309A3D24206F20005E5AA3 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 29309A3B24206F20005E5AA3 /* Settings.bundle */; };
+		29309A3E24206F20005E5AA3 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 29309A3B24206F20005E5AA3 /* Settings.bundle */; };
+		29309A3F24206F20005E5AA3 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 29309A3B24206F20005E5AA3 /* Settings.bundle */; };
+		29309A4124224609005E5AA3 /* FMCSecurity in Resources */ = {isa = PBXBuildFile; fileRef = 29309A4024224609005E5AA3 /* FMCSecurity */; };
+		29309A4224224609005E5AA3 /* FMCSecurity in Resources */ = {isa = PBXBuildFile; fileRef = 29309A4024224609005E5AA3 /* FMCSecurity */; };
+		29309A4324224609005E5AA3 /* FMCSecurity in Resources */ = {isa = PBXBuildFile; fileRef = 29309A4024224609005E5AA3 /* FMCSecurity */; };
+		29309A4424224609005E5AA3 /* FMCSecurity in Resources */ = {isa = PBXBuildFile; fileRef = 29309A4024224609005E5AA3 /* FMCSecurity */; };
+		29309A462422489C005E5AA3 /* ProxyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29309A452422489C005E5AA3 /* ProxyManager.swift */; };
+		29309A472422489C005E5AA3 /* ProxyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29309A452422489C005E5AA3 /* ProxyManager.swift */; };
+		29309A482422489C005E5AA3 /* ProxyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29309A452422489C005E5AA3 /* ProxyManager.swift */; };
+		29309A492422489C005E5AA3 /* ProxyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29309A452422489C005E5AA3 /* ProxyManager.swift */; };
 		294D382F24205AC600781AFD /* SIGIL_SHREDS.wad in Resources */ = {isa = PBXBuildFile; fileRef = A1DE85BA229F610B0041E450 /* SIGIL_SHREDS.wad */; };
 		4333CCE80F5CC23E00AE2B6F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4333CCE70F5CC23E00AE2B6F /* AudioToolbox.framework */; };
 		4364BF3F0F5CB25900F29317 /* dist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4364BF3E0F5CB25900F29317 /* dist.plist */; };
@@ -2146,6 +2158,9 @@
 		29309A26242067B6005E5AA3 /* SIGIL-iOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SIGIL-iOS-Bridging-Header.h"; sourceTree = "<group>"; };
 		29309A312420687D005E5AA3 /* VehicleController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = VehicleController.mm; path = SmartDeviceLink/VehicleController.mm; sourceTree = "<group>"; };
 		29309A36242068BE005E5AA3 /* VehicleController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = VehicleController.h; path = SmartDeviceLink/VehicleController.h; sourceTree = "<group>"; };
+		29309A3B24206F20005E5AA3 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Settings.bundle; path = SmartDeviceLink/Settings.bundle; sourceTree = "<group>"; };
+		29309A4024224609005E5AA3 /* FMCSecurity */ = {isa = PBXFileReference; lastKnownFileType = folder; path = FMCSecurity; sourceTree = "<group>"; };
+		29309A452422489C005E5AA3 /* ProxyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProxyManager.swift; path = SmartDeviceLink/ProxyManager.swift; sourceTree = "<group>"; };
 		294D381B241F050E00781AFD /* BiSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BiSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		294D381F241F051800781AFD /* BiSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BiSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		294D3823241F052100781AFD /* BiSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BiSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -2832,6 +2847,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				29309A452422489C005E5AA3 /* ProxyManager.swift */,
 				29B97315FDCFA39411CA2CEA /* DOOM-iOS */,
 				A1B9E45B216FFD6A003E9731 /* DOOM-tvOS */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
@@ -2908,6 +2924,7 @@
 				29309A26242067B6005E5AA3 /* SIGIL-iOS-Bridging-Header.h */,
 				29309A312420687D005E5AA3 /* VehicleController.mm */,
 				29309A36242068BE005E5AA3 /* VehicleController.h */,
+				29309A3B24206F20005E5AA3 /* Settings.bundle */,
 			);
 			name = "DOOM-iOS";
 			sourceTree = "<group>";
@@ -3248,6 +3265,7 @@
 		A1A63E25205632E2000955AE /* SDL_shim */ = {
 			isa = PBXGroup;
 			children = (
+				29309A4024224609005E5AA3 /* FMCSecurity */,
 				A1A63E26205632E2000955AE /* ios */,
 				A1A63E28205632E2000955AE /* SDL_Mixer.h */,
 			);
@@ -3823,6 +3841,7 @@
 				C8D1CFAA13E1CDC600F0EAC6 /* Default-Landscape~ipad.png in Resources */,
 				A1A63DF220562B76000955AE /* SettingsMenuView.xib in Resources */,
 				C8792ED813F5AFE5003D834F /* BackButton_Highlighted.png in Resources */,
+				29309A3C24206F20005E5AA3 /* Settings.bundle in Resources */,
 				C8792ED913F5AFE6003D834F /* Button_Highlighted.png in Resources */,
 				C8792EDA13F5AFE6003D834F /* NextButton_Highlighted.png in Resources */,
 				C8792EDB13F5AFE6003D834F /* NextButton.png in Resources */,
@@ -3873,6 +3892,7 @@
 				A12302FD205783E70075CBAD /* base.iPack in Resources */,
 				A1A63DEF20562B76000955AE /* OpenGLView.xib in Resources */,
 				A1A63E3520563345000955AE /* r_drawcolumn.inl in Resources */,
+				29309A4124224609005E5AA3 /* FMCSecurity in Resources */,
 				C87931F913F610B9003D834F /* SliderSkull.png in Resources */,
 				A1A63DE920562B76000955AE /* MissionMenuView.xib in Resources */,
 				C8139AB313FADA800094C2C0 /* SliderSkull@2x.png in Resources */,
@@ -4045,11 +4065,13 @@
 				A1063A17216EFCEE00BDE196 /* EpisodeCell~ipad.xib in Resources */,
 				A1063A18216EFCEE00BDE196 /* AdvancedButton_Highlighted.png in Resources */,
 				A1063A19216EFCEE00BDE196 /* LegalMenuView~ipad.xib in Resources */,
+				29309A4324224609005E5AA3 /* FMCSecurity in Resources */,
 				A1063A1A216EFCEE00BDE196 /* DOOM_76.png in Resources */,
 				A1063A1B216EFCEE00BDE196 /* AdvancedButton.png in Resources */,
 				A1063A1C216EFCEE00BDE196 /* Divide.png in Resources */,
 				A1063A1D216EFCEE00BDE196 /* LayoutDualButton_Highlighted.png in Resources */,
 				A1063A1E216EFCEE00BDE196 /* LayoutDualButton.png in Resources */,
+				29309A3E24206F20005E5AA3 /* Settings.bundle in Resources */,
 				A1063A1F216EFCEE00BDE196 /* DOOM_120.png in Resources */,
 				29309A212420658F005E5AA3 /* SmartDeviceLink in Resources */,
 				A1063A20216EFCEE00BDE196 /* LayoutSingleButton_Highlighted.png in Resources */,
@@ -4243,6 +4265,7 @@
 				A187084D216EB633006C013F /* Divide.png in Resources */,
 				A187084E216EB633006C013F /* LayoutDualButton_Highlighted.png in Resources */,
 				A187084F216EB633006C013F /* LayoutDualButton.png in Resources */,
+				29309A4224224609005E5AA3 /* FMCSecurity in Resources */,
 				A1870850216EB633006C013F /* DOOM_120.png in Resources */,
 				A1870851216EB633006C013F /* LayoutSingleButton_Highlighted.png in Resources */,
 				A1870852216EB633006C013F /* LayoutSingleButton.png in Resources */,
@@ -4255,6 +4278,7 @@
 				A1870859216EB633006C013F /* SliderBackground.png in Resources */,
 				A187085A216EB633006C013F /* SliderBar.png in Resources */,
 				A187085B216EB633006C013F /* prboom.wad in Resources */,
+				29309A3D24206F20005E5AA3 /* Settings.bundle in Resources */,
 				A10638C3216EBC5A00BDE196 /* doom2.wad in Resources */,
 				A187085D216EB633006C013F /* base.iPack in Resources */,
 				A187085E216EB633006C013F /* OpenGLView.xib in Resources */,
@@ -4421,6 +4445,7 @@
 				29309A222420658F005E5AA3 /* SmartDeviceLink in Resources */,
 				A1DE84D9229F60BE0041E450 /* UpArrow.png in Resources */,
 				A1DE84DA229F60BE0041E450 /* r_drawspan.inl in Resources */,
+				29309A4424224609005E5AA3 /* FMCSecurity in Resources */,
 				A1DE84DB229F60BE0041E450 /* DOOM_400.png in Resources */,
 				A1DE84DC229F60BE0041E450 /* Episode1Background_Highlighted.png in Resources */,
 				A1DE85C7229F874F0041E450 /* SIGILLaunchScreen.storyboard in Resources */,
@@ -4457,6 +4482,7 @@
 				A1DE84FA229F60BE0041E450 /* MissionMenuView.xib in Resources */,
 				A1DE84FB229F60BE0041E450 /* SliderSkull@2x.png in Resources */,
 				A1DE84FC229F60BE0041E450 /* SliderSkull~ipad.png in Resources */,
+				29309A3F24206F20005E5AA3 /* Settings.bundle in Resources */,
 				A1DE84FD229F60BE0041E450 /* LegalMenuView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -4734,6 +4760,7 @@
 				72D50DBC0F8ED98000BB49E6 /* ipak.c in Sources */,
 				A12302E9205737F50075CBAD /* View.mm in Sources */,
 				A1A63F3620563B60000955AE /* eas_tcdata.c in Sources */,
+				29309A462422489C005E5AA3 /* ProxyManager.swift in Sources */,
 				A1A63E0E20562FB0000955AE /* iphone_delegate.mm in Sources */,
 				72E847650F93C61900AB3C99 /* am_map.c in Sources */,
 				72E847740F93FFDB00AB3C99 /* d_client.c in Sources */,
@@ -5080,6 +5107,7 @@
 				A1063A3F216EFCEE00BDE196 /* ipak.c in Sources */,
 				A1063A40216EFCEE00BDE196 /* View.mm in Sources */,
 				A1063A41216EFCEE00BDE196 /* eas_tcdata.c in Sources */,
+				29309A482422489C005E5AA3 /* ProxyManager.swift in Sources */,
 				A1063A42216EFCEE00BDE196 /* iphone_delegate.mm in Sources */,
 				A1063A43216EFCEE00BDE196 /* am_map.c in Sources */,
 				A1063A44216EFCEE00BDE196 /* d_client.c in Sources */,
@@ -5480,6 +5508,7 @@
 				A18708A5216EB633006C013F /* eas_imaadpcm.c in Sources */,
 				A18708A6216EB633006C013F /* p_inter.c in Sources */,
 				A18708A7216EB633006C013F /* p_lights.c in Sources */,
+				29309A472422489C005E5AA3 /* ProxyManager.swift in Sources */,
 				A18708A8216EB633006C013F /* p_map.c in Sources */,
 				A18708A9216EB633006C013F /* p_maputl.c in Sources */,
 				A18708AA216EB633006C013F /* GameController.mm in Sources */,
@@ -5826,6 +5855,7 @@
 				A1DE853E229F60BE0041E450 /* eas_imaadpcm.c in Sources */,
 				A1DE853F229F60BE0041E450 /* p_inter.c in Sources */,
 				A1DE8540229F60BE0041E450 /* p_lights.c in Sources */,
+				29309A492422489C005E5AA3 /* ProxyManager.swift in Sources */,
 				A1DE8541229F60BE0041E450 /* p_map.c in Sources */,
 				A1DE8542229F60BE0041E450 /* p_maputl.c in Sources */,
 				A1DE8543229F60BE0041E450 /* GameController.mm in Sources */,
