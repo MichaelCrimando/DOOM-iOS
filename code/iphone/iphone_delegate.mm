@@ -101,6 +101,7 @@ touch_t		gameTouches[MAX_TOUCHES];
     
     // Initialize and start the SmartDeviceLink proxy
     [[ProxyManager sharedManager] connect];
+    
 }
 
 /*
