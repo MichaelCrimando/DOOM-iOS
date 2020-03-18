@@ -124,21 +124,11 @@ class ProxyManager: NSObject, SDLStreamingMediaManagerDataSource {
         
         lifecycleConfiguration.appType = appType
         
-//        isEncryptionEnabled = SettingsBundleHelper.isEncryptionEnabled()
-//        let encryptionFlag:SDLStreamingEncryptionFlag = SettingsBundleHelper.isEncryptionEnabled() ? SDLStreamingEncryptionFlag.authenticateAndEncrypt : SDLStreamingEncryptionFlag.none
-//        let streamingConfig : SDLStreamingMediaConfiguration = SDLStreamingMediaConfiguration(securityManagers: [FMCSecurityManager.self], encryptionFlag: encryptionFlag, videoSettings: nil, dataSource: self, rootViewController: self.sdlViewController)
-        var videoEncoderSettings:[String:Any]?
-        let streamingConfig = SDLStreamingMediaConfiguration(encryptionFlag: SDLStreamingEncryptionFlag.authenticateAndEncrypt, videoSettings: videoEncoderSettings, dataSource: self as! SDLStreamingMediaManagerDataSource, rootViewController: self.sdlViewController)
-        streamingConfig.carWindowRenderingType = .viewAfterScreenUpdates
         
         
-        let encryptionConfig = SDLEncryptionConfiguration(securityManagers: [FMCSecurityManager.self], delegate: nil)
-        var lockScreenConfiguration:SDLLockScreenConfiguration = SDLLockScreenConfiguration.disabled()
-        //let lockIcon: UIImage = #imageLiteral(resourceName: "sdl_logo_black")
-        //let backGroundColor: UIColor = #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)
-        lockScreenConfiguration = SDLLockScreenConfiguration.disabled()
-        
-        let configuration = SDLConfiguration(lifecycle: lifecycleConfiguration, lockScreen: lockScreenConfiguration, logging: nil, streamingMedia: streamingConfig, fileManager: nil, encryption: encryptionConfig)
+        let encryptionConfig = SDLEncryptionConfiguration(securityManagers: [FMCSecurityManager.self], delegate: self as! SDLServiceEncryptionDelegate)
+        let streamingConfig = SDLStreamingMediaConfiguration.secure()
+        let configuration = SDLConfiguration(lifecycle: lifecycleConfiguration, lockScreen: .disabled(), logging: .default(), streamingMedia: streamingConfig, fileManager: .default(), encryption: encryptionConfig)
         
         sdlManager = SDLManager(configuration: configuration, delegate: self)
         self.isVideoStreamStarted = true
@@ -261,5 +251,10 @@ extension ProxyManager: SDLManagerDelegate {
 
   func hmiLevel(_ oldLevel: SDLHMILevel, didChangeToLevel newLevel: SDLHMILevel) {
     print("Went from HMI level \(oldLevel) to HMI level \(newLevel)")
+    if newLevel != .none {
+        UIApplication.shared.isIdleTimerDisabled = true
+    } else {
+        UIApplication.shared.isIdleTimerDisabled = false
+    }
   }
 }
