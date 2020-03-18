@@ -7,7 +7,11 @@
 import Foundation
 import SmartDeviceLink
 
-class ProxyManager: NSObject, SDLStreamingMediaManagerDataSource {
+class ProxyManager: NSObject, SDLStreamingMediaManagerDataSource, SDLServiceEncryptionDelegate {
+    func serviceEncryptionUpdated(serviceType type: SDLServiceType, isEncrypted encrypted: Bool, error: Error?) {
+        print(" I have no idea what this fnuction is for but protocol baby")
+    }
+    
     
     // Manager
     public var sdlManager: SDLManager!
@@ -125,12 +129,14 @@ class ProxyManager: NSObject, SDLStreamingMediaManagerDataSource {
         lifecycleConfiguration.appType = appType
         
         
-        
         let encryptionConfig = SDLEncryptionConfiguration(securityManagers: [FMCSecurityManager.self], delegate: self as! SDLServiceEncryptionDelegate)
         let streamingConfig = SDLStreamingMediaConfiguration.secure()
         let configuration = SDLConfiguration(lifecycle: lifecycleConfiguration, lockScreen: .disabled(), logging: .default(), streamingMedia: streamingConfig, fileManager: .default(), encryption: encryptionConfig)
         
         sdlManager = SDLManager(configuration: configuration, delegate: self)
+        
+        
+        
         self.isVideoStreamStarted = true
         NotificationCenter.default.addObserver(self, selector: #selector(vehicleDataAvailable(_:)), name: .SDLDidReceiveVehicleData, object: nil)
         NSObject.load()
@@ -251,10 +257,12 @@ extension ProxyManager: SDLManagerDelegate {
 
   func hmiLevel(_ oldLevel: SDLHMILevel, didChangeToLevel newLevel: SDLHMILevel) {
     print("Went from HMI level \(oldLevel) to HMI level \(newLevel)")
-    if newLevel != .none {
-        UIApplication.shared.isIdleTimerDisabled = true
-    } else {
-        UIApplication.shared.isIdleTimerDisabled = false
-    }
+//    DispatchQueue.global(qos: .background).async {
+//        if newLevel != .none {
+//            UIApplication.shared.isIdleTimerDisabled = true
+//        } else {
+//            UIApplication.shared.isIdleTimerDisabled = false
+//        }
+//    }
   }
 }
