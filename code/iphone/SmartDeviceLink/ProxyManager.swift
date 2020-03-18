@@ -101,13 +101,14 @@ class ProxyManager: NSObject {
 //        let encryptionFlag:SDLStreamingEncryptionFlag = SettingsBundleHelper.isEncryptionEnabled() ? SDLStreamingEncryptionFlag.authenticateAndEncrypt : SDLStreamingEncryptionFlag.none
 //        let streamingConfig : SDLStreamingMediaConfiguration = SDLStreamingMediaConfiguration(securityManagers: [FMCSecurityManager.self], encryptionFlag: encryptionFlag, videoSettings: nil, dataSource: self, rootViewController: self.sdlViewController)
         
+        let encryptionConfig = SDLEncryptionConfiguration(securityManagers: [FMCSecurityManager.self], delegate: nil)
         
         let streamingConfig : SDLStreamingMediaConfiguration = SDLStreamingMediaConfiguration(encryptionFlag: SDLStreamingEncryptionFlag.authenticateAndEncrypt, videoSettings: nil, dataSource: self as? SDLStreamingMediaManagerDataSource, rootViewController: self.sdlViewController)
         streamingConfig.carWindowRenderingType = .viewAfterScreenUpdates
 
         
         
-        let configuration = SDLConfiguration(lifecycle: lifecycleConfiguration, lockScreen: nil, logging: nil, streamingMedia: streamingConfig)
+        let configuration = SDLConfiguration(lifecycle: lifecycleConfiguration, lockScreen: nil, logging: nil, streamingMedia: streamingConfig, fileManager: nil, encryption: encryptionConfig)
         sdlManager = SDLManager(configuration: configuration, delegate: self)
         
         self.isVideoStreamStarted = true
