@@ -30,17 +30,11 @@
 
 #if GAME_DOOM
 #import "DOOM-Swift.h"
-#endif
-
-#if GAME_DOOM2
+#elif GAME_DOOM2
 #import "DOOM_II-Swift.h"
-#endif
-
-#if GAME_FINALDOOM
+#elif GAME_FINALDOOM
 #import "FInal_DOOM-Swift.h"
-#endif
-
-#if GAME_SIGIL
+#else
 #import "SIGIL-Swift.h"
 #endif
 
