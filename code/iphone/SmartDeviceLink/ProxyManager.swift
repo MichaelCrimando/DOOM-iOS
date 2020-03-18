@@ -7,7 +7,7 @@
 import Foundation
 import SmartDeviceLink
 
-class ProxyManager: NSObject {
+class ProxyManager: NSObject, SDLStreamingMediaManagerDataSource {
     
     // Manager
     public var sdlManager: SDLManager!
@@ -35,11 +35,38 @@ class ProxyManager: NSObject {
     private let appId = "666666"
     private let appImageName = "SIGIL_76.png"
     #endif
-
+    
+    private var appType : SDLAppHMIType = .navigation
+    var isConnected : Bool = false
     var isVideoStreamStarted: Bool = false
-    var sdlViewController:UIViewController? = blankViewController()
+    var sdlViewSize:CGSize = CGSize(width: 200, height: 200)
+    
+    
     var subscribeVehicleData : SDLSubscribeVehicleData
-    var currentHmiLevel : SDLHMILevel = .none
+    
+    private var _hmiLevel: SDLHMILevel = .none
+    var hmiLevel: SDLHMILevel{
+        get {
+            return _hmiLevel
+        }
+    }
+    
+    //viewcontroller to send to hmi
+    private var _sdlVC:SDLCarWindowViewController = SDLCarWindowViewController()
+    var sdlViewController: SDLCarWindowViewController {
+        get {
+            return _sdlVC
+        }
+        set {
+            _sdlVC = newValue
+            if sdlManager.streamManager != nil {
+                sdlManager.streamManager?.rootViewController = newValue
+            }
+        }
+    }
+    
+    
+    
     @objc public var isVehicleDataSubscribed : Bool = false
     @objc public var bodyData : SDLBodyInformation = SDLBodyInformation() //Door - 1 = open, 0 = closed
     private var _steeringWheelAngle : SDLFloat = 0 as SDLFloat //On a scale from 480 (all the way left) to -480 (all the way right).
@@ -82,7 +109,7 @@ class ProxyManager: NSObject {
     private override init() {
         subscribeVehicleData = SDLSubscribeVehicleData()
         super.init()
-        var sdlViewController:UIViewController? = blankViewController()
+
         // Used for USB Connection
         let lifecycleConfiguration = SDLLifecycleConfiguration(appName: appName, fullAppId: appId)
         lifecycleConfiguration.shortAppName = appName
@@ -95,25 +122,28 @@ class ProxyManager: NSObject {
         SDLLockScreenConfiguration.enabled()
         SDLLogConfiguration.default()
         
-        lifecycleConfiguration.appType = .navigation
+        lifecycleConfiguration.appType = appType
         
 //        isEncryptionEnabled = SettingsBundleHelper.isEncryptionEnabled()
 //        let encryptionFlag:SDLStreamingEncryptionFlag = SettingsBundleHelper.isEncryptionEnabled() ? SDLStreamingEncryptionFlag.authenticateAndEncrypt : SDLStreamingEncryptionFlag.none
 //        let streamingConfig : SDLStreamingMediaConfiguration = SDLStreamingMediaConfiguration(securityManagers: [FMCSecurityManager.self], encryptionFlag: encryptionFlag, videoSettings: nil, dataSource: self, rootViewController: self.sdlViewController)
+        var videoEncoderSettings:[String:Any]?
+        let streamingConfig = SDLStreamingMediaConfiguration(encryptionFlag: SDLStreamingEncryptionFlag.authenticateAndEncrypt, videoSettings: videoEncoderSettings, dataSource: self as! SDLStreamingMediaManagerDataSource, rootViewController: self.sdlViewController)
+        streamingConfig.carWindowRenderingType = .viewAfterScreenUpdates
+        
         
         let encryptionConfig = SDLEncryptionConfiguration(securityManagers: [FMCSecurityManager.self], delegate: nil)
+        var lockScreenConfiguration:SDLLockScreenConfiguration = SDLLockScreenConfiguration.disabled()
+        //let lockIcon: UIImage = #imageLiteral(resourceName: "sdl_logo_black")
+        //let backGroundColor: UIColor = #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)
+        lockScreenConfiguration = SDLLockScreenConfiguration.disabled()
         
-        let streamingConfig : SDLStreamingMediaConfiguration = SDLStreamingMediaConfiguration(encryptionFlag: SDLStreamingEncryptionFlag.authenticateAndEncrypt, videoSettings: nil, dataSource: self as? SDLStreamingMediaManagerDataSource, rootViewController: self.sdlViewController)
-        streamingConfig.carWindowRenderingType = .viewAfterScreenUpdates
-
+        let configuration = SDLConfiguration(lifecycle: lifecycleConfiguration, lockScreen: lockScreenConfiguration, logging: nil, streamingMedia: streamingConfig, fileManager: nil, encryption: encryptionConfig)
         
-        
-        let configuration = SDLConfiguration(lifecycle: lifecycleConfiguration, lockScreen: nil, logging: nil, streamingMedia: streamingConfig, fileManager: nil, encryption: encryptionConfig)
         sdlManager = SDLManager(configuration: configuration, delegate: self)
-        
         self.isVideoStreamStarted = true
-        
         NotificationCenter.default.addObserver(self, selector: #selector(vehicleDataAvailable(_:)), name: .SDLDidReceiveVehicleData, object: nil)
+        NSObject.load()
         
     }
     
@@ -132,12 +162,22 @@ class ProxyManager: NSObject {
     }
 
    @objc func connect() {
-        // Start watching for a connection with a SDL Core
-        sdlManager.start { (success, error) in
-            if success {
-                // Your app has successfully connected with the SDL Core
-            }
-        }
+       // Start watching for a connection with a SDL Core
+       DispatchQueue.global(qos: .background).async {
+       self.sdlManager.start { (success, error) in
+           if success {
+               // Your app has successfully connected with the SDL Core
+               self.isConnected = true
+           }
+       }
+       }
+   }
+    
+    /**
+     *  Disconnect app on SYNC
+     */
+    @objc func disconnect() {
+        sdlManager.stop()
     }
     
     func preferredVideoFormatOrder(fromHeadUnitPreferredOrder headUnitPreferredOrder: [SDLVideoStreamingFormat]) -> [SDLVideoStreamingFormat] {
@@ -196,6 +236,17 @@ class ProxyManager: NSObject {
             self.isVehicleDataSubscribed = true
             // Successfully subscribed
             print("Vehicle data subscribed")
+        }
+    }
+    
+    @objc func didReceiveGetSystemCapabilityResponse(_ notification:SDLRPCResponseNotification){
+        guard let response: SDLGetSystemCapabilityResponse = notification.response as? SDLGetSystemCapabilityResponse else {return}
+        //set view size
+        let height:Double? = response.systemCapability?.videoStreamingCapability?.preferredResolution?.resolutionHeight.doubleValue
+        let width:Double? = response.systemCapability?.videoStreamingCapability?.preferredResolution?.resolutionWidth.doubleValue
+        if width != nil && height != nil{
+          let size:CGSize = CGSize(width: width!, height: height!)
+          self.sdlViewSize = size
         }
     }
 }
