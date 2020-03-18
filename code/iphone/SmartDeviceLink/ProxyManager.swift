@@ -18,23 +18,22 @@ class ProxyManager: NSObject {
     #if GAME_DOOM
     private let appName = "DOOM"
     private let appId = "666"
-    private let iconName = "DOOM_72.png"
-    private let appImageName = "DOOM_72.png"
+    private let appImageName = "DOOM_76.png"
     
     #elseif GAME_DOOM2
     private let appName = "DOOM II"
     private let appId = "6666"
-    private let appImageName = "DOOM_72.png"
+    private let appImageName = "DOOM2_76.png"
     
     #elseif GAME_FINALDOOM
     private let appName = "Final DOOM"
     private let appId = "66666"
-    private let appImageName = "DOOM_72.png"
+    private let appImageName = "FinalDOOM_76.png"
     
     #else
     private let appName = "SIGIL"
     private let appId = "666666"
-    private let appImageName = "DOOM_72.png"
+    private let appImageName = "SIGIL_76.png"
     #endif
 
     var isVideoStreamStarted: Bool = false
@@ -89,10 +88,10 @@ class ProxyManager: NSObject {
         lifecycleConfiguration.shortAppName = appName
         
         if let appImage = UIImage(named: appImageName) {
-          let appIcon = SDLArtwork(image: appImage, name: appName, persistent: true, as: .JPG /* or .PNG */)
+          let appIcon = SDLArtwork(image: appImage, name: appName, persistent: true, as: .PNG )
           lifecycleConfiguration.appIcon = appIcon
         }
-        
+
         SDLLockScreenConfiguration.enabled()
         SDLLogConfiguration.default()
         

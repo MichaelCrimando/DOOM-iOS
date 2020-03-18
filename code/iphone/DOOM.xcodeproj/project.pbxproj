@@ -45,6 +45,21 @@
 		29C0CF0D242282F500D6688E /* libFMCSecurity.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 29C0CF082422828500D6688E /* libFMCSecurity.a */; };
 		29C0CF0E2422830800D6688E /* libFMCSecurity.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 29C0CF062422827300D6688E /* libFMCSecurity.a */; };
 		29C0CF0F2422831600D6688E /* libFMCSecurity.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 29C0CF082422828500D6688E /* libFMCSecurity.a */; };
+		29C0CF102422960F00D6688E /* SIGIL-iOS.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1DE85C2229F73950041E450 /* SIGIL-iOS.xcassets */; };
+		29C0CF112422961000D6688E /* SIGIL-iOS.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1DE85C2229F73950041E450 /* SIGIL-iOS.xcassets */; };
+		29C0CF122422961100D6688E /* SIGIL-iOS.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1DE85C2229F73950041E450 /* SIGIL-iOS.xcassets */; };
+		29C0CF162422962C00D6688E /* SIGIL_76.png in Resources */ = {isa = PBXBuildFile; fileRef = 29C0CF132422962B00D6688E /* SIGIL_76.png */; };
+		29C0CF172422962C00D6688E /* SIGIL_76.png in Resources */ = {isa = PBXBuildFile; fileRef = 29C0CF132422962B00D6688E /* SIGIL_76.png */; };
+		29C0CF182422962C00D6688E /* SIGIL_76.png in Resources */ = {isa = PBXBuildFile; fileRef = 29C0CF132422962B00D6688E /* SIGIL_76.png */; };
+		29C0CF192422962C00D6688E /* SIGIL_76.png in Resources */ = {isa = PBXBuildFile; fileRef = 29C0CF132422962B00D6688E /* SIGIL_76.png */; };
+		29C0CF1A2422962C00D6688E /* FinalDOOM_76.png in Resources */ = {isa = PBXBuildFile; fileRef = 29C0CF142422962B00D6688E /* FinalDOOM_76.png */; };
+		29C0CF1B2422962C00D6688E /* FinalDOOM_76.png in Resources */ = {isa = PBXBuildFile; fileRef = 29C0CF142422962B00D6688E /* FinalDOOM_76.png */; };
+		29C0CF1C2422962C00D6688E /* FinalDOOM_76.png in Resources */ = {isa = PBXBuildFile; fileRef = 29C0CF142422962B00D6688E /* FinalDOOM_76.png */; };
+		29C0CF1D2422962C00D6688E /* FinalDOOM_76.png in Resources */ = {isa = PBXBuildFile; fileRef = 29C0CF142422962B00D6688E /* FinalDOOM_76.png */; };
+		29C0CF1E2422962C00D6688E /* DOOM2_76.png in Resources */ = {isa = PBXBuildFile; fileRef = 29C0CF152422962C00D6688E /* DOOM2_76.png */; };
+		29C0CF1F2422962C00D6688E /* DOOM2_76.png in Resources */ = {isa = PBXBuildFile; fileRef = 29C0CF152422962C00D6688E /* DOOM2_76.png */; };
+		29C0CF202422962C00D6688E /* DOOM2_76.png in Resources */ = {isa = PBXBuildFile; fileRef = 29C0CF152422962C00D6688E /* DOOM2_76.png */; };
+		29C0CF212422962C00D6688E /* DOOM2_76.png in Resources */ = {isa = PBXBuildFile; fileRef = 29C0CF152422962C00D6688E /* DOOM2_76.png */; };
 		4333CCE80F5CC23E00AE2B6F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4333CCE70F5CC23E00AE2B6F /* AudioToolbox.framework */; };
 		4364BF3F0F5CB25900F29317 /* dist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4364BF3E0F5CB25900F29317 /* dist.plist */; };
 		43CF02FF0F56974E00E4A23D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 43CF02FE0F56974E00E4A23D /* Default.png */; };
@@ -2183,6 +2198,9 @@
 		29C0CF04242281A000D6688E /* FMCSecurity */ = {isa = PBXFileReference; lastKnownFileType = folder; path = FMCSecurity; sourceTree = "<group>"; };
 		29C0CF062422827300D6688E /* libFMCSecurity.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFMCSecurity.a; path = FMCSecurity/FMCSecurity/debug/libFMCSecurity.a; sourceTree = "<group>"; };
 		29C0CF082422828500D6688E /* libFMCSecurity.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFMCSecurity.a; path = FMCSecurity/FMCSecurity/release/libFMCSecurity.a; sourceTree = "<group>"; };
+		29C0CF132422962B00D6688E /* SIGIL_76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SIGIL_76.png; sourceTree = "<group>"; };
+		29C0CF142422962B00D6688E /* FinalDOOM_76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FinalDOOM_76.png; sourceTree = "<group>"; };
+		29C0CF152422962C00D6688E /* DOOM2_76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DOOM2_76.png; sourceTree = "<group>"; };
 		29E606BC7B7FDD49D2416DB9 /* Pods-DOOM2-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DOOM2-iOS.debug.xcconfig"; path = "Target Support Files/Pods-DOOM2-iOS/Pods-DOOM2-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		2ECE0A091CB7E305A4AFFF65 /* Pods-DOOM-iOS.distribution.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DOOM-iOS.distribution.xcconfig"; path = "Target Support Files/Pods-DOOM-iOS/Pods-DOOM-iOS.distribution.xcconfig"; sourceTree = "<group>"; };
 		36235B6B9B8C50099161814E /* Pods-FInalDOOM-iOS.adhocdist.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FInalDOOM-iOS.adhocdist.xcconfig"; path = "Target Support Files/Pods-FInalDOOM-iOS/Pods-FInalDOOM-iOS.adhocdist.xcconfig"; sourceTree = "<group>"; };
@@ -2896,6 +2914,9 @@
 				A1A63E1D20562FD1000955AE /* Doom_App.m */,
 				434669A30F8D08C000EA7D6D /* doom_Prefix.pch */,
 				A1063C06216F032300BDE196 /* DOOM-iOS-Info.plist */,
+				29C0CF152422962C00D6688E /* DOOM2_76.png */,
+				29C0CF142422962B00D6688E /* FinalDOOM_76.png */,
+				29C0CF132422962B00D6688E /* SIGIL_76.png */,
 				A1063C07216F032300BDE196 /* DOOM2-iOS-Info.plist */,
 				7229CC8E0F6B3363004123C5 /* doomiphone.h */,
 				7229CE450F6C89F8004123C5 /* EAGLView.h */,
@@ -3841,6 +3862,7 @@
 				C81E104C13E1CCA000B1049A /* BackButton.png in Resources */,
 				C81E104D13E1CCA000B1049A /* Button.png in Resources */,
 				A1E89C902067469D00760204 /* CreditsMenuView.xib in Resources */,
+				29C0CF102422960F00D6688E /* SIGIL-iOS.xcassets in Resources */,
 				A1A63DC220562B2B000955AE /* CreditsMenuView~ipad.xib in Resources */,
 				A1A63DC420562B2B000955AE /* SecretMenuView.xib in Resources */,
 				C81E104E13E1CCA000B1049A /* DOOM_sigil_decal.png in Resources */,
@@ -3892,6 +3914,7 @@
 				A1A63E3920563345000955AE /* r_drawspan.inl in Resources */,
 				A1EA3B87207F9DE20038650E /* DOOM_400.png in Resources */,
 				C87930E513F5EC1B003D834F /* Episode1Background_Highlighted.png in Resources */,
+				29C0CF1E2422962C00D6688E /* DOOM2_76.png in Resources */,
 				C87930E613F5EC1B003D834F /* Episode2Background_Highlighted.png in Resources */,
 				C87930E713F5EC1B003D834F /* Episode3Background_Highlighted.png in Resources */,
 				C87930E813F5EC1B003D834F /* Episode4Background_Highlighted.png in Resources */,
@@ -3900,6 +3923,7 @@
 				A176AC09206492DD00A96B7E /* EpisodeCell~ipad.xib in Resources */,
 				C87931EC13F610B9003D834F /* AdvancedButton_Highlighted.png in Resources */,
 				A1A63DE820562B76000955AE /* LegalMenuView~ipad.xib in Resources */,
+				29C0CF162422962C00D6688E /* SIGIL_76.png in Resources */,
 				A1A63E1C20562FC4000955AE /* DOOM_76.png in Resources */,
 				C87931ED13F610B9003D834F /* AdvancedButton.png in Resources */,
 				C87931EE13F610B9003D834F /* Divide.png in Resources */,
@@ -3907,6 +3931,7 @@
 				C87931F013F610B9003D834F /* LayoutDualButton.png in Resources */,
 				A1A63E1B20562FC4000955AE /* DOOM_120.png in Resources */,
 				C87931F113F610B9003D834F /* LayoutSingleButton_Highlighted.png in Resources */,
+				29C0CF1A2422962C00D6688E /* FinalDOOM_76.png in Resources */,
 				C87931F213F610B9003D834F /* LayoutSingleButton.png in Resources */,
 				C87931F313F610B9003D834F /* LayoutWheelButton_Highlighted.png in Resources */,
 				A1A63E3820563345000955AE /* r_drawflush.inl in Resources */,
@@ -4026,6 +4051,7 @@
 				A10639D8216EFCEE00BDE196 /* dist.plist in Resources */,
 				A10639D9216EFCEE00BDE196 /* DOOM_57.png in Resources */,
 				A10639DA216EFCEE00BDE196 /* DOOM_114.png in Resources */,
+				29C0CF182422962C00D6688E /* SIGIL_76.png in Resources */,
 				A10639DB216EFCEE00BDE196 /* DOOM_72.png in Resources */,
 				A10639DC216EFCEE00BDE196 /* Default@2x.png in Resources */,
 				A10639DD216EFCEE00BDE196 /* Default~ipad.png in Resources */,
@@ -4044,6 +4070,7 @@
 				A10639EA216EFCEE00BDE196 /* MainMenuView.xib in Resources */,
 				A10639EB216EFCEE00BDE196 /* Hard.png in Resources */,
 				A10639EC216EFCEE00BDE196 /* MainMenuView~ipad.xib in Resources */,
+				29C0CF122422961100D6688E /* SIGIL-iOS.xcassets in Resources */,
 				A1D39933217144A800FD11C3 /* FinalDOOMLaunchScreen.storyboard in Resources */,
 				A10639ED216EFCEE00BDE196 /* DOOM_144.png in Resources */,
 				A10639EE216EFCEE00BDE196 /* MapOverlay.png in Resources */,
@@ -4076,6 +4103,7 @@
 				A1063A06216EFCEE00BDE196 /* Episode1Background.png in Resources */,
 				A1063A07216EFCEE00BDE196 /* Episode2Background.png in Resources */,
 				A1063A08216EFCEE00BDE196 /* Episode3Background.png in Resources */,
+				29C0CF1C2422962C00D6688E /* FinalDOOM_76.png in Resources */,
 				A1063A09216EFCEE00BDE196 /* Localizable.strings in Resources */,
 				A1063A0A216EFCEE00BDE196 /* Episode4Background.png in Resources */,
 				A1063A0B216EFCEE00BDE196 /* MissonBackground.png in Resources */,
@@ -4112,6 +4140,7 @@
 				A1063A27216EFCEE00BDE196 /* DOOM_152.png in Resources */,
 				A1063A28216EFCEE00BDE196 /* SliderBackground.png in Resources */,
 				A1063A29216EFCEE00BDE196 /* SliderBar.png in Resources */,
+				29C0CF202422962C00D6688E /* DOOM2_76.png in Resources */,
 				A1063A2A216EFCEE00BDE196 /* prboom.wad in Resources */,
 				A1063A2C216EFCEE00BDE196 /* base.iPack in Resources */,
 				A1063A2D216EFCEE00BDE196 /* OpenGLView.xib in Resources */,
@@ -4252,6 +4281,7 @@
 				A1870826216EB633006C013F /* EpisodeMenuView.xib in Resources */,
 				A1870827216EB633006C013F /* Makefile.am in Resources */,
 				A1870828216EB633006C013F /* SelectedBracket.png in Resources */,
+				29C0CF1B2422962C00D6688E /* FinalDOOM_76.png in Resources */,
 				A1870829216EB633006C013F /* Default-Portrait~ipad.png in Resources */,
 				A187082A216EB633006C013F /* Default-Landscape~ipad.png in Resources */,
 				A187082B216EB633006C013F /* SettingsMenuView.xib in Resources */,
@@ -4265,6 +4295,8 @@
 				A1870832216EB633006C013F /* SubMenuButton.png in Resources */,
 				A1870833216EB633006C013F /* EpisodeMenuView~ipad.xib in Resources */,
 				A1870834216EB633006C013F /* DifficultyBackground.png in Resources */,
+				29C0CF1F2422962C00D6688E /* DOOM2_76.png in Resources */,
+				29C0CF172422962C00D6688E /* SIGIL_76.png in Resources */,
 				A1870835216EB633006C013F /* DownArrow_Highlighted.png in Resources */,
 				A1870836216EB633006C013F /* DownArrow.png in Resources */,
 				A1870837216EB633006C013F /* Episode1Background.png in Resources */,
@@ -4314,6 +4346,7 @@
 				A1870860216EB633006C013F /* SliderSkull.png in Resources */,
 				A1870861216EB633006C013F /* MissionMenuView.xib in Resources */,
 				A1870862216EB633006C013F /* SliderSkull@2x.png in Resources */,
+				29C0CF112422961000D6688E /* SIGIL-iOS.xcassets in Resources */,
 				A1870863216EB633006C013F /* SliderSkull~ipad.png in Resources */,
 				A1870864216EB633006C013F /* LegalMenuView.xib in Resources */,
 			);
@@ -4416,6 +4449,7 @@
 				A1DE84A0229F60BE0041E450 /* Default.png in Resources */,
 				A1DE84A1229F60BE0041E450 /* dist.plist in Resources */,
 				A1DE84A3229F60BE0041E450 /* DOOM_57.png in Resources */,
+				29C0CF192422962C00D6688E /* SIGIL_76.png in Resources */,
 				A1DE84A4229F60BE0041E450 /* DOOM_114.png in Resources */,
 				A1DE84A5229F60BE0041E450 /* DOOM_72.png in Resources */,
 				A1DE85C3229F73950041E450 /* SIGIL-iOS.xcassets in Resources */,
@@ -4467,6 +4501,7 @@
 				A1DE84D3229F60BE0041E450 /* Episode3Background.png in Resources */,
 				A1DE84D4229F60BE0041E450 /* Localizable.strings in Resources */,
 				A1DE84D5229F60BE0041E450 /* Episode4Background.png in Resources */,
+				29C0CF1D2422962C00D6688E /* FinalDOOM_76.png in Resources */,
 				A1DE84D6229F60BE0041E450 /* MissonBackground.png in Resources */,
 				A1DE84D7229F60BE0041E450 /* DOOMLaunchScreen.storyboard in Resources */,
 				A1DE84D8229F60BE0041E450 /* UpArrow_Highlighted.png in Resources */,
@@ -4503,6 +4538,7 @@
 				A1DE84F3229F60BE0041E450 /* SliderBackground.png in Resources */,
 				A1DE84F4229F60BE0041E450 /* SliderBar.png in Resources */,
 				A1DE84F5229F60BE0041E450 /* prboom.wad in Resources */,
+				29C0CF212422962C00D6688E /* DOOM2_76.png in Resources */,
 				A1DE84F6229F60BE0041E450 /* base.iPack in Resources */,
 				A1DE84F7229F60BE0041E450 /* OpenGLView.xib in Resources */,
 				A1DE84F8229F60BE0041E450 /* r_drawcolumn.inl in Resources */,
@@ -6218,6 +6254,7 @@
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = GAME_DOOM;
 				SWIFT_OBJC_BRIDGING_HEADER = "DOOM-iOS-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -6269,6 +6306,7 @@
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = GAME_DOOM;
 				SWIFT_OBJC_BRIDGING_HEADER = "DOOM-iOS-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -6354,6 +6392,7 @@
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = GAME_DOOM;
 				SWIFT_OBJC_BRIDGING_HEADER = "DOOM-iOS-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -6438,6 +6477,7 @@
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = GAME_DOOM;
 				SWIFT_OBJC_BRIDGING_HEADER = "DOOM-iOS-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -6526,6 +6566,7 @@
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = GAME_DOOM;
 				SWIFT_OBJC_BRIDGING_HEADER = "DOOM-iOS-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -6885,6 +6926,7 @@
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = GAME_FINALDOOM;
 				SWIFT_OBJC_BRIDGING_HEADER = "FInalDOOM-iOS-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -6934,6 +6976,7 @@
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = GAME_FINALDOOM;
 				SWIFT_OBJC_BRIDGING_HEADER = "FInalDOOM-iOS-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -6985,6 +7028,7 @@
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = GAME_FINALDOOM;
 				SWIFT_OBJC_BRIDGING_HEADER = "FInalDOOM-iOS-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -7030,6 +7074,7 @@
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = GAME_FINALDOOM;
 				SWIFT_OBJC_BRIDGING_HEADER = "FInalDOOM-iOS-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -7073,6 +7118,7 @@
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = GAME_FINALDOOM;
 				SWIFT_OBJC_BRIDGING_HEADER = "FInalDOOM-iOS-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -7120,6 +7166,7 @@
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "18BCE49D-8823-4A0C-B597-CFE83C7820BE";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = GAME_FINALDOOM;
 				SWIFT_OBJC_BRIDGING_HEADER = "FInalDOOM-iOS-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -7478,6 +7525,7 @@
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = GAME_DOOM2;
 				SWIFT_OBJC_BRIDGING_HEADER = "DOOM2-iOS-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -7527,6 +7575,7 @@
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = GAME_DOOM2;
 				SWIFT_OBJC_BRIDGING_HEADER = "DOOM2-iOS-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -7578,6 +7627,7 @@
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = GAME_DOOM2;
 				SWIFT_OBJC_BRIDGING_HEADER = "DOOM2-iOS-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -7623,6 +7673,7 @@
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = GAME_DOOM2;
 				SWIFT_OBJC_BRIDGING_HEADER = "DOOM2-iOS-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -7666,6 +7717,7 @@
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = GAME_DOOM2;
 				SWIFT_OBJC_BRIDGING_HEADER = "DOOM2-iOS-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -7713,6 +7765,7 @@
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "18BCE49D-8823-4A0C-B597-CFE83C7820BE";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = GAME_DOOM2;
 				SWIFT_OBJC_BRIDGING_HEADER = "DOOM2-iOS-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -8072,6 +8125,7 @@
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = GAME_SIGIL;
 				SWIFT_OBJC_BRIDGING_HEADER = "SIGIL-iOS-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -8122,6 +8176,7 @@
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = GAME_SIGIL;
 				SWIFT_OBJC_BRIDGING_HEADER = "SIGIL-iOS-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -8174,6 +8229,7 @@
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = GAME_SIGIL;
 				SWIFT_OBJC_BRIDGING_HEADER = "SIGIL-iOS-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -8220,6 +8276,7 @@
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = GAME_SIGIL;
 				SWIFT_OBJC_BRIDGING_HEADER = "SIGIL-iOS-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -8264,6 +8321,7 @@
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = GAME_SIGIL;
 				SWIFT_OBJC_BRIDGING_HEADER = "SIGIL-iOS-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -8312,6 +8370,7 @@
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "18BCE49D-8823-4A0C-B597-CFE83C7820BE";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = GAME_SIGIL;
 				SWIFT_OBJC_BRIDGING_HEADER = "SIGIL-iOS-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -8798,6 +8857,7 @@
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "18BCE49D-8823-4A0C-B597-CFE83C7820BE";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = GAME_DOOM;
 				SWIFT_OBJC_BRIDGING_HEADER = "DOOM-iOS-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
