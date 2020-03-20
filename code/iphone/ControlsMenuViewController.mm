@@ -21,6 +21,8 @@
 #import "ControlsMenuViewController.h"
 #include "doomiphone.h"
 #include "iphone_delegate.h"
+#include "SmartDeviceLink.h"
+
 
 /*
  ================================================================================================

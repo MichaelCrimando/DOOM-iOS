@@ -33,7 +33,7 @@ class ProxyManager: NSObject {
     
     //viewcontroller to send to hmi
     private var _sdlVC:SDLCarWindowViewController = SDLCarWindowViewController()
-    var sdlViewController: SDLCarWindowViewController {
+    @objc var sdlViewController: SDLCarWindowViewController {
         get {
             return _sdlVC
         }
