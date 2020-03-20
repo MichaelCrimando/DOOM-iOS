@@ -28,8 +28,22 @@ class ProxyManager: NSObject {
     private let appId = "666666"
     private let appImageName = "SIGIL_76.png"
     #endif
-    private var sdlManager: SDLManager?
+    private var sdlManager: SDLManager!
     @objc static let sharedManager = ProxyManager()
+    
+    //viewcontroller to send to hmi
+    private var _sdlVC:SDLCarWindowViewController = SDLCarWindowViewController()
+    var sdlViewController: SDLCarWindowViewController {
+        get {
+            return _sdlVC
+        }
+        set {
+            _sdlVC = newValue
+            if sdlManager.streamManager != nil {
+                sdlManager.streamManager?.rootViewController = newValue
+            }
+        }
+    }
     
     override init() {
         super.init()
@@ -37,8 +51,8 @@ class ProxyManager: NSObject {
         let lifecycleConfig = SDLLifecycleConfiguration(appName: appName, fullAppId: appId)
         lifecycleConfig.appType = .navigation
         
-        let streamingConfig = SDLStreamingMediaConfiguration(encryptionFlag: .authenticateAndEncrypt, videoSettings: nil, dataSource: self, rootViewController: blankViewController(nibName: "blankViewController", bundle: nil))
-
+        let streamingConfig = SDLStreamingMediaConfiguration(encryptionFlag: .authenticateAndEncrypt, videoSettings: nil, dataSource: self, rootViewController: self.sdlViewController)
+        
         let encryptionConfig = SDLEncryptionConfiguration(securityManagers: [FMCSecurityManager.self], delegate: self)
         
         let config = SDLConfiguration(lifecycle: lifecycleConfig, lockScreen: .enabled(), logging: .debug(), streamingMedia: streamingConfig, fileManager: .default(), encryption: encryptionConfig)
@@ -46,7 +60,7 @@ class ProxyManager: NSObject {
         sdlManager = SDLManager(configuration: config, delegate: self)
     }
     
-   @objc func connect() {
+    @objc func connect() {
         sdlManager?.start{ (success, error) in
             if error != nil {
                 print("START UP ERROR -> \(error.debugDescription)")
@@ -112,5 +126,16 @@ extension ProxyManager: SDLStreamingMediaManagerDataSource {
 }
 extension ProxyManager: SDLServiceEncryptionDelegate {
     func serviceEncryptionUpdated(serviceType type: SDLServiceType, isEncrypted encrypted: Bool, error: Error?) {
+    }
+}
+
+//MARK: SDLAudioStreamManagerDelegate
+extension ProxyManager: SDLAudioStreamManagerDelegate{
+    public func audioStreamManager(_ audioManager: SDLAudioStreamManager, errorDidOccurForFile fileURL: URL, error: Error) {
+        
+    }
+    
+    public func audioStreamManager(_ audioManager: SDLAudioStreamManager, fileDidFinishPlaying fileURL: URL, successfully: Bool) {
+        audioManager.playNextWhenReady()
     }
 }
