@@ -57,6 +57,8 @@ class ProxyManager: NSObject {
         
         let config = SDLConfiguration(lifecycle: lifecycleConfig, lockScreen: .enabled(), logging: .debug(), streamingMedia: streamingConfig, fileManager: .default(), encryption: encryptionConfig)
         
+        streamingConfig.carWindowRenderingType = .viewAfterScreenUpdates
+        
         sdlManager = SDLManager(configuration: config, delegate: self)
     }
     
