@@ -33,17 +33,15 @@ class ProxyManager: NSObject {
     
     //viewcontroller to send to hmi
     private var _sdlVC:SDLCarWindowViewController = SDLCarWindowViewController()
-    @objc var sdlViewController: SDLCarWindowViewController {
-        get {
-            return _sdlVC
-        }
-        set {
-            _sdlVC = newValue
-            if sdlManager.streamManager != nil {
-                sdlManager.streamManager?.rootViewController = newValue
-            }
-        }
+    var sdlViewController:UIViewController? = blankViewController()
+    var streamManager: SDLStreamingMediaManager? {
+        return self.sdlManager.streamManager
     }
+    
+    @objc public func setStreamViewController(_ vc:UIViewController) {
+        self.sdlManager.streamManager?.rootViewController = vc
+    }
+    
     
     override init() {
         super.init()
@@ -51,6 +49,7 @@ class ProxyManager: NSObject {
         let lifecycleConfig = SDLLifecycleConfiguration(appName: appName, fullAppId: appId)
         lifecycleConfig.appType = .navigation
         
+
         let streamingConfig = SDLStreamingMediaConfiguration(encryptionFlag: .authenticateAndEncrypt, videoSettings: nil, dataSource: self, rootViewController: self.sdlViewController)
         
         let encryptionConfig = SDLEncryptionConfiguration(securityManagers: [FMCSecurityManager.self], delegate: self)
