@@ -8,23 +8,23 @@ import Foundation
 import SmartDeviceLink
 
 class ProxyManager: NSObject {
-    #if GAME_DOOM
+    #if GAME_DOOM //TODO: Eventualley give these all their own app ID. But gotta work out backend for that
     private let appName = "DOOM"
     private let appId = "666"
     private let appImageName = "DOOM_76.png"
     
     #elseif GAME_DOOM2
     private let appName = "DOOM II"
-    private let appId = "6666"
+    private let appId = "666"
     private let appImageName = "DOOM2_76.png"
     
     #elseif GAME_FINALDOOM
     private let appName = "Final DOOM"
-    private let appId = "66666"
+    private let appId = "666"
     private let appImageName = "FinalDOOM_76.png"
     
     #else
-    private let appName = "DOOM"
+    private let appName = "SIGIL"
     private let appId = "666"
     private let appImageName = "SIGIL_76.png"
     #endif
