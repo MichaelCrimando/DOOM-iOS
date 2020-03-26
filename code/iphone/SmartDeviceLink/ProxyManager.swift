@@ -12,21 +12,25 @@ class ProxyManager: NSObject {
     private let appName = "DOOM"
     private let appId = "666"
     private let appImageName = "DOOM_76.png"
+    private let appIconName = "DOOM"
     
     #elseif GAME_DOOM2
     private let appName = "DOOM II"
     private let appId = "666"
     private let appImageName = "DOOM2_76.png"
+    private let appIconName = "DOOM2"
     
     #elseif GAME_FINALDOOM
     private let appName = "Final DOOM"
     private let appId = "666"
     private let appImageName = "FinalDOOM_76.png"
+    private let appIconName = "FinalDOOM"
     
     #else
     private let appName = "SIGIL"
     private let appId = "666"
     private let appImageName = "SIGIL_76.png"
+    private let appIconName = "SIGIL"
     #endif
     private var sdlManager: SDLManager!
     @objc static let sharedManager = ProxyManager()
@@ -49,6 +53,11 @@ class ProxyManager: NSObject {
         
         let lifecycleConfig = SDLLifecycleConfiguration(appName: appName, fullAppId: appId)
         lifecycleConfig.appType = .navigation
+
+        if let appImage = UIImage(named: appImageName) {
+            let appIcon = SDLArtwork(image: appImage, name: appIconName, persistent: true, as: .PNG)
+            lifecycleConfig.appIcon = appIcon
+        }
         
 
         let streamingConfig = SDLStreamingMediaConfiguration(encryptionFlag: .authenticateAndEncrypt, videoSettings: nil, dataSource: self, rootViewController: self.sdlViewController)
