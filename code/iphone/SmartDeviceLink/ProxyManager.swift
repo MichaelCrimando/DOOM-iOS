@@ -24,8 +24,8 @@ class ProxyManager: NSObject {
     private let appImageName = "FinalDOOM_76.png"
     
     #else
-    private let appName = "SIGIL"
-    private let appId = "666666"
+    private let appName = "DOOM"
+    private let appId = "666"
     private let appImageName = "SIGIL_76.png"
     #endif
     private var sdlManager: SDLManager!
@@ -39,6 +39,7 @@ class ProxyManager: NSObject {
     }
     
     @objc public func setStreamViewController(_ vc:UIViewController) {
+        print("Changing the view controller to: \(vc.nibName ?? "IDK")")
         self.sdlManager.streamManager?.rootViewController = vc
     }
     
