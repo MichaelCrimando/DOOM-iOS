@@ -8,24 +8,24 @@ import Foundation
 import SmartDeviceLink
 
 class ProxyManager: NSObject {
-    #if GAME_DOOM
+    #if GAME_DOOM //TODO: Eventualley give these all their own app ID. But gotta work out backend for that
     private let appName = "DOOM"
     private let appId = "666"
     private let appImageName = "DOOM_76.png"
     
     #elseif GAME_DOOM2
     private let appName = "DOOM II"
-    private let appId = "6666"
+    private let appId = "666"
     private let appImageName = "DOOM2_76.png"
     
     #elseif GAME_FINALDOOM
     private let appName = "Final DOOM"
-    private let appId = "66666"
+    private let appId = "666"
     private let appImageName = "FinalDOOM_76.png"
     
     #else
     private let appName = "SIGIL"
-    private let appId = "666666"
+    private let appId = "666"
     private let appImageName = "SIGIL_76.png"
     #endif
     private var sdlManager: SDLManager!
@@ -33,17 +33,16 @@ class ProxyManager: NSObject {
     
     //viewcontroller to send to hmi
     private var _sdlVC:SDLCarWindowViewController = SDLCarWindowViewController()
-    @objc var sdlViewController: SDLCarWindowViewController {
-        get {
-            return _sdlVC
-        }
-        set {
-            _sdlVC = newValue
-            if sdlManager.streamManager != nil {
-                sdlManager.streamManager?.rootViewController = newValue
-            }
-        }
+    var sdlViewController:UIViewController? = blankViewController()
+    var streamManager: SDLStreamingMediaManager? {
+        return self.sdlManager.streamManager
     }
+    
+    @objc public func setStreamViewController(_ vc:UIViewController) {
+        print("Changing the view controller to: \(vc.nibName ?? "IDK")")
+        self.sdlManager.streamManager?.rootViewController = vc
+    }
+    
     
     override init() {
         super.init()
@@ -51,6 +50,7 @@ class ProxyManager: NSObject {
         let lifecycleConfig = SDLLifecycleConfiguration(appName: appName, fullAppId: appId)
         lifecycleConfig.appType = .navigation
         
+
         let streamingConfig = SDLStreamingMediaConfiguration(encryptionFlag: .authenticateAndEncrypt, videoSettings: nil, dataSource: self, rootViewController: self.sdlViewController)
         
         let encryptionConfig = SDLEncryptionConfiguration(securityManagers: [FMCSecurityManager.self], delegate: self)
