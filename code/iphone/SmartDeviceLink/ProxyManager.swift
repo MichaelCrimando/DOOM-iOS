@@ -34,8 +34,48 @@ class ProxyManager: NSObject {
     #endif
     private var sdlManager: SDLManager!
     @objc static let sharedManager = ProxyManager()
+    var currentHmiLevel : SDLHMILevel = .none
     
-    //viewcontroller to send to hmi
+    //Vehicle Data ----------------------------------------------------/
+    var subscribeVehicleData : SDLSubscribeVehicleData
+    @objc public var isVehicleDataSubscribed : Bool = false
+    @objc public var bodyData : SDLBodyInformation = SDLBodyInformation() //Door - 1 = open, 0 = closed
+    private var _steeringWheelAngle : SDLFloat = 0 as SDLFloat //On a scale from 480 (all the way left) to -480 (all the way right).
+    @objc public var steeringWheelAngle: CGFloat {
+        get {
+            let _x = _steeringWheelAngle as! CGFloat
+            if(_x >= -10 && _x <= 10) { //Throw some dead zone in there
+                return 0.0
+            } else {
+                return _x/95
+            }
+        }
+    }
+    @objc public var headLampStatus : SDLHeadLampStatus = SDLHeadLampStatus()
+    private var _accelPedalPosition : SDLFloat = 0 as SDLFloat //On scale from 0 - 100 (percent pressed down)
+    @objc public var accelPedalPosition : CGFloat {
+        get {
+            var _x = _accelPedalPosition as! CGFloat
+            //need to keep between 0 and 1
+            _x = _x/10.0
+            if(_x >= 1.0) {
+                return 1.0
+            } else {
+                return _x
+            }
+        }
+    }
+    private var _brakingStatus : SDLVehicleDataEventStatus = .no
+    @objc public func isDriverBraking() -> Bool {
+        if _brakingStatus == .yes {
+            return true
+        } else {
+            return false
+        }
+    }
+    
+    
+    //Viewcontroller to send to hmi ----------------------------------------------------/
     private var _sdlVC:SDLCarWindowViewController = SDLCarWindowViewController()
     var sdlViewController:UIViewController? = blankViewController()
     var streamManager: SDLStreamingMediaManager? {
@@ -49,6 +89,7 @@ class ProxyManager: NSObject {
     
     
     override init() {
+        subscribeVehicleData = SDLSubscribeVehicleData()
         super.init()
         
         let lifecycleConfig = SDLLifecycleConfiguration(appName: appName, fullAppId: appId)
@@ -78,6 +119,61 @@ class ProxyManager: NSObject {
             }
         }
     }
+    
+    @objc func vehicleDataAvailable(_ notification: SDLRPCNotificationNotification) {
+           guard let onVehicleData = notification.notification as? SDLOnVehicleData else {
+               return
+           }
+           bodyData = onVehicleData.bodyInformation ?? bodyData
+
+           print("Driver door: \(bodyData.driverDoorAjar ?? NSNumber(value: 666))")
+           _steeringWheelAngle = onVehicleData.steeringWheelAngle ?? _steeringWheelAngle
+           headLampStatus = onVehicleData.headLampStatus ?? headLampStatus
+           _accelPedalPosition = onVehicleData.accPedalPosition ?? _accelPedalPosition
+           _brakingStatus = onVehicleData.driverBraking ?? _brakingStatus
+
+       }
+    
+    func subscribeToVehicleData(){
+           print("Subscribing to vehicle data...")
+           subscribeVehicleData.bodyInformation = true as NSNumber & SDLBool
+           subscribeVehicleData.accPedalPosition = true as NSNumber & SDLBool
+           subscribeVehicleData.steeringWheelAngle = true as NSNumber & SDLBool
+           subscribeVehicleData.headLampStatus = true as NSNumber & SDLBool
+           subscribeVehicleData.driverBraking = true as NSNumber & SDLBool
+           
+           self.sdlManager.send(request: subscribeVehicleData) { (request, response, error) in
+               guard let response = response as? SDLSubscribeVehicleDataResponse else { return }
+               
+               guard response.success.boolValue == true else {
+                   if response.resultCode == .disallowed {
+                       // Not allowed to register for this vehicle data.
+                   } else if response.resultCode == .userDisallowed {
+                       // User disabled the ability to give you this vehicle data
+                   } else if response.resultCode == .ignored {
+                       if let bodyDataResponse = response.bodyInformation {
+                           if bodyDataResponse.resultCode == .dataAlreadySubscribed {
+                               // You have access to this data item, and you are already subscribed to this item so we are ignoring.
+                           } else if bodyDataResponse.resultCode == .vehicleDataNotAvailable {
+                               // You have access to this data item, but the vehicle you are connected to does not provide it.
+                           } else {
+                               print("Unknown reason for being ignored: \(bodyDataResponse.resultCode)")
+                           }
+                       } else {
+                           print("Unknown reason for being ignored: \(String(describing: response.info))")
+                       }
+                   } else if let error = error {
+                       print("Encountered Error sending SubscribeVehicleData: \(error)")
+                   }
+                   self.isVehicleDataSubscribed = false
+                   return
+               }
+               
+               self.isVehicleDataSubscribed = true
+               // Successfully subscribed
+               print("Vehicle data subscribed")
+           }
+       }
     
     private func setupTemplate(type templateType: SDLPredefinedLayout, completionBlock: (() -> ())? = nil) {
         let displayTemplate = SDLSetDisplayLayout(predefinedLayout: templateType)
@@ -117,14 +213,16 @@ extension ProxyManager: SDLManagerDelegate {
     }
     
     func hmiLevel(_ oldLevel: SDLHMILevel, didChangeToLevel newLevel: SDLHMILevel) {
-        switch (oldLevel, newLevel) {
-        case (.none, .full):
-            break
-        default:
-            break
+        print("Went from HMI level \(oldLevel) to HMI level \(newLevel)")
+        currentHmiLevel = newLevel
+        if (newLevel == .full ) {
+            // We entered full
+            print("entered HMI full")
+            if(!self.isVehicleDataSubscribed){
+                self.subscribeToVehicleData()
+            }
         }
     }
-    
 }
 extension ProxyManager: SDLStreamingMediaManagerDataSource {
     func preferredVideoFormatOrder(fromHeadUnitPreferredOrder headUnitPreferredOrder: [SDLVideoStreamingFormat]) -> [SDLVideoStreamingFormat] {

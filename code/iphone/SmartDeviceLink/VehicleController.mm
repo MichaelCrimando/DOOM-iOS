@@ -7,7 +7,15 @@
 
 #import "VehicleController.h"
 #import "SmartDeviceLink.h"
-#import "Doom-Swift.h"
+#if GAME_DOOM
+#import "DOOM-Swift.h"
+#elif GAME_DOOM2
+#import "DOOM_II-Swift.h"
+#elif GAME_FINALDOOM
+#import "FInal_DOOM-Swift.h"
+#else
+#import "SIGIL-Swift.h"
+#endif
 
 typedef enum {
     WEAPON_PREVIOUS = 0,
