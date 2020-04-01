@@ -4,6 +4,11 @@ class blankViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        if let background = UIImage(named: "BasicBackgronud.png") {
+            let backgroundView = UIImageView(image: background)
+            backgroundView.frame = CGRect(x: 0, y: 0, width: 300, height: 200)
+            view.addSubview(backgroundView)
+        }
         
 //        // Do any additional setup after loading the view.
 //        self.view.backgroundColor = UIColor(patternImage: #imageLiteral(resourceName: "space"))

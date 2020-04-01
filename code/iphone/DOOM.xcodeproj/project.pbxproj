@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		2913E8EC24342CCE00D30E97 /* BasicBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 2913E8EB24342CCD00D30E97 /* BasicBackground.png */; };
+		2913E8ED24342CCE00D30E97 /* BasicBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 2913E8EB24342CCD00D30E97 /* BasicBackground.png */; };
+		2913E8EE24342CCE00D30E97 /* BasicBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 2913E8EB24342CCD00D30E97 /* BasicBackground.png */; };
+		2913E8EF24342CCE00D30E97 /* BasicBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 2913E8EB24342CCD00D30E97 /* BasicBackground.png */; };
 		29309A1F2420658F005E5AA3 /* SmartDeviceLink in Resources */ = {isa = PBXBuildFile; fileRef = 29309A1E2420658F005E5AA3 /* SmartDeviceLink */; };
 		29309A202420658F005E5AA3 /* SmartDeviceLink in Resources */ = {isa = PBXBuildFile; fileRef = 29309A1E2420658F005E5AA3 /* SmartDeviceLink */; };
 		29309A212420658F005E5AA3 /* SmartDeviceLink in Resources */ = {isa = PBXBuildFile; fileRef = 29309A1E2420658F005E5AA3 /* SmartDeviceLink */; };
@@ -2178,6 +2182,7 @@
 		1AF3774141B909004B2363AF /* Pods-DOOM2-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DOOM2-iOS.release.xcconfig"; path = "Target Support Files/Pods-DOOM2-iOS/Pods-DOOM2-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		1D6058910D05DD3D006BFB54 /* DOOM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DOOM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		200C91992B66EF4F8EFE5D1D /* libPods-DOOM-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DOOM-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2913E8EB24342CCD00D30E97 /* BasicBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BasicBackground.png; path = "../../../../Library/Mobile Documents/com~apple~CloudDocs/.Trash/BasicBackground.png"; sourceTree = "<group>"; };
 		29309A1E2420658F005E5AA3 /* SmartDeviceLink */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SmartDeviceLink; sourceTree = "<group>"; };
 		29309A23242067B5005E5AA3 /* DOOM-iOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DOOM-iOS-Bridging-Header.h"; sourceTree = "<group>"; };
 		29309A24242067B5005E5AA3 /* DOOM2-iOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DOOM2-iOS-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -2909,6 +2914,7 @@
 				724C531E0FBDBCEE000E4348 /* BackgroundMusic.cpp */,
 				72E84A280F9503F100AB3C99 /* cmd.c */,
 				72E8495C0F942B9300AB3C99 /* cvar.c */,
+				2913E8EB24342CCD00D30E97 /* BasicBackground.png */,
 				72E8495D0F942B9300AB3C99 /* cvar.h */,
 				A1A63E1E20562FD1000955AE /* Doom_App.h */,
 				A1A63E1D20562FD1000955AE /* Doom_App.m */,
@@ -3856,6 +3862,7 @@
 				C8D1CF6813DE1EB600F0EAC6 /* DOOM_57.png in Resources */,
 				C8D1CF6A13DE1EF500F0EAC6 /* DOOM_114.png in Resources */,
 				C8D1CF6C13DE1F0600F0EAC6 /* DOOM_72.png in Resources */,
+				2913E8EC24342CCE00D30E97 /* BasicBackground.png in Resources */,
 				C8D1CF8613DF792D00F0EAC6 /* Default@2x.png in Resources */,
 				C8D1CF8813DF79BC00F0EAC6 /* Default~ipad.png in Resources */,
 				C81E0E5E13E076E400B1049A /* idGinzaNar-Md2.otf in Resources */,
@@ -4119,6 +4126,7 @@
 				A1063A15216EFCEE00BDE196 /* MissionMenuView~ipad.xib in Resources */,
 				A1063A16216EFCEE00BDE196 /* OpenGLView~ipad.xib in Resources */,
 				A1063A17216EFCEE00BDE196 /* EpisodeCell~ipad.xib in Resources */,
+				2913E8EE24342CCE00D30E97 /* BasicBackground.png in Resources */,
 				A1063A18216EFCEE00BDE196 /* AdvancedButton_Highlighted.png in Resources */,
 				A1063A19216EFCEE00BDE196 /* LegalMenuView~ipad.xib in Resources */,
 				29309A4324224609005E5AA3 /* FMCSecurity in Resources */,
@@ -4270,6 +4278,7 @@
 				A187081B216EB633006C013F /* MainMenuView.xib in Resources */,
 				A187081C216EB633006C013F /* Hard.png in Resources */,
 				A187081D216EB633006C013F /* MainMenuView~ipad.xib in Resources */,
+				2913E8ED24342CCE00D30E97 /* BasicBackground.png in Resources */,
 				A187081E216EB633006C013F /* DOOM_144.png in Resources */,
 				A187081F216EB633006C013F /* MapOverlay.png in Resources */,
 				A1870820216EB633006C013F /* Medium.png in Resources */,
@@ -4517,6 +4526,7 @@
 				A1DE84DF229F60BE0041E450 /* Episode4Background_Highlighted.png in Resources */,
 				A1DE84E0229F60BE0041E450 /* MissionMenuView~ipad.xib in Resources */,
 				A1DE84E1229F60BE0041E450 /* OpenGLView~ipad.xib in Resources */,
+				2913E8EF24342CCE00D30E97 /* BasicBackground.png in Resources */,
 				A1DE84E2229F60BE0041E450 /* EpisodeCell~ipad.xib in Resources */,
 				A1DE84E3229F60BE0041E450 /* AdvancedButton_Highlighted.png in Resources */,
 				A1DE84E4229F60BE0041E450 /* LegalMenuView~ipad.xib in Resources */,
